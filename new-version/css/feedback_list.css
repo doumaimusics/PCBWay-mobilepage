@@ -1,0 +1,349 @@
+.u-tick:after {
+  content: '';
+  display: block;
+  width: 0.26rem;
+  height: 0.2rem;
+  background: url("../img/tick.png") no-repeat;
+  background-size: cover;
+  margin-top: -0.1rem;
+  position: absolute;
+  top: 50%;
+  right: 0.3rem; }
+
+.g-home {
+  width: 100%;
+  height: 100%; }
+
+.m-search-box {
+  width: 100%;
+  background: #fff;
+  padding: 0.19rem 0.15rem;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  border-bottom: 1px solid #D3D3D3; }
+  .m-search-box .m-search-inner {
+    width: 100%;
+    height: 0.68rem;
+    border-radius: 0.05rem;
+    padding-left: 0.15rem;
+    background: #EBEBEC;
+    position: relative; }
+
+.m-search-inner input {
+  width: 80%;
+  height: 100%;
+  display: block;
+  background: #EBEBEC;
+  font-size: 0.26rem; }
+
+.m-search-inner .m-search-clear {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  background: url(../img/colicon-icon.png) no-repeat;
+  background-size: 0.28rem 0.28rem;
+  background-position: center center; }
+
+.m-search-inner .m-search-icon {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/search-icon.png) no-repeat #12C286;
+  background-size: 0.28rem 0.28rem;
+  background-position: center center;
+  border-top-right-radius: 0.05rem;
+  border-bottom-right-radius: 0.05rem; }
+
+.u-detail-center {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  bottom: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.swiper-container {
+  height: 2.64rem; }
+
+.swiper-slide {
+  width: 100%;
+  position: relative; }
+  .swiper-slide img {
+    width: 100%; }
+  .swiper-slide a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
+  left: 0;
+  bottom: -5px; }
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #12C286; }
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: #E2E2E4;
+  opacity: 1; }
+
+.u-list-box {
+  width: 100%;
+  position: relative;
+  z-index: 100; }
+  .u-list-box .u-list-title {
+    width: 100%;
+    height: 1rem;
+    background: #FAFAFA;
+    border-bottom: 1px solid #D3D3D3; }
+    .u-list-box .u-list-title .u-list {
+      width: 100%;
+      height: 100%;
+      float: left;
+      background: url(../img/xo-icon2.png) no-repeat;
+      background-size: 0.3rem 0.18rem;
+      background-position: 6.8rem center;
+      line-height: 1rem;
+      font-size: 0.32rem;
+      color: #333;
+      padding: 0 0.34rem; }
+  .u-list-box .u-content-ul {
+    width: 100%;
+    background: #fff;
+    z-index: 2; }
+    .u-list-box .u-content-ul li.u-content-li.active {
+      display: block; }
+    .u-list-box .u-content-ul li.u-content-li {
+      display: none;
+      font-size: 0.26rem;
+      color: #333; }
+
+li.u-content-li .u-list-content {
+  width: 100%;
+  max-height: 3.4rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+li.u-content-li .u-default-select {
+  padding: 0 0.2rem;
+  line-height: 0.9rem;
+  background: #fff;
+  border-bottom: 1px solid #EBEBEC; }
+
+.u-list-content .u-list-content-dl,
+.u-list-content-dl2,
+.u-list-content-dl3 {
+  font-size: 0.26rem;
+  padding: 0 0.2rem; }
+
+.u-list-content-dl dt,
+.u-list-content-dl3 dt {
+  color: #666;
+  line-height: 0.9rem;
+  padding-left: 0.15rem;
+  border-bottom: 1px solid #EBEBEC; }
+
+.u-list-content-dl dd,
+.u-list-content-dl2 dd,
+.u-list-content-dl3 dd {
+  color: #333;
+  line-height: 0.9rem;
+  padding-left: 0.15rem;
+  position: relative; }
+
+.u-feedack-content {
+  margin-bottom: 1.22rem; }
+
+.u-feedack-content .u-feedack-list {
+  margin-bottom: 0.4rem; }
+
+.u-feedack-content .u-feedack-list .u-item {
+  background: #fff;
+  margin-bottom: 0.22rem; }
+
+.skip_box {
+  position: relative; }
+  .skip_box a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto; }
+
+.u-personinfo-box {
+  padding: 0.34rem; }
+  .u-personinfo-box .u-head-portrait {
+    width: 15%;
+    float: left; }
+    .u-personinfo-box .u-head-portrait i {
+      display: block;
+      width: 0.96rem;
+      height: 0.96rem;
+      background: url(../img/portrait2.png) no-repeat;
+      background-size: cover; }
+      .u-personinfo-box .u-head-portrait i img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
+  .u-personinfo-box .u-personinfo {
+    width: 85%;
+    float: left;
+    padding-left: 0.15rem; }
+
+.u-personinfo .u-info {
+  width: 100%;
+  font-size: 0.26rem;
+  color: #333; }
+  .u-personinfo .u-info span {
+    margin-right: 0.12rem; }
+  .u-personinfo .u-info img {
+    width: 0.44rem;
+    height: 0.3rem;
+    vertical-align: middle; }
+  .u-personinfo .u-info .u-djx {
+    width: 34.5%;
+    height: 0.4rem;
+    display: inline-block;
+    background: url(../img/score4.png) repeat-x;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0 0;
+    float: right; }
+    .u-personinfo .u-info .u-djx .u-hx {
+      width: 100%;
+      height: 0.4rem;
+      display: inline-block;
+      background: url(../img/score3.png) repeat-x;
+      background-size: 0.4rem 0.4rem;
+      background-position: 0 0; }
+
+.u-personinfo .u-time {
+  margin-top: 0.3rem;
+  font-size: 0.24rem;
+  color: #999; }
+
+.u-projects {
+  padding: 0 0.34rem;
+  position: relative; }
+  .u-projects h3 {
+    font-size: 0.3rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .u-projects p {
+    font-size: 0.26rem;
+    color: #333;
+    line-height: 0.36rem;
+    margin-bottom: 0.32rem; }
+
+.u-feedack-img {
+  margin-bottom: 0.24rem;
+  padding: 0 0.34rem;
+  font-size: 0; }
+  .u-feedack-img span {
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    margin-right: 0.1rem;
+    margin-bottom: 0.1rem; }
+  .u-feedack-img img {
+    height: 1.6rem;
+    width: 1.6rem; }
+
+.u-ratehistory {
+  border-top: 1px solid #EBEBEC; }
+  .u-ratehistory .s-t-1:not(:last-child) {
+    border-right: 1px solid #EBEBEC; }
+  .u-ratehistory .s-t-1:nth-child(1) .u-icon-ck {
+    background: url(../img/Sprites.png) no-repeat;
+    background-size: 3rem 5rem;
+    background-position: -2rem -1.56rem; }
+  .u-ratehistory .s-t-1:nth-child(2) .u-icon-ck {
+    background: url(../img/mes-icon2.png) no-repeat;
+    background-size: 0.26rem 0.24rem;
+    background-position: 0rem 0rem; }
+  .u-ratehistory .s-t-1:nth-child(3) .u-icon-ck.active {
+    background: url(../img/ax-icon_b.png) no-repeat;
+    background-size: 0.3rem 0.26rem;
+    background-position: 0rem center; }
+  .u-ratehistory .s-t-1:nth-child(3) .u-icon-ck {
+    background: url(../img/ax-icon.png) no-repeat;
+    background-size: 0.3rem 0.26rem;
+    background-position: 0rem center; }
+  .u-ratehistory .s-t-1 {
+    width: 33.33%;
+    float: left;
+    font-size: 0;
+    color: #999;
+    text-align: center;
+    position: relative; }
+    .u-ratehistory .s-t-1 a {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto; }
+    .u-ratehistory .s-t-1 .u-icon-ck {
+      display: inline-block;
+      width: 0.32rem;
+      height: 0.25rem;
+      margin-top: 0.26rem;
+      margin-right: 0.12rem;
+      vertical-align: top; }
+    .u-ratehistory .s-t-1 span {
+      font-size: 0.24rem;
+      display: inline-block;
+      line-height: 0.8rem; }
+
+.page-box {
+  width: 100%;
+  height: 0.8rem; }
+
+.page-box .u-paging {
+  width: 2.6rem;
+  height: 100%;
+  margin: 0 auto; }
+
+.page-box .paging-L.active, .page-box .paging-R.active {
+  background: #12C286;
+  color: #fff; }
+
+.page-box .paging-L {
+  width: 1.2rem;
+  float: left;
+  background: #ddd;
+  font-size: 0.24rem;
+  color: #666666;
+  text-align: center;
+  line-height: 0.6rem; }
+
+.page-box .paging-R {
+  width: 1.2rem;
+  float: right;
+  background: #ddd;
+  font-size: 0.24rem;
+  color: #666666;
+  text-align: center;
+  line-height: 0.6rem; }
+
+.u-bgzz {
+  display: none;
+  position: fixed;
+  top: 5.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10; }

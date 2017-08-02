@@ -1,0 +1,420 @@
+//左右居中定位
+@mixin left-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+//上下居中定位
+@mixin top-bottom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+//正中间定位
+@mixin zhong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+//覆盖定位
+@mixin shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+//
+.u-tick:after {
+    content: '';
+    display: block;
+    width: 0.26rem;
+    height: 0.2rem;
+    background: url("../img/tick.png") no-repeat;
+    background-size: cover;
+    margin-top: -0.1rem;
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+}
+
+.g-home {
+    width: 100%;
+    height: 100%;
+}
+//搜索部分css
+.m-search-box {
+    width: 100%;
+    background: #fff;
+    padding: 0.19rem 0.15rem;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    border-bottom: 1px solid #D3D3D3;
+    .m-search-inner {
+        width: 100%;
+        height: 0.68rem;
+        border-radius: 0.05rem;
+        padding-left: 0.15rem;
+        background: #EBEBEC;
+        position: relative;
+        padding-right:20% ;
+    }
+}
+
+.m-search-inner input {
+    width: 100%;
+    height: 100%;
+    display: block;
+        background: #EBEBEC;
+    font-size: 0.26rem;
+}
+
+.m-search-inner .m-search-clear {
+    width: 10%;
+    height: 100%;
+   position: absolute;
+   top: 0;
+   right: 10%;
+    background: url(../img/colicon-icon.png) no-repeat;
+    background-size: 0.28rem 0.28rem;
+    background-position: center center;
+}
+
+.m-search-inner .m-search-icon {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    right: 0;top: 0;
+    background: url(../img/search-icon.png) no-repeat #12C286;
+    background-size: 0.28rem 0.28rem;
+    background-position: center center;
+    border-top-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+}
+
+//sponsor_list.html页面中间css
+.u-detail-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    //z-index: 2;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+//轮播css
+.swiper-container {
+    height: 2.64rem;
+}
+
+.swiper-slide {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    a {
+        @include shade;
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #12C286;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: #E2E2E4;
+    opacity: 1;
+}
+
+//列表选择css
+.u-list-box {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    .u-list-title {
+        width: 100%;
+        height: 1rem;
+        background: #FAFAFA;
+        border-bottom: 1px solid #D3D3D3;
+        .u-list.u-color-active {
+            background: url(../img/san-icon-color.png) no-repeat;
+            background-size: 0.24rem 0.13rem;
+            background-position: 1.95rem center;
+            color: #12C286;
+        }
+        .u-list {
+            width: 33.33%;
+            height: 100%;
+            float: left;
+            background: url(../img/san-icon.png) no-repeat;
+            background-size: 0.24rem 0.13rem;
+            background-position: 1.95rem center;
+            text-align: center;
+            line-height: 1rem;
+            font-size: 0.3rem;
+            color: #333;
+        }
+    }
+    .u-content-ul {
+        width: 100%;
+        background: #fff;
+        z-index: 2;
+        li.u-content-li {
+            display: none;
+            font-size: 0.26rem;
+            color: #333;
+        }
+    }
+}
+
+li.u-content-li .u-list-content {
+    width: 100%;
+    max-height: 3.4rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+li.u-content-li .u-default-select {
+    padding: 0 0.19rem;
+    line-height: 0.9rem;
+    background: #FAFAFA;
+    border-bottom: 1px solid #EBEBEC;
+}
+
+.u-list-content .u-list-content-dl,
+.u-list-content .u-list-content-dl2,
+.u-list-content .u-list-content-dl3 {
+    font-size: 0.26rem;
+    padding: 0 0.19rem;
+}
+
+.u-list-content-dl dt,
+.u-list-content-dl3 dt {
+    color: #666;
+    line-height: 0.9rem;
+    border-bottom: 1px solid #EBEBEC;
+    padding-left: 0.15rem;
+    font-size: 0.32rem;
+}
+
+.u-list-content-dl dd,
+.u-list-content-dl2 dd,
+.u-list-content-dl3 dd {
+    color: #333;
+    line-height: 0.9rem;
+    position: relative;
+    padding-left: 0.15rem;
+}
+
+//展示选择条件后下面展示的内容
+.u-appraise-content {
+    background: #fff;
+    padding-bottom: 0.22rem;
+    margin-bottom: 1.22rem;
+    .u-Reviews-box {
+        position: relative;
+        margin-bottom: 0.4rem;
+        padding: 0 0.16rem;
+    }
+}
+
+.u-Reviews-box .u-Reviews {
+    width: 3.51rem;
+    padding: 0.22rem 0;
+    float: left;
+}
+.u-Reviews-box .u-Reviews:nth-child(2n){
+    float: right;
+}
+
+
+.u-Reviews .u-Reviews-conter {
+    width:100%;
+}
+
+.u-Reviews-conter .u-appraise-cont-box {
+    position: relative;
+    margin-bottom: 0.3rem;
+    a {
+        @include shade;
+    }
+}
+
+.u-appraise-cont-box .u-appraise-img {
+    width: 100%;
+    height: 1.92rem;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.u-appraise-cont-box .u-Customer-p {
+    height: 0.64rem;
+    font-size: 0.26rem;
+    color: #333;
+    line-height: 0.32rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0.3rem auto 0.3rem;
+}
+
+ .u-appraise-cont-box .u-collect-btn.u-active-btn {
+        background: url(../img/sc-icon2.png) no-repeat center center #fff;
+        background-size: 0.36rem 0.28rem;
+    }
+.u-appraise-cont-box .u-collect-btn {
+        width: 0.54rem;
+        height: 0.54rem;
+        border-radius: 50%;
+        border: 1px solid #EBEBEC;
+        z-index: 1;
+        position: absolute;
+        right: 0.15rem;
+        top: 1.6rem;
+        background: url(../img/sc-icon1.png) no-repeat center center #fff;
+        background-size: 0.34rem 0.30rem;
+    }
+    
+    
+.s-comment{
+   padding-right: 0.1rem;
+   .s-t,.s-t-1{
+       width: 50%;
+       float: left;
+       font-size:0 ;
+    
+   }   
+}
+
+.s-comment .s-t{
+       white-space:nowrap; text-overflow:ellipsis;overflow:hidden;
+}
+.s-comment .s-t img{
+    width: 0.44rem;
+    height: 0.3rem;
+    display: inline-block;
+        vertical-align:top;
+}
+.s-comment .s-t span{
+     font-size: 0.24rem;
+        color: #666;
+         display: inline-block;
+         margin-left: 0.1rem;
+}
+.s-comment .s-t-1{
+   direction: rtl;
+   text-align: right;
+   padding-right: 0.1rem;
+}
+.s-comment .s-t-1 .u-icon-ck{
+    display:inline-block;
+        width: 0.33rem;
+        height: 0.25rem;
+        background: url(../img/Sprites.png) no-repeat;
+        background-size: 3rem 5rem;
+        background-position: -2rem -1.56rem;
+        margin-right: 0.1rem;
+        
+}
+.s-comment .s-t-1 span{
+    font-size: 0.24rem;
+        color: #999;
+        vertical-align:super;
+}
+
+//上一页下一页
+.u-appraise-content .page-box {
+    width: 100%;
+    height: 0.8rem;
+}
+
+.page-box .u-paging {
+    width: 2.6rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.page-box .paging-L.active,
+.page-box .paging-R.active {
+    background: #12C286;
+    color: #fff;
+}
+
+.page-box .paging-L {
+    width: 1.2rem;
+    float: left;
+    background: #ddd;
+    font-size: 0.24rem;
+    color: #666666;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+.page-box .paging-R {
+    width: 1.2rem;
+    float: right;
+    background: #ddd;
+    font-size: 0.24rem;
+    color: #666666;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+
+
+
+//半个遮罩css
+.u-bgzz {
+    display: none;
+    position: fixed;
+    top: 5.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+//sponsor_list.html页面底部
+.u-footer {
+    width: 100%;
+    height: 1rem;
+    border-top: 1px solid #D3D3D3;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 0.14rem 0.34rem;
+    z-index: 1;
+    .u-footer-btn {
+        width: 100%;
+        height: 0.72rem;
+        background: #12C286;
+        font-size: 0.3rem;
+        color: #fff;
+        text-align: center;
+        line-height: 0.72rem;
+        position: relative;
+        a {
+            @include shade;
+        }
+    }
+}

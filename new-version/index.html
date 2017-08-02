@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--<meta name="apple-touch-fullscreen" content="yes"> //启用webapp全屏模式-->
+		<!--<meta name="apple-mobile-web-app-capable" content="yes"> //启用webapp全屏模式-->
+		<title>home</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<!--首页整体大框架-->
+		<div class="g-main">
+			<!--点击u-guild弹出的-->
+			<div class="u-top-bounced">
+				<div class="tounced-sj"></div>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="javascript:;">PCB Quote</a>
+					</li>
+					<li>
+						<a href="javascript:;">My Order</a>
+					</li>
+					<li>
+						<a href="javascript:;">My Account</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--首页页面大框架-->
+			<div class="g-home">
+				<!--活动弹框-->
+				<div class="activity">
+					<div class="activity-close"></div>
+					<a href="activity_detail.html" class="get-coupon"></a>
+				</div>
+
+				<!--首页头部-->
+				<div class="u-header">
+					<div class="u-drawer sprites-img"></div>
+					<div class="u-logo sprites-img">
+						<a href="index.html"></a>
+					</div>
+					<div class="u-position-right sprites-img">
+						<div class="u-in-title">1</div>
+					</div>
+					<!--购物车-->
+					<div class="u-guild"></div>
+				</div>
+
+				<!--首页中间部分-->
+				<div class="u-detail-center">
+					<!--中间计价部分-->
+					<div class="m-quoteNow">
+						<div class="u-xian-bg"></div>
+						<h3 class="u-iq-title">One-stop solution for PCB<br> manufacturing and assembly</h3>
+						<!--计价选项卡-->
+						<div class="u-tab-box">
+							<div class="u-tab-title">
+								<ul class="u-tab-ul cleartfix">
+									<li class="active">
+										<i></i>
+										<span>PCB</span>
+									</li>
+									<li style="padding-left: 0.36rem;">
+										<i></i> Assembly
+									</li>
+								</ul>
+							</div>
+							<ul class="u-center-nav">
+								<li class="u-new-inner active cleartfix">
+
+									<dl class="u_valuation u-border-none">
+										<div class="u-Dl-L">
+											<dd>
+												<input type="text" placeholder="Length" class="u-input" />
+												<i></i>
+												<input type="text" placeholder="Width" class="u-input" />
+												<div class="u-dw">mm</div>
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation">
+										<div class="u-Dl-L">
+											<dd>
+												<select id="num" name="num" class="u-xuanz">
+													<option value="" selected="selected">Choose Num (pcs)</option>
+													<option value="5">5</option>
+													<option value="10">10</option>
+													<option value="15">15</option>
+													<option value="20">20</option>
+													<option value="25">25</option>
+													<option value="30">30</option>
+													<option value="40">40</option>
+													<option value="50">50</option>
+													<option value="75">75</option>
+													<option value="100">100</option>
+													<option value="-1">100+</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+
+									<dl class="u_valuation">
+										<div class="u-Dl-L">
+											<dd>
+												<select id="Layersquote" name="Layersquote" class="u-xuanz">
+													<option value="1">1 Layer</option>
+													<option value="2" selected="selected">2 Layers</option>
+													<option value="4">4 Layers</option>
+													<option value="6">6 Layers</option>
+													<option value="8">8 Layers</option>
+													<option value="10">10 Layers</option>
+													<option value="12">12 Layers</option>
+													<option value="14">14 Layers</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+
+									<div class="u-btn">
+										<a href="javascript:;">Quote Now </a>
+									</div>
+									<p class="line1 line2">Sign up now to get a <i>US $5</i> coupon</p>
+								</li>
+
+								<li class="u-new-inner">
+									<dl class="u_valuation">
+										<div class="u-Dl-L">
+											<dd>
+												<input type="text" class="u-input1" placeholder="Estimated PCBA Qty" />
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation">
+										<div class="u-Dl-L">
+
+											<dd>
+												<input type="text" class="u-input1" placeholder="Number of Unique Parts" />
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation">
+										<div class="u-Dl-L">
+											<dd>
+												<input type="text" class="u-input1" placeholder="Total number" />
+											</dd>
+										</div>
+									</dl>
+
+									<div class="u-btn">
+										<a href="javascript:;">Quote Now </a>
+									</div>
+									<p class="line1 line2">Sign up now to get a <i>US $5</i> coupon</p>
+
+								</li>
+
+							</ul>
+						</div>
+					</div>
+
+					<!--select-->
+					<section class="m-select-wrapper">
+						<ul class="cleartfix">
+							<li>
+								<img src="img/custom_default_icon1.png" alt="" />
+								<p>PCB <br>Prototype</p>
+								<a href="javascript:;"></a>
+							</li>
+							<li>
+								<img src="img/custom_default_icon2.png" alt="" />
+								<p>SMD<br>Stencil</p>
+								<a href="javascript:;"></a>
+							</li>
+							<li>
+								<img src="img/custom_default_icon3.png" alt="" />
+								<p>PCB <br>Assembly</p>
+								<a href="javascript:;"></a>
+							</li>
+							<li>
+								<img src="img/custom_default_icon4.png" alt="" />
+								<p>Flexible<br>PCBs</p>
+								<a href="javascript:;"></a>
+							</li>
+
+						</ul>
+					</section>
+
+					<!--only-->
+					<section class="m-only-box">
+						<img src="img/only_bj.jpg" alt="" />
+						<a href="javascript:;"></a>
+					</section>
+
+					<!--成交展示部分-->
+					<section class="m-module-con">
+						<!--承诺-->
+						<ul class="u-safeguard cleartfix">
+
+							<li class="u-list">
+								<i></i>
+								<span class="u-list-text">Best Value</span>
+								<a href="../capabilities_list.html"></a>
+							</li>
+							<li class="u-list">
+								<i></i>
+								<span class="u-list-text">Fast Turnarounds</span>
+								<a href="../capabilities_list.html"></a>
+							</li>
+							<li class="u-list">
+								<i></i>
+								<span class="u-list-text">Low Minimums</span>
+								<a href="../capabilities_list.html"></a>
+							</li>
+
+						</ul>
+						<!--导航-->
+						<ul class="u-min-nav cleartfix">
+							<li class="u-nav-list">
+								<i></i>
+								<span>PCB<br>Assembly</span>
+								<a href="../pcb-assembly.html"></a>
+							</li>
+							<li class="u-nav-list">
+								<i></i>
+								<span>Project<br>Sponsorship</span>
+								<a href="sponsor_list.html"></a>
+							</li>
+							<li class="u-nav-list">
+								<i></i>
+								<span>Customer<br>Feedback</span>
+								<a href="feedback_list.html"></a>
+							</li>
+							<li class="u-nav-list">
+								<i></i>
+								<span>Why<br>Us?</span>
+								<a href="../why.html"></a>
+							</li>
+						</ul>
+
+					</section>
+					<!--Super Deals-->
+					<div class="m-show-module">
+						<div class="u-title">
+							Super Deals
+						</div>
+						<ul class="u-mui-flex cleartfix">
+							<li class="u-flex-left">
+								<div class="img-box">
+									<img src="img/HOT.png" alt="" />
+								</div>
+								<div class="u-hot-box">
+									<h3 class="title-h">PCB</h3>
+								</div>
+								<div class="pcbhot">
+									<img src="img/pcbhot.jpg" alt="" />
+								</div>
+								<div class="price-box">
+									<strong>US $5.00</strong><i>/10pcs</i>
+								</div>
+							</li>
+							<li class="u-flex-right">
+								<div class="u-cp-can">
+									<h3 class="title-h">PCBA</h3>
+									<div class="u-can-js cleartfix">
+										<div class="img-box">
+											<img src="img/1_03.jpg" alt="" />
+										</div>
+										<div class="price-box">
+											<strong>US $88.00</strong><br><i>10 pcs in total</i>
+										</div>
+									</div>
+								</div>
+								<div class="u-cp-can">
+									<h3 class="title-h">SMD</h3>
+									<div class="u-can-js cleartfix">
+										<div class="img-box">
+											<img src="img/1_04.jpg" alt="" />
+										</div>
+										<div class="price-box">
+											<strong>US $25.00</strong><br><i>/pcs</i>
+										</div>
+									</div>
+								</div>
+
+							</li>
+						</ul>
+
+						<!--从下向上滚动-->
+						<div class="u-latest">
+							<div class="u-latest-logo sprites-img"></div>
+							<div class="smarticker1 demo">
+								<ul>
+									<li class="u-cell">
+										<dl class="cleartfix">
+											<dt>01-02</dt>
+											<dd>
+												<img src="img/flag01.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+										<dl class="cleartfix">
+											<dt>01-03</dt>
+											<dd>
+												<img src="img/flag02.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+									</li>
+									<li class="u-cell">
+										<dl class="cleartfix">
+											<dt>02-02</dt>
+											<dd>
+												<img src="img/flag01.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+										<dl class="cleartfix">
+											<dt>02-02</dt>
+											<dd>
+												<img src="img/flag02.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+									</li>
+									<li class="u-cell">
+										<dl class="cleartfix">
+											<dt>03-02</dt>
+											<dd>
+												<img src="img/flag01.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+										<dl class="cleartfix">
+											<dt>03-02</dt>
+											<dd>
+												<img src="img/flag02.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+					<!--Just for you-->
+					<div class="m-show-module">
+						<div class="u-title">
+							Most Popular
+							<!--<i class="sprites-img"></i>-->
+							<a href="javascript:;"></a>
+						</div>
+						<ul class="u-hot-list cleartfix">
+							<li>
+								<div class="u-hot-log">
+									<img src="img/hot-icon.png" alt="" />
+								</div>
+								<div class="u-hot-img">
+									<img src="img/hot-img1.jpg" alt="" />
+								</div>
+								<div class="u-hot-text">
+									<h3 class="u-hot-title">2 Layers</h3>
+									<p>L≤100mm W≤100mm<br>2-3 Days Delivery</p>
+									<h3 class="u-price">US $5.00 <i>/10pcs</i></h3>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+							<li>
+								<div class="u-hot-log">
+									<!--<img src="img/hot-icon.png" alt="" />-->
+								</div>
+								<div class="u-hot-img">
+									<img src="img/hot-img2.jpg" alt="" />
+								</div>
+								<div class="u-hot-text">
+									<h3 class="u-hot-title">2 Layers</h3>
+									<p>L≤100mm W≤100mm<br>3-4 Days Delivery</p>
+									<h3 class="u-price">US $133.00 <i>/100pcs</i></h3>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+							<li>
+								<div class="u-hot-log">
+									<!--<img src="img/hot-icon.png" alt="" />-->
+								</div>
+								<div class="u-hot-img">
+									<img src="img/hot-img3.jpg" alt="" />
+								</div>
+								<div class="u-hot-text">
+									<h3 class="u-hot-title">4 Layers</h3>
+									<p>L≤100mm W≤100mm<br>4-5 Days Delivery</p>
+									<h3 class="u-price">US $50.00 <i>/10pcs</i></h3>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+							<li>
+								<div class="u-hot-log">
+									<!--<img src="img/hot-icon.png" alt="" />-->
+								</div>
+								<div class="u-hot-img">
+									<img src="img/hot-img4.jpg" alt="" />
+								</div>
+								<div class="u-hot-text">
+									<h3 class="u-hot-title">4 Layers</h3>
+									<p>L≤100mm W≤100mm<br>6-7 Days Delivery</p>
+									<h3 class="u-price">US $264.00 <i>/100pcs</i></h3>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+						</ul>
+					</div>
+
+					<!--评论点赞部分-->
+					<div class="m-appraise-module">
+						<div class="u-appraise-title">
+							<ul class="u-appraise-ul cleartfix">
+								<li class="active">Sponsorships</li>
+								<li>Feedback</li>
+							</ul>
+						</div>
+						<ul class="u-appraise-content">
+							<!--Sponsor projects-->
+							<li class="u-appraise-li  active">
+								<div class="u-Reviews-box cleartfix">
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/9_03.jpg" alt="" />
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<div class="u-collect-btn"></div>
+												<a href="sponsor_detail.html"></a>
+											</div>
+											<div class="s-comment cleartfix">
+												<div class="s-t">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+												</div>
+												<div class="s-t-1">
+													<span>598</span>
+													<i class="u-icon-ck"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/9_03.jpg" alt="" />
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<div class="u-collect-btn"></div>
+												<a href="sponsor_detail.html"></a>
+											</div>
+											<div class="s-comment cleartfix">
+												<div class="s-t">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+												</div>
+												<div class="s-t-1">
+													<span>598</span>
+													<i class="u-icon-ck"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/9_03.jpg" alt="" />
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<div class="u-collect-btn"></div>
+												<a href="sponsor_detail.html"></a>
+											</div>
+											<div class="s-comment cleartfix">
+												<div class="s-t">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+												</div>
+												<div class="s-t-1">
+													<span>598</span>
+													<i class="u-icon-ck"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/9_03.jpg" alt="" />
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<div class="u-collect-btn"></div>
+												<a href="sponsor_detail.html"></a>
+											</div>
+											<div class="s-comment cleartfix">
+												<div class="s-t">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+												</div>
+												<div class="s-t-1">
+													<span>598</span>
+													<i class="u-icon-ck"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="m-more">
+									<a href="sponsor_list.html">View More</a>
+								</div>
+							</li>
+
+							<!--Feedback-->
+							<li class="u-appraise-li">
+								<ul class="u-feedack-list">
+									<li class="u-item">
+										<div class="u-personinfo-box cleartfix">
+											<div class="u-head-portrait">
+												<i class="u-portrait">
+               	  	 			 	           <img src="img/portrait2.png" alt="">
+               	  	 			                   </i>
+											</div>
+											<div class="u-personinfo">
+												<div class="u-info">
+													<span>r******gns</span>
+													<img src="img/flag02.jpg" alt="">
+													<div class="u-djx">
+														<div class="u-hx"></div>
+													</div>
+												</div>
+												<div class="u-time">2017-03-15</div>
+
+												<div class="u-projects">
+													<h3>Remote Relay Control And Using Wifi Ardui Using Wifi Ardui Using Wifi Ardui RFID Using Wifi Ardui</h3>
+													<p class="u-pltext">Analog and digital I/O using small PSOC with i2c interface to Raspberry PI. I/O scanning and processing handled by PSOC MCU. Data logging and web interface handled on PI using Node.js PC boards look and work great as always!</p>
+
+												</div>
+												<!--有可能有晒图，也有可能没有晒图-->
+												<div class="u-feedack-img">
+													<span>
+		                            		            <img src="img/8-2_03.jpg" alt="">
+		                            	           </span>
+													<span>
+		               	  	    	    	            <img src="img/8-2_03.jpg" alt="">
+		               	  	    	    			</span>
+													<span>
+		               	  	    	    				<img src="img/8-2_03.jpg" alt="">
+		               	  	    	    			</span>
+													<span>
+		               	  	    	    				<img src="img/8-2_03.jpg" alt="">
+		               	  	    	    			</span>
+												</div>
+													<a href="feedback_detail.html"></a>
+											   
+											</div>
+										</div>
+									</li>
+
+									<li class="u-item">
+										<div class="u-personinfo-box cleartfix">
+											<div class="u-head-portrait">
+												<i class="u-portrait">
+													<img src="img/portrait2.png" alt="">
+												</i>
+											</div>
+											<div class="u-personinfo">
+												<div class="u-info">
+													<span>r******gns</span>
+													<img src="img/flag02.jpg" alt="">
+													<div class="u-djx">
+														<div class="u-hx"></div>
+													</div>
+												</div>
+												<div class="u-time">2017-03-15</div>
+
+												<div class="u-projects">
+													<h3>Remote Relay Control And Using Wifi Ardui Using Wifi Ardui Using Wifi Ardui RFID Using Wifi Ardui</h3>
+													<p class="u-pltext">Data logging and web interface handled on PI using Node.js PC boards look and work great as always!</p>
+
+												</div>
+												<!--有可能有晒图，也有可能没有晒图-->
+												<div class="u-feedack-img">
+													<span>
+		                            		            <img src="img/8-2_03.jpg" alt="">
+		                            	           </span>
+												</div>
+													<a href="feedback_detail.html"></a>
+												
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="m-more">
+									<a href="feedback_list.html">View More</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!--首页底部-->
+				<div class="m-footer">
+					<li class="u-ft1 active">
+						<a href="javascript:;">
+							<i></i> Home
+						</a>
+					</li>
+					<li class="u-ft2">
+						<a href="quote-PCB.html">
+							<i></i> Quote
+						</a>
+					</li>
+					<li class="u-ft3">
+						<a href="javascript:;">
+							<i></i> Cart
+						</a>
+						<div class="u-in-title">1</div>
+					</li>
+					<li class="u-ft4">
+						<a href="My-Account.html">
+							<i></i> My Account
+						</a>
+					</li>
+				</div>
+	             <!--返回顶部按钮-->
+			<div class="goTop"></div>
+			</div>
+			<!--首页侧边导航大框架-->
+			<!--遮罩-->
+			<div class="g-slide-mask"></div>
+
+			<div class="g-swipe-wrapper">
+				<div class="m-drawer-loginInfo">
+					<div class="u-portrait">
+						<img src="img/portrait.png" alt="" />
+					</div>
+					<!--登录注册-->
+					<div class="u-drawer-unlogin">
+						<a href="user-login.html" class="u-sign-In">Sign In</a>
+						<a href="register.html" class="u-join-free">Join Free</a>
+					</div>
+				</div>
+				<ul class="u-drawer-box">
+					<li class="u-home">
+						<a href="javascript:;">
+							<i class="u-icon1 sprites-img"></i>
+							<span>Home</span>
+						</a>
+					</li>
+					<!--当有新消息的时候添加attention类进行提示-->
+					<li class="attention">
+						<a href="javascript:;">
+							<i class="u-icon2 sprites-img"></i>
+							<span>My Account</span>
+						</a>
+					</li>
+				</ul>
+					<ul class="u-drawer-box ">
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon3 sprites-img"></i>
+							<span>Under review</span>
+							<em>99</em>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="dfk_un"></i>
+							<span>Awaiting Payment</span>
+							<em>99</em>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="dfk"></i>
+							<span>Uncomplete Payment</span>
+							<em>99</em>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon4 sprites-img"></i>
+							<span>Production Status</span>
+							<em>99</em>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon5 sprites-img"></i>
+							<span>Delivery</span>
+		           <em>99</em>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon6 sprites-img"></i>
+							<span>Completed</span>
+							<em>99</em>
+						</a>
+					</li>
+				</ul>
+				<ul class="u-drawer-box ">
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon7 sprites-img"></i>
+							<span>Feedback</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon8 sprites-img"></i>
+							<span>Sponsorships</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="u-drawer-box ">
+					<li>
+						<a href="pcb-assembly.html">
+							<i class="u-icon9 sprites-img"></i>
+							<span>PCB Assembly</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="capabilities_list.html">
+							<i class="u-icon10 sprites-img"></i>
+							<span>Capabilities</span>
+						</a>
+					</li>
+					<li>
+						<a href="why.html">
+							<i class="u-icon11 sprites-img"></i>
+							<span>Why Us?</span>
+						</a>
+					</li>
+					<li>
+
+						<a href="aboutPCBWay_list.html">
+							<i class="u-icon12 sprites-img"></i>
+							<span>About PCBWay</span>
+						</a>
+					</li>
+				</ul>
+				<div class="u-statement">
+					<p>PCB Prototype the Easy Way!</p>
+				</div>
+			</div>
+		    
+		</div>
+	</body>
+
+</html>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/public.js"></script>
+<script type="text/javascript">
+	//首页的活动弹框js
+		$(function() {
+			function show() {
+				$('.activity').show();
+				$('.g-slide-mask').show();
+			}
+			setTimeout(show, 3000)
+			$('.activity').find('.activity-close').click(function() {
+				$('.activity').hide();
+				$('.g-slide-mask').hide();
+			})
+		})
+
+	//	产品展示从下向上轮播
+	function AutoScroll(obj) {
+		$(obj).find("ul:first").animate({
+			marginTop: "-1.35rem"
+		}, 500, function() {
+			$(this).css({
+				marginTop: "0px"
+			}).find("li:first").appendTo(this);
+		});
+	}
+	$(document).ready(function() {
+		setInterval('AutoScroll(".demo")', 3000);
+	});
+
+	$(function() {
+
+		//首页计价部分选项卡
+		$('.u-tab-box .u-tab-title .u-tab-ul').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-tab-box .u-center-nav li').removeClass('active');
+			var index = $(this).index();
+			$('.u-tab-box .u-center-nav').find('li').eq(index).addClass('active');
+		})
+
+		//点击收藏js
+		$('.u-collect-btn').click(function() {
+			$(this).toggleClass('u-active-btn');
+		})
+		//评论部分选项卡		
+		$('.m-appraise-module .u-appraise-title .u-appraise-ul').find('li').click(function() {
+			$(this).attr('class', 'active').siblings('.u-appraise-ul li').attr('class', '');
+			$('.u-appraise-content li').eq($(this).index('.u-appraise-ul li')).show().siblings('.u-appraise-content li').hide();
+		})
+
+		//feedback列表心点击
+		$('.s-t-1:nth-child(3)').click(function() {
+			$(this).find('.u-icon-ck').toggleClass('active');
+			var zan = parseInt($('>span', this).text());
+			if($('.u-icon-ck').hasClass('active')) {
+				zan += 1;
+				$('>span', this).text(zan);
+			} else {
+				zan -= 1;
+				$('>span', this).text(zan);
+			}
+
+		})
+		// 上一页 下一页
+		$('.page-box .u-paging div').click(function() {
+			$('.page-box .u-paging div').removeClass('active');
+			$(this).addClass('active');
+		})
+
+		//点击顶部图标左侧导航划出		
+		$('.g-home .u-header .u-drawer').click(function(e) {
+			var wh = $('.g-home').height();
+			$('.g-slide-mask').css('height', wh).show();
+			$('.g-main .g-swipe-wrapper').css('height', wh).addClass('g-moved');
+			$('.u-detail-center').css('overflow','hidden');
+		});
+		//点击导航Home左侧导航消失
+		$('.u-drawer-box .u-home').click(function() {
+			$('.g-slide-mask').hide();
+			$('.g-main .g-swipe-wrapper').removeClass('g-moved');
+			$('.u-detail-center').css('overflow','scroll');
+			
+		})
+	})
+</script>
+
+	
+	

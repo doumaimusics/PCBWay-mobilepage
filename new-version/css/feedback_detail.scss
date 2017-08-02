@@ -1,0 +1,690 @@
+//左右居中定位
+@mixin left-right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+//覆盖定位
+@mixin shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+}
+
+.g-main {
+  background: #EBEBEC;
+}
+
+.u-detail-center {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+//客户信息
+.u-detail-center .u-client-box {
+  background: #ffffff;
+  padding: 0.32rem 0.34rem 0.24rem;
+  position: relative;
+}
+
+.u-client-box .u-portrait-box {
+  width: 12%;
+  height: 0.8rem;
+  float: left;
+  line-height: 0.8rem;
+  background: url(../img/portrait2.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: center center;
+  img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50%;
+  }
+}
+
+.u-client-box .u-module-box {
+  width: 88%;
+  height: 0.8rem;
+  float: left;
+  padding-left: 0.18rem;
+}
+
+.u-module-box .u-info-inner,
+.u-module-box .u-infp-btn {
+  width: 50%;
+  float: left;
+}
+
+.u-info-inner .u-info {
+  width: 100%;
+  height: 0.4rem;
+  font-size: 0.26rem;
+  margin-bottom: 0.1rem;
+}
+
+.u-info-inner .u-info span {
+  color: #333;
+}
+
+.u-info-inner .u-info img {
+  width: 0.44rem;
+  height: 0.3rem;
+  margin-left: 0.1rem;
+  vertical-align: middle;
+}
+
+.u-info-inner .u-date {
+  font-size: 0.24rem;
+  color: #999;
+}
+
+.u-module-box .u-infp-btn {
+  height: 100%;
+  position: relative;
+  .u-btn-an.active {
+    padding-left: 0.5rem;
+    color: #fff;
+    background: url(../img/tick2.png) no-repeat #12C286;
+    background-size: 0.26rem 0.2rem;
+    background-position: 0.15rem center;
+  }
+  .u-btn-an {
+    width: 1.72rem;
+    height: 0.48rem;
+    @include top-bottom;
+    right: 0;
+    padding: 0rem 0.3rem;
+    border: 1px solid #12C286;
+    font-size: 0.26rem;
+    line-height: 0.48rem;
+    padding-left: 0.7rem;
+    color: #12C286;
+    background: url(../img/add.png) no-repeat;
+    background-size: 0.22rem 0.22rem;
+    background-position: 0.3rem center;
+  }
+}
+
+.u-client-box .u-bagde {
+  width: 0.17rem;
+  height: 0.22rem;
+  position: absolute;
+  top: 0;
+  right: 0.34rem;
+  background: url(../img/bagde-icon.png) no-repeat;
+  background-size: cover;
+}
+
+//<!--详情内容-->
+.u-detail-center .u-feedback-detail {
+  padding: 0.1rem 0.34rem 0;
+  margin-bottom: 0.22rem;
+  font-size: 0.26rem;
+  background: #fff;
+}
+
+.u-feedback-detail .u-sm-box {
+  width: 100%;
+  p.u-p1 {
+    font-size: 0.36rem;
+    color: #333;
+    margin-bottom: 0.32rem;
+    line-height: 0.44rem;
+  }
+}
+
+.u-feedback-detail .u-mui-flex {
+  width: 100%;
+  border-top: 1px solid #EBEBEC;
+  border-bottom: 1px solid #EBEBEC;
+  padding: 0.25rem 0;
+  margin-bottom: 0.4rem;
+}
+
+.u-mui-flex .u-tabs {
+  float: left;
+  height: 0.8rem;
+  width: 25%;
+  text-align: center;
+}
+
+.u-mui-flex .u-dj-icon {
+  width: 90%;
+  background: url("../img/score4.png") repeat-x 0 0;
+  background-size: 0.3rem 0.3rem;
+  margin: 0 auto;
+  .u-xing2 {
+    display: block;
+    width: 100%;
+    height: 0.3rem;
+    background: url("../img/score3.png") repeat-x 0 0;
+    background-size: 0.3rem 0.3rem;
+  }
+}
+
+.u-mui-flex .u-text {
+  color: #999;
+  margin-top: 0.1rem;
+}
+
+.u-mui-flex .u-tabs:not(:last-child) {
+  border-right: 1px solid #EBEBEC;
+}
+
+.u-detail-center .u-feedback-box {
+  width: 100%;
+  padding: 0rem 0 0.1rem 0;
+}
+
+.u-feedback-box p {
+  color: #333;
+  margin-bottom: 0.32rem;
+  line-height: 0.36rem;
+}
+
+.u-feedback-box .u-feedback-img {
+  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.u-feedback-box .u-filter {
+  width: 100%;
+  padding: 0.3rem 0 0;
+  li {
+    font-size: 0.26rem;
+    color: #666;
+    border: 1px solid #EBEBEC;
+    padding: 1.5% 1.5%;
+    margin: 0 2.3% 3.5% 0;
+    float: left;
+    border-radius: 0.03rem;
+  }
+}
+
+//
+//feedback_detail.html展示内容的css
+.u-feedack-content {
+  margin-bottom: 0.22rem;
+  border-top: 1px solid #D3D3D3;
+}
+
+.u-feedack-content .u-feedback-title {
+  padding: 0 0.34rem;
+  line-height: 1rem;
+  background: #FAFAFA;
+  font-size: 0.32rem;
+  color: #333;
+  border-bottom: 1px solid #EBEBEC;
+}
+
+.u-feedack-content .u-feedack-list .u-item:not(:last-child) {
+  border-bottom: 0px solid #EBEBEC;
+}
+
+.u-feedack-content .u-feedack-list .u-item {
+  background: #fff;
+}
+.skip_box{position: relative;
+  a{@include shade;}
+}
+.u-feedack-list .u-personinfo-box {
+  padding: 0.34rem;
+  .u-head-portrait {
+    width: 15%;
+    float: left;
+    i {
+      display: block;
+      width: 0.96rem;
+      height: 0.96rem;
+      background: url(../img/portrait2.png) no-repeat;
+      background-size: cover;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .u-personinfo {
+    width: 85%;
+    float: left;
+    padding-left: 0.2rem;
+  }
+}
+
+.u-personinfo .u-info {
+  width: 100%;
+  font-size: 0.26rem;
+  color: #333;
+  margin-top: 0.05rem;
+  span {
+    margin-right: 0.12rem;
+  }
+  img {
+    width: 0.44rem;
+    height: 0.3rem;
+    vertical-align: middle;
+  }
+  .u-djx {
+    width: 36%;
+    height: 0.4rem;
+    display: inline-block;
+    background: url(../img/score4.png) repeat-x;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0 0;
+    float: right;
+    .u-hx {
+      width: 100%;
+      height: 0.4rem;
+      display: inline-block;
+      background: url(../img/score3.png) repeat-x;
+      background-size: 0.4rem 0.4rem;
+      background-position: 0 0;
+    }
+  }
+}
+
+.u-personinfo .u-time {
+  margin-top: 0.3rem;
+  font-size: 0.24rem;
+  color: #999;
+}
+
+.u-feedack-list .u-projects {
+  padding: 0 0.34rem;
+  h3 {
+    font-size: 0.3rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  p {
+    font-size: 0.26rem;
+    color: #333;
+    margin-bottom: 0.32rem;
+    line-height: 0.36rem;
+  }
+}
+
+.u-feedack-list .u-feedack-img {
+  padding: 0 0.34rem;
+  font-size: 0;
+  span {
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+  img {
+   height: 1.6rem;
+    width: 1.6rem;
+  }
+}
+
+.u-item .u-ratehistory {
+  margin: 0 0.34rem;
+  background: #fff;
+  padding: 0.24rem 0 0.3rem;
+  border-bottom: 1px #EBEBEC solid;
+}
+
+.u-ratehistory .s-t-1 {
+  float: left;
+  font-size: 0.24rem;
+  color: #999;
+  margin-right: 0.24rem;
+}
+
+.u-ratehistory {
+  .s-t-1 .u-icon-ck {
+    float: left;
+    width: 0.32rem;
+    height: 0.25rem;
+  }
+      span {
+      float: left;
+      margin-left: 0.1rem;
+    }
+  .s-t-1:nth-child(1) .u-icon-ck {
+    background: url("../img/Sprites.png") no-repeat;
+    background-size: 3rem 5rem;
+    background-position: -2rem -1.56rem;
+  }
+  .s-t-1:nth-child(2) .u-icon-ck {
+    background: url(../img/mes-icon2.png) no-repeat;
+    background-size: 0.26rem 0.24rem;
+    background-position: 0rem 0rem;
+  }
+  .s-t-1:nth-child(3) .u-icon-ck {
+
+    background: url(../img/ax-icon.png) no-repeat;
+    background-size: 0.3rem 0.26rem;
+    background-position: 0rem center;
+  }
+}
+
+
+//评论列表的css
+.u-container-page {
+  background: #fff;
+  margin-bottom: 0.22rem;
+  border-top: 1px solid #D3D3D3;
+  .u-container-title {
+    width: 100%;
+    background: #FAFAFA;
+    border-bottom: 1px solid #EBEBEC;
+    height: 1rem;
+    padding: 0 0.34rem;
+    font-size: 0;
+    .u-container-li.active {
+      color: #333;
+      border-bottom: 2px solid #12C286;
+    }
+    .u-container-li {
+      width: 50%;
+      line-height: 0.96rem;
+      text-align: center;
+      font-size: 0.32rem;
+      color: #999;
+      display: inline-block;
+    }
+  }
+}
+
+.u-container-page .u-content-ul {
+  width: 100%;
+  padding: 0 0.34rem;
+  .u-content-box {
+    display: none;
+  }
+}
+
+//Comments评论列表内容的css
+.u-content-ul-box {
+  margin-bottom: 0.22rem;
+  .u-item {
+    padding: 0.34rem 0;
+    border-bottom: 1px solid #EBEBEC;
+  }
+}
+
+.u-item .u-head-portrait {
+  width: 12%;
+  float: left;
+  .u-portrait {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(../img/portrait2.png) no-repeat;
+    background-size: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      float: left;
+      border-radius: 50%;
+    }
+  }
+}
+
+.u-item .u-info-box {
+  overflow: hidden;
+  width: 88%;
+  float: left;
+  padding-left: 0.18rem;
+  font-size: 0.26rem;
+  color: #333;
+}
+
+.u-info-box .u-info.u-likes {
+  line-height: 0.8rem;
+  margin: 0;
+}
+
+.u-info-box .u-info {
+  margin-bottom: 0.2rem;
+  position: relative;
+  span.u-color {
+    color: #12C286;
+  }
+  span.u-time-rq {
+    color: #999;
+    font-size: 0.24rem;
+    margin-left: 0.15rem;
+  }
+  img {
+    width: 0.44rem;
+    height: 0.3rem;
+    vertical-align: middle;
+    margin-left: 0.12rem;
+  }
+  .u-del-btn {
+    width: 0.26rem;
+    height: 0.28rem;
+    background: url(../img/del.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0.75rem;
+    top: 0;
+  }
+  .u-reply-btn {
+    width: 0.31rem;
+    height: 0.28rem;
+    background: url(../img/mes-icon2.png) no-repeat;
+    background-size: 0.31rem 0.28rem;
+    position: absolute;
+    right: 0.18rem;
+    top: 0;
+  }
+}
+
+.u-info-box .u-date {
+  margin-bottom: 0.32rem;
+  font-size: 0.24rem;
+  color: #999999;
+}
+
+.u-info-box .u-inside-comments {
+  background: #F7F7F7;
+  padding: 0 0.22rem;
+  margin-top: 0.3rem;
+}
+
+.u-inside-comments .u-inside-comments-list:not(:last-child) {
+  border-bottom: 1px dotted #bababa;
+}
+
+.u-inside-comments .u-inside-comments-list {
+  padding: 0.22rem 0;
+}
+
+.u-inside-comments-list .u-reply-box {
+  margin-bottom: 0.28rem;
+  font-size: 0.26rem;
+  span {
+    color: #12C286;
+  }
+}
+
+//上一页下一页
+.page-box {
+  width: 100%;
+  height: 0.8rem;
+}
+
+.page-box .u-paging {
+  width: 2.6rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.page-box .paging-L.active,
+.page-box .paging-R.active {
+  background: #12C286;
+  color: #fff;
+}
+
+.page-box .paging-L {
+  width: 1.2rem;
+  float: left;
+  background: #ddd;
+  font-size: 0.24rem;
+  color: #666666;
+  text-align: center;
+  line-height: 0.6rem;
+}
+
+.page-box .paging-R {
+  width: 1.2rem;
+  float: right;
+  background: #ddd;
+  font-size: 0.24rem;
+  color: #666666;
+  text-align: center;
+  line-height: 0.6rem;
+}
+
+//底部的css
+.u-footer-box {
+  width: 100%;
+  height: 1rem;
+  border-top: 1px solid #D3D3D3;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0.14rem 0.34rem;
+  .u-footer-l {
+    width: 30%;
+    float: left;
+    font-size: 0.26rem;
+    i.active {
+      background: url(../img/xin-icon2.png) no-repeat;
+      background-size: 0.42rem 0.36rem;
+      background-position: 0 center;
+    }
+    i {
+      float: left;
+      width: 0.42rem;
+      height: 0.72rem;
+      background: url(../img/xin-icon1.png) no-repeat;
+      background-size: 0.42rem 0.36rem;
+      background-position: 0 center;
+      margin-left: 0.28rem;
+    }
+    span {
+      line-height: 0.72rem;
+      margin-left: 0.15rem;
+    }
+  }
+  .u-footer-r {
+    width: 70%;
+    background: #12C286;
+    float: left;
+    text-align: center;
+    line-height: 0.72rem;
+    font-size: 0.32rem;
+    color: #fff;
+  }
+}
+
+//评论输入框
+.u-import-container.active {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.u-import-container {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1004;
+  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+
+  transition: transform 0.7s ease;
+  -webkit-transition: transform 0.7s ease;
+  -moz-transition: transform 0.7s ease;
+  -o-transition: transform 0.7s ease;
+  -ms-transition: transform 0.7s ease;
+
+  .u-import-title {
+    font-size: 0.28rem;
+    color: #999;
+    line-height: 1rem;
+    position: relative;
+    padding: 0 0.34rem;
+    .u-close {
+      width: 0.24rem;
+      height: 0.24rem;
+      @include top-bottom;
+      right: 0.34rem;
+      background: url(../img/u-cxicon2.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  .u-textarea-box {
+    padding: 0 0.34rem;
+    margin-bottom: 0.38rem;
+    textarea {
+      width: 100%;
+      resize: none;
+      border: 1px solid #EBEBEC;
+      border-radius: 0.03rem;
+      padding: 0.15rem;
+      font-size: 0.26rem;
+    }
+  }
+  .u-import-btn {
+    width: 6.82rem;
+    margin: 0 auto;
+    border-radius:0.03rem ;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    background: #12C286;
+    font-size: 0.32rem;
+  }
+}
+
+

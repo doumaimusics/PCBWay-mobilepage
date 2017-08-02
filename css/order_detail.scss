@@ -1,0 +1,616 @@
+//左右居中定位
+@mixin left-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+//上下居中定位
+@mixin top-bottom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+//正中间定位
+@mixin zhong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+//遮罩
+@mixin shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.g-order-detail {
+    width: 100%;
+    height: 100%;
+    //中间
+    .u-order-detail-center {
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+        bottom: 1rem;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        .u-order-info-title.u-none-border {
+            border-bottom: 0;
+            width: 100%;
+            padding: 0.34rem 0.34rem 0.24rem;
+            background: #fff;
+            box-sizing: border-box;
+            font-weight: normal;
+
+        }
+        .u-order-info-title {
+            width: 100%;
+            border-bottom: 1px solid #D3D3D3;
+            padding: 0.34rem 0;
+            box-sizing: border-box;
+            font-size: 0.32rem;
+            color: #333;
+            font-weight: normal;
+            position: relative;
+            i.u-icon {
+                display: block;
+                width: 0.14rem;
+                height: 0.25rem;
+                @include top-bottom;
+                right: 0;
+                background: url("../img/r-icon.png") no-repeat;
+                background-size: 0.14rem 0.25rem;
+                background-position: center center;
+            }
+            a {
+                @include shade;
+            }
+
+        }
+        .u-order-info-content {
+            padding: 0.34rem 0 0.15rem;
+            box-sizing: border-box;
+
+            li {
+                width: 100%;
+                font-size: 0.26rem;
+                margin-bottom: 0.2rem;
+                .u-info-name.u-black {
+                    color: #333;
+                }
+                .u-info-name {
+                    float: left;
+                    color: #999;
+                }
+                .u-info-nature.u-green {
+                    color: #12C186;
+                }
+                .u-info-nature.u-jacinth {
+                    color: #f60;
+                }
+                .u-info-nature {
+                    float: right;
+                    color: #333;
+                }
+            }
+        }
+        .u-order-information.u-none-border {
+            border-top: 0;
+        }
+        .u-order-information {
+            width: 100%;
+            border-bottom: 1px solid #D3D3D3;
+            border-top: 1px solid #D3D3D3;
+
+            background: #fff;
+            padding: 0 0.34rem 0.34rem;
+            box-sizing: border-box;
+            margin-bottom: 0.2rem;
+            .u-pi-btn {
+
+                font-size: 0.26rem;
+                color: #333;
+                background: #fff;
+                border: 1px solid #BABABA;
+                border-radius: 0.03rem;
+                text-align: center;
+                padding: 0 0.25rem 0 0.5rem;
+                line-height: 0.65rem;
+                box-sizing: border-box;
+                float: right;
+                position: relative;
+                a {
+                    @include shade;
+                }
+                i {
+                    display: block;
+                    width: 0.21rem;
+                    height: 0.26rem;
+                    background: url("../img/u-pr.jpg") no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    top: 0.18rem;
+                    left: 0.15rem;
+                }
+            }
+            .u-cont {
+                padding: 0.34rem 0 0.2rem;
+                width: 100%;
+                font-size: 0.3rem;
+                color: #333;
+                .u-name {
+                    margin-right: 0.35rem;
+                    word-break: break-all;
+                }
+            }
+            .u-company-xx {
+                width: 100%;
+                font-size: 0.26rem;
+                color: #666;
+                dd img {
+                    width: 0.4rem;
+                    height: 0.2rem;
+                }
+            }
+
+        }
+        .u-product-details {
+            width: 100%;
+            border-bottom: 1px solid #D3D3D3;
+            border-top: 1px solid #D3D3D3;
+            margin-bottom: 0.2rem;
+            background: #fff;
+            .u-car-content {
+                width: 100%;
+                background: #F5F5F5;
+                margin-top: 0.15rem;
+                padding: 0.3rem 0.34rem;
+                box-sizing: border-box;
+                .u-details-img {
+                    width: 1.95rem;
+                    height: 1.95rem;
+                    border: 1px solid #E3E3E3;
+                    border-radius: 0.03rem;
+                    float: left;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+                .u-details-xq {
+                    width: 70%;
+                    height: 1.96rem;
+                    float: left;
+                    font-size: 0.26rem;
+                    color: #999;
+                    padding-left: 0.25rem;
+                    box-sizing: border-box;
+                    .item-basic-info {
+                        font-size: 0.28rem;
+                        color: #333;
+                        margin-bottom: 0.1rem;
+                        margin-top: 0.1rem;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    //底部
+    .u-order-detail-footer {
+        background: #fff;
+        width: 100%;
+        height: 0.99rem;
+        border-top: 1px solid #D3D3D3;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        font-size: 0.26rem;
+        padding: 0 0.34rem;
+        box-sizing: border-box;
+        .u-lf-btn {
+            margin-right: 0.2rem;
+            border: 1px solid #BABABA;
+        }
+        .u-cr-btn {
+            border: 1px solid #12C186;
+            color: #12C186;
+        }
+        .u-cr-btn,
+        .u-lf-btn {
+
+            background: #fff;
+
+            border-radius: 0.03rem;
+            text-align: center;
+            padding: 0 0.1rem;
+            line-height: 0.65rem;
+            box-sizing: border-box;
+            float: right;
+            margin-top: 0.15rem;
+            position: relative;
+            a {
+                @include shade;
+            }
+        }
+    }
+}
+// 点击message_list.html的页面底部按钮弹出留言页面
+//message_remark,post_message 留言页面css
+.u-leave-feedback-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    background: #fff;
+    padding: 0.5rem 0.34rem;
+    box-sizing: border-box;
+    h3 {
+        font-weight: normal;
+        font-size: 0.28rem;
+        color: #999;
+    }
+    textarea {
+
+        width: 100%;
+        border: 1px solid #D3D3D3;
+        border-radius: 0.03rem;
+        padding: 0.2rem;
+        line-height: 0.28rem;
+        color: #333;
+        box-sizing: border-box;
+        resize: none;
+        margin-top: 0.2rem;
+        font-size: 0.26rem;
+    }
+    .u-btn-submit {
+        width: 100%;
+        height: 0.9rem;
+        background: #12C186;
+        border-radius: 0.03rem;
+        line-height: 0.9rem;
+        color: #fff;
+        text-align: center;
+        font-size: 0.32rem;
+        margin-top: 0.7rem;
+    }
+}
+
+//coupons优惠券页面的css
+.g-coupons {
+    width: 100%;
+    height: 100%;
+    .u-coupons-center {
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+        bottom: 0;
+        background: #fff;
+        padding: 0.35rem 0.19rem 0;
+        .u-coupons-list:nth-child(1) {
+            background: url("../img/coupons-bg1.png") no-repeat;
+            background-size: 7.14rem 2.24rem;
+        }
+        .u-coupons-list:nth-child(2) {
+            background: url("../img/coupons-bg2.png") no-repeat;
+            background-size: 7.14rem 2.24rem;
+        }
+        .u-coupons-list {
+            width: 100%;
+            height: 3.15rem;
+            border-radius: 0.08rem;
+            position: relative;
+            box-shadow: 0 0.05rem 0.2rem #D3D2D2;
+            overflow: hidden;
+            margin-bottom: 0.4rem;
+            h3 {
+                text-align: center;
+                margin: 0.4rem 0 0.15rem;
+                font-size: 0.64rem;
+                color: #fff;
+                i {
+                    font-size: 0.32rem;
+                }
+            }
+            p {
+                font-size: 0.26rem;
+                color: #ffe2b8;
+                text-align: center;
+                margin-bottom: 0.35rem;
+            }
+            .u-coupons-btn {
+                width: 100%;
+                font-size: 0.26rem;
+                color: #B0B2B7;
+                line-height: 0.9rem;
+                padding: 0 0.17rem;
+                a {
+                    float: right;
+                    padding: 0 0.15rem;
+                    background: #12C286;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 0.5rem;
+                    text-decoration: none;
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+    }
+}
+
+//message_list.html消息页面的css
+.g-message {
+    width: 100%;
+    height: 100%;
+    background: #EBEBEC;
+    .u-messages-center {
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+        bottom: 1.1rem;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding-top:0.3rem ;
+        .u-messages-list,.u-chat-list {
+            padding: 0rem 0.19rem 0;
+            margin-bottom: 0.25rem;
+           
+            .u-list-item {
+                padding: 0.2rem 0.3rem;
+                border-bottom: 1px solid #E3E3E3;
+                background: #fff;
+                p {
+                    color: #333;
+                    margin-bottom: 0.2rem;
+                    em {
+                        color: #12C286;
+                        font-style: normal;
+                    }
+                    span.u-time{
+                        font-size: 0.24rem;
+                        color: #999;
+                        float: right;
+                    }
+                }
+                p.u-wrote {
+                    font-size: 0.32rem;
+                }
+                p.u-intro {
+                    font-size: 0.26rem;
+                }
+            }
+        }
+        .u-chat-list .u-chat-btn-box{         
+            padding: 0.2rem;
+            background: #fff;
+            .u-chat-btn{
+                width: 20%;
+                float: right;
+                background:url(../img/chat-icon.png) no-repeat;
+                background-size:0.33rem 0.29rem ;
+                background-position:0rem center ;
+                font-size: 0.26rem;
+                color: #12C286;
+                padding-left: 0.45rem;
+                line-height: 0.5rem;
+            }
+        }
+    }
+}
+
+//freight_list.html底部按钮点击弹出的页面  freight_add   css
+
+    .u-freight-center {
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+        bottom: 2.2rem;
+        padding: 0 0.34rem;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        .u-jesp {
+            border-bottom: 1px solid #E3E3E3;
+            padding: 0.4rem 0;
+            font-size: 0.26rem;
+            color: #999;
+            line-height: 0.32rem;
+        }
+        .u-freight-select {
+            padding: 0.6rem 0 0;
+            .u-kd-select {
+                h3 {
+                    font-size: 0.28rem;
+                    color: #999;
+                    margin-bottom: 0.2rem;
+                }
+                .u-form-three {
+                    padding: 0.2rem 0;
+                    li:nth-child(2) {
+                        margin-left: 1.18rem;
+                    }
+                    li {
+                        float: left;
+                        font-size: 0.26rem;
+                        color: #333;
+                        .u-radio.active {
+                            background: url("../img/xz-icon.png") no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                        }
+                        .u-radio {
+                            width: 0.38rem;
+                            height: 0.38rem;
+                            background: url("../img/circle-icon.png") no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                            vertical-align: middle;
+                        }
+                        label {
+                            margin-left: 0.2rem;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .u-idsr {
+                    margin-top: 0.4rem;
+                    margin-bottom: 0.6rem;
+                    h3 {
+                        font-size: 0.28rem;
+                        color: #999;
+                        margin-bottom: 0.2rem;
+                    }
+                    input {
+                        width: 100%;
+                        height: 0.64rem;
+                        border: 1px solid #D5D5D5;
+                        border-radius: 0.03rem;
+                        display: block;
+                        padding-left: 0.1rem;
+                        margin-bottom: 0.25rem;
+                    }
+                    p {
+                        font-size: 0.24rem;
+                        color: #999;
+                    }
+                }
+                .u-nation-box {
+                    width: 100%;
+                    h3 {
+                        font-size: 0.28rem;
+                        color: #999;
+                    }
+                    .u-nation-btn {
+                        width: 100%;
+                        border: 1px solid #D5D5D5;
+                        padding-left: 0.2rem;
+                        line-height: 0.64rem;
+                        font-size: 0.26rem;
+                        color: #333;
+                        border-radius: 0.03rem;
+                        background: url("../img/r-icon.png") no-repeat;
+                        background-size: 0.14rem 0.25rem;
+                        background-position: 6.48rem center;
+                    }
+                }
+            }
+        }
+    }
+
+//my_information.html我的信息页面css
+//箭头伪类
+.u-gj-select:after{
+                          content: '';
+                          width: 0.14rem;height: 0.25rem;
+                          overflow: hidden;
+                          position: absolute;
+                          right: 0;
+                          top: 0.15rem;
+                       background: url("../img/r-icon.png") no-repeat;
+                        background-size: 0.14rem 0.25rem;
+                        background-position:0 center;
+            }
+.u-xl-select:after{
+                          content: '';
+                          width: 0.24rem;height: 0.13rem;
+                          overflow: hidden;
+                          position: absolute;
+                          right: 0;
+                          top: 0.15rem;
+                       background: url("../img/xo-icon.jpg") no-repeat;
+                        background-size:cover;
+                        background-position:0 center;
+            }
+.g-information {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .u-information-center {
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+        bottom: 1.2rem;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        .u-user-box {
+            border-bottom: 1px solid #E3E3E3;
+            background: #FAFAFA;
+            padding: 0.5rem 0 0.3rem;
+            .u-avatar-box {
+                width: 1.2rem;
+                height: 1.2rem;
+                margin: 0 auto;
+                border-radius: 50%;
+                background: url("../img/portrait.png") no-repeat;
+                background-size: cover;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius:50%;
+                    border: none;
+                }
+            }
+            .u-zh-box {
+                width: 100%;
+                margin-top: 0.25rem;
+                font-size: 0.26rem;
+                color: #333;
+                text-align: center;
+                .u-grade {
+                    width: 0.34rem;
+                    height: 0.34rem;
+                    background: #12C286;
+                    text-align: center;
+                    line-height: 0.34rem;
+                    color: #fff;
+                    display: inline-block;
+                    font-size: 0.24rem;
+                    border-radius: 0.03rem;
+                }
+            }
+        }
+        .u-gr-information {
+            padding: 0.4rem 0.34rem 0;
+            color: #999;
+            p {
+                font-size: 0.26rem;
+
+                margin-bottom: 0.34rem;
+            }
+            dl {
+                margin-bottom: 0.45rem;
+                position: relative;
+                dt {
+                    font-size: 0.24rem;
+                }
+                dd {
+                    width: 100%;
+                    font-size: 0.26rem;
+                    color: #333;
+                         border-bottom: 1px solid #E3E3E3;
+                         input{height: 0.8rem;}
+                    input,select,textarea{
+                        width: 100%;
+                        padding: 0.1rem 0;                 
+                        background: #fff;
+                    }
+                    textarea{
+                        resize: none;                     
+                    }
+                }   
+            }
+
+        }
+    }
+}

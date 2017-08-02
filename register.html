@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>register</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/userlogin.css" />
+	</head>
+	<body>
+		<div class="g-main">
+			<div class="g-sign-in">
+				<!--头部-->
+				<div class="m-header">
+					<div class="u-close">
+						<i class="i-close-icon sprites-img"></i>
+						<a href="index.html"></a>
+					</div>
+					<div class="u-sign-text">Create Account</div>		
+				</div>
+			    <!--中间注册-->
+			    <div class="m-user-inner">
+			    	<!--账户名-->
+			    	<div class="u-account-box">
+			    		<input type="text" name="" id="" value="" />
+			    		<div class="u-icon-box3">
+			    			<i class="u-icon4 sprites-img"></i>
+			    		</div>
+			    	</div>
+                    <!--密码-->			    	
+                    <div class="u-pass-box">
+			    		<input type="password" placeholder="Create Password"/>
+			    		<div class="u-icon-box4">
+			    			<i class="u-icon2 sprites-img"></i>
+			    		</div>
+			    	</div>
+			    	<!--确认密码-->
+			    	<div class="u-pass-box">
+			    		<input type="password" placeholder="Confirm Password "/>
+			    		<div class="u-icon-box5">
+			    			<i class="u-icon3 sprites-img"></i>
+			    		</div>
+			    	</div>
+			        <!--注册-->			    			        
+			        <div class="u-button-box">
+			        	<a href="user-login.html">Create Account</a>
+			        </div>
+			        <!--注册有礼-->
+			        <div class="u-forgot-pass">
+			        Earn a <i>$5</i> Welcome Bonus
+			        </div>
+			        <!--登录-->
+			        <div class="u-join">			        
+			        Already have an account? <a href="user-login.html">sign In</a>
+			        </div>
+			    </div>
+			    <!--注册facebook-->
+			    <div class="m-facrbook">
+			    	<div class="u-facrbook-icon"></div>
+			    	<a href="javascript:;">Sign Up with Facebook
+			    	</a>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+	$('.u-account-box input').click(function(e){
+		$(this).next('.u-icon-box3').show();
+		$(this).focus();
+		e.stopPropagation();
+	})
+	$('.u-icon-box3').click(function(e){
+		$(this).prev('input').val('').focus();
+		e.stopPropagation();
+	})
+	$(document).click(function(){
+		$('.u-icon-box3').hide();
+	})
+</script>

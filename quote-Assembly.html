@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	     <meta name="format-detection" content="telephone=no" />		
+		<meta name="apple-touch-fullscreen" content="yes"><!-- //启用webapp全屏模式 -->
+        <meta name="apple-mobile-web-app-capable" content="yes"><!-- //启用webapp全屏模式 -->
+		<title>quote</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/quote.css" />
+	</head>
+
+	<body>
+		<!--计价整体大框架-->
+		<div class="g-main">
+								<!--点击u-guild的弹框-->
+				<div class="u-top-bounced">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="javascript:;">My account</a>
+
+						</li>
+						<li>
+							<a href="javascript:;">My Order</a>
+
+						</li>					<li>
+						<a href="javascript:;">My Account</a>
+		            </li>	
+					</ul>
+				</div>
+			<!--计价页面大框架-->
+			<div class="m-quote">
+				<!--计价页面头部-->
+				<div class="m-header-box">
+					<div class="u-header">
+						<!--返回箭头-->
+						<div class="u-return"><a href="javascript:;"></a></div>
+						<div class="u-hint">PCB Instant Quote</div>
+						<!--购物车-->
+						<div class="u-position-right sprites-img">
+							<div class="u-in-title">1</div>
+						</div>
+						<!--点-->
+						<div class="u-guild"></div>
+
+					</div>
+					<ul class="u-top-title cleartfix">
+					<li class="" id="0">
+							<a href="quote-PCB.html">PCB</a>
+						</li>
+						<li class="" id="1">
+							<a href="quote-SMD.html">SMD-Stencil</a>
+						</li>
+						<li class="active" id="2">
+							<a href="quote-Assembly.html">Assembly</a>
+						</li>
+						<li class="e" id="3">
+							<a href="quote-Flexible.html">Flexible PCBs</a>
+						</li>
+					</ul>
+				</div>
+				<!--计价页面中间部分-->
+				<div class="m-center-box">
+
+						
+					<!--Assembly-->
+					<div class="u-content">
+						<div class="u-mian-block">																    
+							<!--3 flexible options	-->
+							<div class="u-board-type">
+							
+								<div class="u-list-search-title">
+									<h3 class="u-list-search-row-title">
+									3 flexible options								    
+								</h3>
+								
+								</div>
+								<!--boaed选项-->
+								<ul class="u-form-col2 cleartfix">
+									<li class="u-left">
+										<input type="radio" class="u-radio active" id="u-click13">
+										<label class="u-radio-text u-radio-text-two" for="u-click13">Turnkey</label>
+									</li>
+									<li>
+										<input type="radio" class="u-radio" id="u-click14">
+										<label class="u-radio-text" for="u-click14">Kitted or<br> Consigned</label>
+									</li>
+									<li>
+										<input type="radio" class="u-radio" id="u-click15">
+										<label class="u-radio-text u-radio-text-two" for="u-click15">Combo</label>
+									</li>
+								</ul>
+							</div>
+							
+							<!--stencil-->
+							<div class="u-product-screening">								
+								<div class="u-list-search-filter cleartfix" style="">
+									<div class="u-pulldown-box">
+										<div class="u-list-search-title">
+											<h3 class="u-list-search-row-title">
+									         Stencil: 				    
+								            </h3>
+										</div>
+									</div>
+									<div class="u-float">
+										<ul class="u-form-three cleartfix">
+										<li class="u-left">
+											<input type="radio" class="u-radio active">
+											<label class="u-radio-text u-radio-text-two">Yes</label>
+										</li>
+						
+									</ul>									
+										
+									</div>
+									
+
+								</div>
+
+							</div>
+						  
+						  <!--搜索-->
+						  <div class="u-calculate-box">
+				
+
+								<!--Quantity-->
+								<div class="u-quantity-box">
+									<!--Quantity标题-->
+									<div class="u-list-search-title u-none-border">
+										<h3 class="u-list-search-row-title">
+									          Quantity						    
+								           </h3>
+									</div>
+									<div class="u-choose-num cleartfix" >
+										<input type="number" placeholder="Estimated PCBA Qty">
+										<div class="u-unit u-bg-none" style="text-align: center;padding-right: 0;">
+											pcs
+										</div>
+									</div>
+									<!--Number of Unique Parts-->
+									<div class="u-list-search-title u-none-border">
+										<h3 class="u-list-search-row-title">
+									      Number of Unique Parts			    
+								           </h3>
+								           <i class="u-smintip" data-index=8></i>
+									</div>
+									<div class="u-choose-num cleartfix" >
+										<input type="number" placeholder="Number of unique parts">										
+									</div>
+									<!--Number of SMT Parts-->
+										<div class="u-list-search-title u-none-border">
+										<h3 class="u-list-search-row-title">
+									     Number of SMT Parts			    
+								           </h3>
+								           <i class="u-smintip" data-index=9></i>
+									</div>
+									<div class="u-choose-num cleartfix" >
+										<input type="number" placeholder="Total number">										
+									</div>
+									<!--Number of BGA/QFP Parts-->
+										<div class="u-list-search-title u-none-border">
+										<h3 class="u-list-search-row-title">
+									     Number of BGA/QFP Parts	    
+								           </h3>
+								           <i class="u-smintip" data-index=10></i>
+									</div>
+									<div class="u-choose-num cleartfix" >
+										<input type="number" placeholder="Number of BGA/QFP Parts">										
+									</div>
+									<!--Number of Through-Hole Parts-->
+												<div class="u-list-search-title u-none-border">
+										<h3 class="u-list-search-row-title">
+									     Number of Through-Hole Parts    
+								           </h3>
+								           <i class="u-smintip" data-index=11></i>
+									</div>
+									<div class="u-choose-num cleartfix" >
+										<input type="number" placeholder="Total number">										
+									</div>
+								</div>
+							</div>
+                         <!-- Board type-->
+						    <div class="u-product-screening u-padd">
+								<div class="u-list-search-title u-none-border">
+												<h3 class="u-list-search-row-title">
+									             Board type							    
+								                </h3>		
+								           <i class="u-smintip" data-index=12></i>
+								                
+											</div>
+								
+								
+								<div class="u-select5">
+									
+									       <div class="u-position-rel cleartfix">
+										
+													<select name="" class="u-form-control">
+														<option value="">Single pieces</option>
+                                                         <option value="">Panelized PCBs</option>														
+													</select>
+												<div class="u-bank_xljt"></div>
+											</div>
+
+								</div>
+
+							</div>
+							<!--Assembly Side(s)-->
+							<div class="u-product-screening u-padd">
+								<div class="u-list-search-title u-none-border">
+									<h3 class="u-list-search-row-title">
+									           Assembly Side(s)						    
+								                </h3>
+									<i class="u-smintip" data-index=14></i>
+
+								</div>
+
+								<div class="u-select6">
+
+									<div class="u-position-rel cleartfix">
+									
+											<select name="" class="u-form-control">
+												<option value="">Single Side</option>
+                                                <option value="">Double sides</option>												
+											</select>
+										<div class="u-bank_xljt"></div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!--Select PCBWay's PCB Order#-->
+							<div class="u-product-screening">
+								<div class="u-list-search-filter" style="">
+									<div class="u-pulldown-box">
+										<div class="u-list-search-title">
+											<h3 class="u-list-search-row-title">
+									          Select PCBWay's PCB Order# 				    
+								            </h3>
+											<i class="u-smintip" data-index=13></i>
+
+										</div>
+
+									</div>
+									<div class="u-bott2-select">
+										<ul class="u-form-three cleartfix">
+											<li class="u-left">
+												<input type="radio" class="u-radio active" id="u-click16">
+												<label class="u-radio-text u-radio-text-two" for="u-click16">No</label>
+											</li>
+											<li>
+												<input type="radio" class="u-radio" id="u-click17">
+												<label class="u-radio-text u-radio-text-two" for="u-click17">Yes</label>
+											</li>
+										</ul>
+									</div>
+
+									<div class="u-list-search-title">
+										<h3 class="u-list-search-row-title" style="color: #12C286;">
+									          What is PCBWay’s PCB Order Number				    
+								            </h3>
+										<i class="u-smintip" data-index=15></i>
+
+									</div>
+								</div>
+							</div>
+
+							<!--说明信息-->
+							<div class="u-product-screening u-padd">
+								<div class="u-list-search-title u-none-border">
+									<h3 class="u-list-search-row-title">
+									            Detailed information of assembly
+								                </h3>
+
+								</div>
+								<textarea rows="5" cols="10" class="u-footer-explain" placeholder="Please fill in the detailed technical information about the PCB assembly."></textarea>
+							</div>
+
+							<!--说明2-->
+
+							<div class="u-product-screening u-padd">
+								<p class="u-footer-explaintwo">
+									For a precise quotation or to discuss assembly service, please send us your PCB file,Bom file and requirement to
+									<a href="javascript:;">service@pcbway.com.</a>
+									Prices do not include PCB fabrication or the cost of components.
+								</p>
+
+							</div>
+
+						</div>
+
+					</div>
+					
+				</div>
+
+				<!--计价页面底部-->
+				<div class="m-footer-box">
+					<div class="u-reset">Reset</div>
+					<div class="u-Calculate-box">
+						Calculate
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+
+				<!--问号的弹框-->
+				<div class="u-tishi"></div>
+			</div>
+
+			<!--全屏遮罩-->
+			<div class="g-slide-mask"></div>
+
+			
+		    <!--点击Ass Select PCBWay's PCB Order# YES的弹出页面-->
+		    <div class="m-select-order-box">
+		    	<div class="m-top">
+					<div class="u-close"></div>
+					Select The PCB Order Number
+				</div>
+				<ul class="u-title">
+					<li class="u-order">OrderNo</li>				
+					<li class="u-qty">Qty</li>
+				</ul>
+				<div class="u-center">
+                   <ul class="u-ullist">
+                   
+	<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+					<li>
+					<div class="u-content">
+						<input type="checkbox" value="n" class="check">
+						<span class="s-order">W00002AS370</span>						
+						<span class="s-qty">5</span>
+					</div>
+					<div class="s-time">2017-02-07 15:52:58</div>
+					<div class="datagrid-cell">W00002ASM345_PCBWay测试订单请直接审核通过 .rar</div>
+				</li>
+                   <div class="u-view-more">View more···</div>
+                   	 
+                   </ul>
+
+				</div>
+				
+				
+				<div class="u-bottom">					
+					<div class="u-Submit2">Submit</div>
+				</div>
+		    </div>
+	
+              <!--报价结果弹出页面-->
+ 	       <div class="m-quote-results">
+
+               <!--计价结果中间-->
+            <div class="m-results-center">
+                <!--PCB Price-->
+                <div class="u-PCB-Price-box">
+                	<div class="u-pcb-price-title">PCB Price</div>
+                	<div class="u-pcb-price-center">
+                		<ul class="u-pcb-center-title cleartfix">
+                			<li>Build Time</li>
+                			<li>Quantity</li>
+                			<li>Total</li>
+                		</ul>
+                		<div class="u-pcb-center-inner">
+                			<div class="u-pcb-price-input">
+                				<input type="radio" class="u-radio active">
+                			</div>
+                			<div class="u-options-field">
+                				<div class="u-time">6-7 days</div>
+                				<div class="u-quantity">20</div>
+                				<div class="u-tota">US $37</div>
+                			</div>                			
+                		</div>
+                		<div class="u-pcb-center-inner">
+                			<div class="u-pcb-price-input">
+                				<input type="radio" class="u-radio">
+                			</div>
+                			<div class="u-options-field">
+                				<div class="u-time">6-7 days</div>
+                				<div class="u-quantity">20</div>
+                				<div class="u-tota">US $37</div>
+                			</div>
+                			
+                		</div>
+                	</div>
+                </div>
+                <!--Shipping Method-->
+                <div class="u-shipping-method-box">
+                    <div class="u-shipping-method">
+                    	<div class="u-tite">Shipping Method</div>
+                    	<select >
+                                          
+                          <option value="1">DHL</option>                      
+                          <option value="">HK post</option>
+                          <option value="4">SF Express</option>                      
+                          <option value="6">EMS</option>
+                      
+                          <option value="7">E-packet</option>
+                      
+                          <option value="2">Other shpping way</option>
+                      
+                        </select>
+                		
+                		<i class="u-icon"></i>
+                	</div>
+                	<div class="u-ship-to">
+                		Ship To
+                	     <div class="u-flag">
+                		     <img src="img/flag03.jpg" alt="" />
+                	     </div>
+                		<i class="u-icon"></i>
+                	</div>
+                	<div class="u-delvity">
+                	      <span>3-5 Days,  wt: 1.85kg,  US $25</span>
+                     </div>
+                	<div class="price-info">
+                		<h3>Final price is subject to our review.</h3>
+                		<ul class="price-info-list">
+                			<li class="cleartfix">
+                				<span class="info-title">PCB Cost</span>
+                				<span class="info-value">
+                					US $ 
+                					<span>37</span> 
+                				</span>
+                			</li>
+                			<li class="cleartfix">
+                				<span class="info-title">shipping</span>
+                				<span class="info-value">
+                					US $ 
+                					<span>25</span> 
+                				</span>
+                			</li>
+                		</ul> 
+                	</div>
+                	
+                </div>
+                <!--email-->
+                <div class="u-email">
+                	<label for=""></label>
+                	<input type="email" name="" id="email" value="" required="" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="u-email" placeholder="Email">
+                </div>
+               <!--Manufacturing Guidelines-->
+               <div class="u-manu-guid">
+               	   <div class="u-manu-guid-title">Manufacturing Guidelines</div> 	  
+               	   <textarea rows="5" cols="10" placeholder="Fill in any PCB details to make it as clear as possible for us to understand your requirements." class="u-footer-explain"></textarea>
+               </div>
+            </div>
+                                                     
+               <!--计价结果底部-->
+            <div class="m-results-footer-box">
+			      <div class="u-total">
+			      	Total: <span>US $62</span>
+			      </div>
+			      <div class="add-to-cart">
+			      	Add to Cart
+			      	<a href="order_list_01.html"></a>
+			      	
+			      </div>
+		     </div>
+
+	</div>
+
+    	
+			<!--选择国家页面-->
+<div class="m-state-select">
+    	<div class="m-top">
+		<div class="u-close"></div>
+			please Select
+		 </div>
+    	 <div class="tit_fixed">
+    	 	<p>A</p>
+    	 </div>
+    	<div class="u-state-list-box" id="lanjiaz">
+    		
+    		<!--系统推荐的国家-->
+    		<div class="tit">
+    			<p class="">A</p>
+    		</div>
+    		<ul class="u-state-list skipA">
+    			<li class="cleartfix">
+    	    		<div class="u-flag">
+    	    			<img src="img/grey.gif" alt="" data-url="img/flag01.jpg" />
+    	    		</div>
+    	            <div class="u-state-center tick">COMMONWEALTH NO. MARIANA ISLANDS</div>    	            
+    	     
+    	    	</li>
+    			<li class="cleartfix">
+    	    		<div class="u-flag">
+    	    			<img src="img/grey.gif" alt="" data-url="img/flag01.jpg" />	    			
+    	    		</div>
+    	            <div class="u-state-center">COMMONWEALTH NO. MARIANA ISLANDS</div>   	            
+    	    	</li>
+    		</ul>   
+    	</div>
+    	<div class="ce">
+					<ul class="zi">
+						<li class="key">A</li>
+						<li class="key">B</li>
+						<li class="key">C</li>
+						<li class="key">D</li>
+						<li class="key">E</li>
+						<li class="key">F</li>
+						<li class="key">G</li>
+						<li class="key">H</li>
+						<li class="key">I</li>
+						<li class="key">J</li>
+						<li class="key">K</li>
+						<li class="key">L</li>
+						<li class="key">M</li>
+						<li class="key">N</li>
+						<li class="key">O</li>
+						<li class="key">P</li>
+						<li class="key">Q</li>
+						<li class="key">R</li>
+						<li class="key">S</li>
+						<li class="key">T</li>
+						<li class="key">U</li>
+						<li class="key">V</li>
+						<li class="key">W</li>
+						<li class="key">X</li>
+						<li class="key">Y</li>
+						<li class="key">Z</li>
+					</ul>
+	    </div>
+ </div>		
+	
+		</div>
+	</body>
+
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+	$(function() {
+
+
+
+			//点击问号弹出提示
+		$('.u-smintip').click(function() {
+				var index = $(this).data("index") - 1;
+//				console.log(index)
+				my1.confirms(index);
+				$('.g-slide-mask').show();
+				$('.u-tishi').show();
+			})
+
+
+		var my1 = {
+			confirms: function(index) {
+				var spanlCons = [
+					"The full board are by only one single board or be arrayed with the same or different PCBs",
+					"it means- we will charge extra panel costs when there are different kinds in <b>1</b> PCB  design. For same kinds, it needn't charge.",
+					"Input the maximum length and width of the board",
+					"How those boards connected in the panel",
+					"Bad PCBs existed in panel",
+                    "If you ordered pcb already on PCBWay, you only need to select the pcb order number here so we can use the file from this pcb order to do stencil.",                   
+					"We normally will reduce apatures for ICs to make stencil, so if don't want to change the apatures, please note it when place the order.",
+					"The number of BOM line items.",
+					"Number of SMT parts on each board (including fine pitch and leadless).",
+					"Number of ICs with more than 16pins and SMD irregular parts with more than 10pins on each board.(SOP,QFP,QFN,BGA)",
+					"Number of through-hole parts on each board(DIP NO.)",
+					"If single pcb qty is more than 20pcs or the part solering points are less than 100,then we suggest do panel.Or we may charge extra wastage fee.",
+					"If you ordered pcb already on PCBWay, you only need to select the pcb order number here so we can use the file from this pcb order to do assembly.",
+					"Are parts mounted on one side only, or both sides?",
+					" It is the order# that you have placed with PCBWay.com and it is still unshipped."
+					];
+				var confirmsHtml = '<span>' + spanlCons[index] + '</span>'
+				$('.u-tishi').html(confirmsHtml);
+
+			}
+
+		}
+
+		//Boaed选项的点击效果
+		$('.u-board-type .u-form-col li .u-radio').click(function() {
+			$('.u-board-type .u-form-col li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		
+		
+		
+				//AssemblyBoaed选项的点击效果
+		$('.u-board-type .u-form-col2 li .u-radio').click(function() {
+			$('.u-board-type .u-form-col2 li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		$('#u-click0').click(function() {
+			$('.u-board-type .u-dropdown-toggle').hide();
+		})
+		$('#u-click1').click(function() {
+			$('.u-board-type .u-dropdown-toggle').show();
+			$('.u-board-type .u-dropdown-toggle .u-list-search-filter:first').hide();
+		})
+		$('#u-click2').click(function() {
+			$('.u-board-type .u-dropdown-toggle').show();
+
+			$('.u-board-type .u-dropdown-toggle .u-list-search-filter:first').show();
+		})
+
+		//弹框下X-out Allowance in Panel的选择Js
+		$('.u-board-type .u-form-two li .u-radio').click(function() {
+				$('.u-board-type .u-form-two li .u-radio').removeClass('active');
+				$(this).addClass('active');
+			})
+			//弹框下Yes NO的选择Js
+		$('.u-board-type .u-form-three li .u-radio').click(function() {
+			$('.u-board-type .u-form-three li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+
+		//Surface Finish下弹框的js
+		$('.u-product-screening .u-form-two li .u-radio').click(function() {
+				$('.u-product-screening .u-form-two li .u-radio').removeClass('active');
+				$(this).addClass('active');
+			})
+			// Route Process 下模拟selest
+		$('.u-pulldown-box .u-position-rel').click(function() {
+			$('.u-pulldown-box .u-bank_xl').show();
+		})
+		$('.u-pulldown-box .u-bank_xl .u-hotBank-list').bind('touchend', function() {
+				$('.u-pulldown-box .u-bank_xl').hide();
+				$('#chose_input').val($(this).attr('title'));
+			})
+
+		//Route Process加减
+		var init = 1;
+
+		function number(type) {
+			if(type === 'jia') {
+				++init;
+			} else
+			if(type === 'jian') {
+				--init;
+				if(init < 1) {
+					return init = 0;
+				}
+			}
+			return init;
+		}
+		//增加数量
+		$('.u-design-box .u-number-box .u-add').click(function() {
+				var text = $(this).closest('.u-number-box').find('input');
+				var $cut = $(this).closest('.u-number-box').find('.u-cut')
+				init = text.val();
+				text.val(number('jia', $(this)))
+			})
+			//减少数量
+		$('.u-design-box .u-number-box .u-cut').click(function() {
+				var text = $(this).closest('.u-number-box').find('input');
+				init = text.val();
+				var reslut = number('jian');
+				if(reslut > 0) {
+					text.val(reslut);
+				} else {
+					text.val(reslut);
+				}
+			})
+
+
+        $('.u-product-screening .u-options-list16').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+        $('.u-product-screening .u-options-list17').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+        $('.u-product-screening .u-options-list18').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+        $('.u-product-screening .u-options-list19').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+        $('.u-product-screening .u-options-list20 li:first').click(function(){
+        	$('.u-Stiffener-box').hide();        	
+        })
+         $('.u-product-screening .u-options-list20 li:first').nextAll('li').click(function(){
+        	$('.u-Stiffener-box').show();        	
+        })
+        $('.u-product-screening .u-options-list20').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+        $('.u-product-screening .u-options-list21').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+        $('.u-product-screening .u-options-list22').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+
+
+		$('.u-top-select .u-form-three li .u-radio').click(function() {
+			$('.u-top-select .u-form-three li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		$('.u-bott-select .u-form-three li .u-radio').click(function() {
+				$('.u-bott-select .u-form-three li .u-radio').removeClass('active');
+				$(this).addClass('active');
+			})
+		
+
+		//Assembly弹框js
+		$('#u-click17').click(function(){
+			$('.g-slide-mask').show();
+			$('.g-main .m-select-order-box').addClass('active');			
+		})
+		var isClickb=true;
+		$('.m-select-order-box .u-center .u-ullist li').click(function(e){
+		   isClickb=true;
+		})
+		$('.m-select-order-box .u-center .u-ullist li').on('touchmove',function(e){
+		   isClickb=false;
+		})
+		$('.m-select-order-box .u-center .u-ullist li').click(function(e){
+              if ($(this).find('.check').hasClass('active')) {
+              	   $(this).find('.check').removeClass('active');
+              } else{
+              	   $(this).find('.check').addClass('active');
+              }			
+		})
+			//Assembly产品筛选组合JS
+		$('.u-bott2-select .u-form-three li .u-radio').click(function() {
+			$('.u-bott2-select .u-form-three li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+
+		//点击inch'↔mm 弹出m-inch-box页面的js
+		$('.u-mian-block .u-calculate-box .u-input-group .u-btn').click(function() {
+			$('.g-slide-mask').show();
+			$('.m-inch-box').addClass('active');
+		})
+
+		$('.g-main .m-inch-box .m-inch-center .m-btn').click(function() {
+			$('.g-slide-mask').hide();
+			$('.m-inch-box').removeClass('active');              
+			//首先判断弹出框里是否有值，当两个inpput同时有值时，就传给当前页面
+			if(!$('.xnumber').val()==''&&!$('.ynumber').val()==''){
+				if($('.u-top-title li#0').hasClass('active')){
+					$('#Length').val($('.xnumber').val());
+					$('#Width').val($('.ynumber').val());
+					$('.xnumber').val('');
+					$('.ynumber').val('');
+				}
+				if($('.u-top-title li#3').hasClass('active')){
+					$('#Length2').val($('.xnumber').val());
+					$('#Width2').val($('.ynumber').val());
+					$('.xnumber').val('');
+					$('.ynumber').val('');
+				}
+			}else{
+				$('.xnumber').val('');
+				$('.ynumber').val('');
+			}
+		})
+	
+
+		////PCB Quantity点击弹出页面的js
+		$('#s-seek1').click(function(){
+		    $('.g-slide-mask').show();		
+			$('.m-quantity-box').addClass('active');
+		})
+		$('.u-bottom .u-Cancel').click(function(){
+			$('.g-slide-mask').hide();
+			$('.m-quantity-box').removeClass('active');			
+		})
+        
+        
+        
+		$('.u-bottom .u-Submit').bind('click',function(){
+			$('#number1').val($('#number2').val());			
+			$('.g-slide-mask').hide();
+			$('.m-quantity-box').removeClass('active');	
+			
+		})
+		$('.m-quantity-box .u-quan-box li .radio').bind('click',function() {
+				$('.m-quantity-box .u-quan-box li .radio').removeClass('active');
+				$(this).addClass('active');
+				$('.g-slide-mask').hide();
+			    $('.m-quantity-box').removeClass('active');	
+				$('#number1').val($(this).attr('value'));
+			})
+
+        $("#u-click20").click(function(){
+        	$('.u-Stiffener-box').show();
+        })
+     
+        $('#u-click19').click(function(){
+        	$('.clsUnit').html('panel');
+        	$('.clsUnitPCS').html('panel');           
+        })
+        $('#u-click18').click(function(){        
+        	$('.clsUnit').html('single');
+        	$('.clsUnitPCS').html('pcs');
+        })
+
+			//底部刷新
+		$('.u-reset').click(function() {
+			location.reload();
+		})
+	})
+</script>

@@ -1,0 +1,588 @@
+.u-sta-box {
+  width: 1rem;
+  height: 0.6rem;
+  margin-top: 0.2rem;
+  background: transparent; }
+  .u-sta-box .u-openOn.active {
+    background: #12C286; }
+  .u-sta-box .u-openOn.active .openTwo {
+    left: 0.42rem; }
+  .u-sta-box .u-openOn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #DBDBDB;
+    position: relative; }
+    .u-sta-box .u-openOn .openTwo {
+      width: 0.56rem;
+      height: 0.56rem;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 0.02rem;
+      left: 0.02rem;
+      transition: left 0.2s ease-in-out; }
+
+.u-particulars-box {
+  width: 100%;
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  padding: 0.3rem 0.34rem 0;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 0.2rem; }
+  .u-particulars-box .img-cell-box {
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 0.24rem;
+    box-sizing: border-box;
+    font-size: 0; }
+    .u-particulars-box .img-cell-box .img-cell {
+      width: 80%;
+      font-size: 0.26rem;
+      display: inline-block;
+      vertical-align: middle; }
+      .u-particulars-box .img-cell-box .img-cell a {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.3rem; }
+        .u-particulars-box .img-cell-box .img-cell a img {
+          width: 1.3rem;
+          height: 1.3rem; }
+      .u-particulars-box .img-cell-box .img-cell span {
+        vertical-align: middle; }
+    .u-particulars-box .img-cell-box .img-number {
+      width: 20%;
+      font-size: 0.26rem;
+      display: inline-block;
+      vertical-align: middle;
+      direction: rtl; }
+  .u-particulars-box .u-combine-shipping {
+    width: 100%;
+    border-bottom: 1px solid #E3E3E3;
+    height: 1rem;
+    position: relative;
+    font-size: 0.3rem;
+    color: #333;
+    line-height: 1rem; }
+    .u-particulars-box .u-combine-shipping .u-combine {
+      width: 45%;
+      height: 100%;
+      float: left;
+      background: url("../img/Qm.png") no-repeat;
+      background-size: 0.27rem 0.27rem;
+      background-position: 2.5rem 0.4rem; }
+    .u-particulars-box .u-combine-shipping .u-tk, .u-particulars-box .u-combine-shipping .u-vessel {
+      width: 50%;
+      height: 100%;
+      float: right;
+      background: url("../img/r-icon.png") no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: right center;
+      text-align: right;
+      padding-right: 0.9rem; }
+    .u-particulars-box .u-combine-shipping .u-vessel {
+      background: transparent;
+      padding-right: 0.5rem; }
+    .u-particulars-box .u-combine-shipping .u-close, .u-particulars-box .u-combine-shipping .u-closet {
+      width: 0.28rem;
+      height: 0.28rem;
+      background: url(../img/colicon.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      right: 0.4rem;
+      margin-top: -0.14rem; }
+    .u-particulars-box .u-combine-shipping .u-closet {
+      position: absolute;
+      top: 50%;
+      right: 0rem;
+      margin-top: -0.14rem; }
+  .u-particulars-box .u-shipping-method.u-none-border {
+    border: 0; }
+  .u-particulars-box .u-shipping-method {
+    width: 100%;
+    padding: 0.36rem 0;
+    border-bottom: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    font-size: 0;
+    position: relative; }
+    .u-particulars-box .u-shipping-method .u-sta-box {
+      position: absolute;
+      right: 0;
+      top: -0.15rem; }
+    .u-particulars-box .u-shipping-method p {
+      font-size: 0.24rem;
+      color: #999; }
+    .u-particulars-box .u-shipping-method .u-tite {
+      width: 40%;
+      display: inline-block;
+      font-size: 0.3rem; }
+    .u-particulars-box .u-shipping-method .u-Rarrows {
+      padding-right: 0.3rem;
+      background: url("../img/r-icon.png") no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: right center;
+      display: inline-block; }
+    .u-particulars-box .u-shipping-method .money,
+    .u-particulars-box .u-shipping-method div.u-Rarrows,
+    .u-particulars-box .u-shipping-method select.u-Rarrows {
+      width: 60%;
+      display: inline-block;
+      direction: rtl;
+      font-size: 0.3rem;
+      color: #333;
+      position: relative; }
+      .u-particulars-box .u-shipping-method .money i,
+      .u-particulars-box .u-shipping-method div.u-Rarrows i,
+      .u-particulars-box .u-shipping-method select.u-Rarrows i {
+        color: #999;
+        padding-left: 0.1rem; }
+      .u-particulars-box .u-shipping-method .money em,
+      .u-particulars-box .u-shipping-method div.u-Rarrows em,
+      .u-particulars-box .u-shipping-method select.u-Rarrows em {
+        font-style: normal; }
+      .u-particulars-box .u-shipping-method .money input,
+      .u-particulars-box .u-shipping-method div.u-Rarrows input,
+      .u-particulars-box .u-shipping-method select.u-Rarrows input {
+        width: 45%;
+        text-align: right;
+        background: #fff;
+        font-size: 0.3rem;
+        direction: ltr; }
+    .u-particulars-box .u-shipping-method .u-delvity {
+      width: 100%;
+      font-size: 0.24rem;
+      color: #999;
+      box-sizing: border-box;
+      margin: 0.15rem 0; }
+    .u-particulars-box .u-shipping-method .u-icon-box.active {
+      background: url("../img/xz-icon.png") no-repeat;
+      background-size: cover; }
+    .u-particulars-box .u-shipping-method .u-icon-box {
+      width: 0.38rem;
+      height: 0.38rem;
+      background: url("../img/circle-icon.png") no-repeat;
+      background-size: cover;
+      float: left; }
+    .u-particulars-box .u-shipping-method .u-particulars-center {
+      float: left;
+      padding-left: 0.2rem;
+      width: 94%; }
+      .u-particulars-box .u-shipping-method .u-particulars-center .u-icon {
+        display: inline-block;
+        width: 10%;
+        height: 0.25rem;
+        background: url("../img/r-icon.png") no-repeat;
+        background-size: 0.12rem 0.25rem;
+        background-position: right center; }
+    .u-particulars-box .u-shipping-method .u-title-center {
+      width: 80%; }
+      .u-particulars-box .u-shipping-method .u-title-center .u-titles {
+        font-size: 0.3rem;
+        color: #333; }
+        .u-particulars-box .u-shipping-method .u-title-center .u-titles span {
+          float: right; }
+ .u-form-two {
+      margin-bottom:0.2rem;
+    display: none; }
+   .u-form-two.u-show {
+    display: block; }
+ .u-form-two li:nth-child(2) {
+    margin-left: 0.4rem; }
+ .u-form-two li {
+    float: left;
+    font-size: 0.28rem; }
+  .u-form-two li input.u-radio {
+      width: 0.38rem;
+      height: 0.38rem;
+      background: url(../img/circle-icon.png) no-repeat;
+      background-size: cover;
+      background-position: center center;
+      margin-top: 0.1rem;
+      float: left; }
+    .u-form-two li input.u-radio.active {
+      background: url(../img/xz-icon.png) no-repeat;
+      background-size: cover;
+      background-position: center center; }
+     .u-form-two li .u-radio-text {
+      line-height: 0.58rem;
+      font-size: 0.28rem;
+      float: left;
+      margin-left: 0.18rem; }
+  .u-particulars-box .u-ship-to {
+    height: 1rem;
+    border-bottom: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    font-size: 0.3rem;
+    color: #333;
+    line-height: 1rem;
+    font-style: normal;
+    position: relative; }
+    .u-particulars-box .u-ship-to .u-flag {
+      float: left;
+      width: 0.44rem;
+      height: 0.3rem;
+      position: absolute;
+      right: 0.32rem;
+      top: 0.05rem;
+      text-align: right; }
+      .u-particulars-box .u-ship-to .u-flag img {
+        width: 100%;
+        height: 100%; }
+    .u-particulars-box .u-ship-to i.u-icon {
+      display: block;
+      width: 0.14rem;
+      height: 100%;
+      float: right;
+      background: url(../img/r-icon.png) no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: center center; }
+  .u-particulars-box .u-message-box h3 {
+    font-size: 0.26rem;
+    color: #666666;
+    margin-bottom: 0.3rem; }
+  .u-particulars-box .u-message-box textarea {
+    resize: none;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    padding: 0.15rem;
+    font-size: 0.26rem; }
+  .u-particulars-box .u-message-box p {
+    margin-bottom: 0.3rem;
+    font-size: 0.24rem;
+    color: #999; }
+
+.u-payment-method h3.u-title-top {
+  border-bottom: 1px solid #E3E3E3;
+  font-size: 0.26rem;
+  color: #666;
+  padding: 0.1rem 0 0.35rem 0;
+  background: url(../img/Qm.png) no-repeat;
+  background-size: 0.27rem 0.27rem;
+  background-position: 2.2rem 0.1rem; }
+
+.u-payment-method .u-payment-list li:last-child {
+  border: 0; }
+
+.u-payment-method .u-payment-list li {
+  border-bottom: 1px solid #E3E3E3;
+  padding: 0.24rem 0;
+  position: relative; }
+
+.u-payment-list li .u-payment-logo {
+  width: 1.1rem;
+  height: 1.1rem;
+  float: left; }
+  .u-payment-list li .u-payment-logo img {
+    width: 100%; }
+
+.u-payment-list li .u-payment-text {
+  width: 75%;
+  padding: 0 0.25rem;
+  float: left; }
+  .u-payment-list li .u-payment-text h3.u-payment-name {
+    font-size: 0.3rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+    margin-top: 0.12rem; }
+  .u-payment-list li .u-payment-text p {
+    font-size: 0.26rem;
+    color: #999; }
+
+.u-payment-list li .u-box {
+  width: 6%;
+  float: right;
+  height: 0.9rem;
+  position: relative; }
+
+.u-payment-list li .u-box .u-radio.active {
+  background: url(../img/xz-icon.png) no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.u-payment-list li .u-box .u-radio {
+  float: right;
+  width: 0.38rem;
+  height: 0.38rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/circle-icon.png) no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.u-order-information {
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #D3D3D3;
+  border-top: 1px solid #D3D3D3;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 0.22rem; }
+  .u-order-information .u-add-site {
+    position: relative;
+    padding: 0.3rem 0.34rem; }
+    .u-order-information .u-add-site .u-add-icon {
+      width: 0.33rem;
+      height: 0.32rem;
+      margin: 0 auto 0.15rem;
+      background: url("../img/addsite.png") no-repeat;
+      background-size: cover; }
+    .u-order-information .u-add-site h3 {
+      font-size: 0.3rem;
+      color: #333333;
+      text-align: center; }
+    .u-order-information .u-add-site a {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto; }
+  .u-order-information .u-exist-box {
+    position: relative;
+    padding: 0.3rem 0.34rem; }
+    .u-order-information .u-exist-box .u-cont {
+      width: 100%;
+      font-size: 0.3rem;
+      color: #333;
+      line-height: 0.4rem;
+      margin-bottom: 0.1rem; }
+    .u-order-information .u-exist-box .u-company-xx {
+      font-size: 0.26rem;
+      color: #666;
+      padding-right: 0.3rem;
+      line-height: 0.44rem; 
+      word-wrap: break-word;}
+      .u-order-information .u-exist-box .u-company-xx dd img {
+        width: 0.44rem;
+        height: 0.3rem; }
+    .u-order-information .u-exist-box i.u-icon {
+      display: block;
+      width: 0.14rem;
+      height: 0.25rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 0.34rem;
+      background: url("../img/r-icon.png") no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: center center; }
+    .u-order-information .u-exist-box a {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto; }
+  .u-order-information .u-order-info-content {
+    font-size: 0.26rem;
+    padding: 0.3rem 0.34rem 0.1rem; }
+    .u-order-information .u-order-info-content li {
+      width: 100%;
+      margin-bottom: 0.2rem; }
+      .u-order-information .u-order-info-content li .u-info-name {
+        float: left;
+        color: #999; }
+        .u-order-information .u-order-info-content li .u-info-name em {
+          font-style: normal; }
+        .u-order-information .u-order-info-content li .u-info-name .u-grade {
+          display: inline-block;
+          width: 0.35rem;
+          height: 0.35rem;
+          background: #12C286;
+          border-radius: 0.03rem;
+          font-size: 0.24rem;
+          color: #fff;
+          text-align: center;
+          line-height: 0.35rem; }
+      .u-order-information .u-order-info-content li .u-info-nature {
+        float: right;
+        color: #333; }
+  .u-order-information .u-summary {
+    padding: 0.34rem 0.34rem 0;
+    font-size: 0.28rem;
+    color: #666; }
+    .u-order-information .u-summary h3 {
+      border-bottom: 1px solid #E3E3E3;
+      padding-bottom: 0.35rem; }
+
+.g-submit-shipping {
+  width: 100%;
+  height: 100%; }
+  .g-submit-shipping .u-submit-shipping-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .g-submit-shipping .u-submit-shipping-center .u-read-tip {
+      width: 100%;
+      border-top: 1px solid #D3D3D3;
+      border-bottom: 1px solid #D3D3D3;
+      background: #fff;
+      position: relative;
+      font-size: 0.28rem;
+      padding: 0.38rem 0.34rem;
+      margin-bottom: 0.22rem; }
+      .g-submit-shipping .u-submit-shipping-center .u-read-tip h3 {
+        margin-bottom: 0.2rem; }
+      .g-submit-shipping .u-submit-shipping-center .u-read-tip p {
+        color: #12C286; }
+      .g-submit-shipping .u-submit-shipping-center .u-read-tip .u-sta-box {
+        position: absolute;
+        right: 0.34rem;
+        top: 0.15rem; }
+    .g-submit-shipping .u-submit-shipping-center .u-explain {
+      width: 100%;
+      padding: 0.3rem 0.34rem;
+      box-sizing: border-box;
+      background: #EBEBEC;
+      font-size: 0.24rem;
+      color: #999; }
+      .g-submit-shipping .u-submit-shipping-center .u-explain i {
+        color: #333; }
+
+.m-payment-sm .u-policy-center,
+.m-policy-js .u-policy-center,
+.m-popupcontent .u-policy-center {
+  padding: 0.3rem 0.34rem 0.2rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+  position: absolute;
+  top: 0;
+  bottom: 1.2rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .m-payment-sm .u-policy-center h3,
+  .m-policy-js .u-policy-center h3,
+  .m-popupcontent .u-policy-center h3 {
+    font-size: 0.32rem;
+    font-weight: 500;
+    margin-bottom: 0.16rem;
+    color: #333333; }
+  .m-payment-sm .u-policy-center h4,
+  .m-policy-js .u-policy-center h4,
+  .m-popupcontent .u-policy-center h4 {
+    font-size: 0.28rem;
+    font-weight: 500;
+    margin-bottom: 0.16rem;
+    color: #333333; }
+  .m-payment-sm .u-policy-center p,
+  .m-policy-js .u-policy-center p,
+  .m-popupcontent .u-policy-center p {
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+    margin-bottom: 0.5rem; }
+    .m-payment-sm .u-policy-center p i,
+    .m-policy-js .u-policy-center p i,
+    .m-popupcontent .u-policy-center p i {
+      color: #FF0000; }
+    .m-payment-sm .u-policy-center p a,
+    .m-policy-js .u-policy-center p a,
+    .m-popupcontent .u-policy-center p a {
+      color: #12C286;
+      text-decoration: underline; }
+
+.m-payment-sm .u-btn,
+.m-policy-js .u-btn,
+.m-popupcontent .u-btn {
+  width: 100%;
+  height: 1.2rem;
+  position: fixed;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 1.2rem;
+  font-size: 0.3rem;
+  line-height: 1rem;
+  color: #fff;
+  text-align: center; }
+  .m-payment-sm .u-btn .u-btn-text,
+  .m-policy-js .u-btn .u-btn-text,
+  .m-popupcontent .u-btn .u-btn-text {
+    width: 80%;
+    height: 1rem;
+    margin: 0 auto;
+    background: #12C286;
+    border-radius: 0.03rem;
+    font-size: 0.32rem; }
+
+.m-combine-shipping .u-combine-center {
+  width: 100%;
+  position: absolute;
+  top: 0.9rem;
+  bottom: 2rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .m-combine-shipping .u-combine-center p {
+    border-bottom: 1px solid #E3E3E3;
+    font-size: 0.26rem;
+    color: #999;
+    padding: 0.4rem 0.34rem;
+    line-height: 0.32rem; }
+  .m-combine-shipping .u-combine-center .u-combine-list {
+    padding: 0 0.34rem 0 0.34rem; }
+    .m-combine-shipping .u-combine-center .u-combine-list .u-item {
+      border-bottom: 1px solid #E3E3E3;
+      padding: 0.34rem 0; }
+      .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale {
+        width: 6%;
+        float: left; }
+        .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale .radio.active {
+          background: url(../img/xz-icon.png) no-repeat;
+          background-size: cover;
+          background-position: center center; }
+        .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale .radio {
+          vertical-align: top;
+          width: 0.38rem;
+          height: 0.38rem;
+          background: url(../img/circle-icon.png) no-repeat;
+          background-size: cover;
+          background-position: center center; }
+      .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale-center {
+        width: 94%;
+        padding-left: 0.2rem;
+        float: left; }
+        .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale-center dl {
+          width: 100%;
+          font-size: 0.26rem;
+          line-height: 0.4rem;
+          margin-bottom: 0.1rem; }
+          .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale-center dl dt {
+            width: 45%;
+            color: #999;
+            float: left; }
+          .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale-center dl dd {
+            width: 55%;
+            color: #333;
+            float: left; }
+            .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale-center dl dd i.active {
+              display: inline-block; }
+            .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale-center dl dd i {
+              display: none; }
+              .m-combine-shipping .u-combine-center .u-combine-list .u-item .u-add-bale-center dl dd i span {
+                color: #FF6600; }
+
+.m-combine-shipping .u-bottom span {
+  font-size: 0.28rem;
+  color: #fff;
+  float: right;
+  padding: 0.2rem;
+  margin-top: 0.18rem;
+  text-align: center;
+  line-height: 0.25rem;
+  background: #000;
+  margin-right: 0.34rem;
+  border-radius: 0.03rem; }
+
+.m-combine-shipping .u-bottom span.u-btn1 {
+  background: #423B52; }
+
+.m-combine-shipping .u-bottom span.u-btn2 {
+  background: #12C286; }

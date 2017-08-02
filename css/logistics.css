@@ -1,0 +1,92 @@
+.logis-detail-first:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -0.13rem;
+  top: 0.24rem;
+  width: 0.26rem;
+  height: 0.26rem;
+  -webkit-border-radius: 50%;
+  background: #BDBDBD;
+  box-shadow: 0 0 0 #C6EFD6; }
+
+.g-main .g-logistics {
+  width: 100%;
+  height: 100%; }
+  .g-main .g-logistics .g-logistics-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .g-main .g-logistics .g-logistics-center .m-mb-ollr {
+      width: 100%;
+      margin: 0.2rem 0;
+      border-bottom: 1px solid #D3D3D3;
+      border-top: 1px solid #D3D3D3;
+      padding: 0.34rem;
+      box-sizing: border-box;
+      background: #fff; }
+      .g-main .g-logistics .g-logistics-center .m-mb-ollr .u-ol-l {
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 1px solid #E3E3E3;
+        border-radius: 0.03rem;
+        float: left;
+        position: relative; }
+        .g-main .g-logistics .g-logistics-center .m-mb-ollr .u-ol-l img {
+          width: 100%;
+          height: 100%; }
+        .g-main .g-logistics .g-logistics-center .m-mb-ollr .u-ol-l a {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin: auto; }
+      .g-main .g-logistics .g-logistics-center .m-mb-ollr .u-ol-r {
+        width: 80%;
+        float: right; }
+        .g-main .g-logistics .g-logistics-center .m-mb-ollr .u-ol-r h3 {
+          font-size: 0.28rem;
+          color: #003333;
+          font-weight: normal; }
+          .g-main .g-logistics .g-logistics-center .m-mb-ollr .u-ol-r h3 span {
+            color: #12C286; }
+        .g-main .g-logistics .g-logistics-center .m-mb-ollr .u-ol-r p {
+          font-size: 0.28rem;
+          color: #999; }
+    .g-main .g-logistics .g-logistics-center .m-logis-detail {
+      width: 100%;
+      border-top: 1px solid #D3D3D3;
+      padding: 0 0.34rem;
+      box-sizing: border-box;
+      background: #fff; }
+      .g-main .g-logistics .g-logistics-center .m-logis-detail .u-detail-title {
+        width: 100%;
+        border-bottom: 1px solid #D3D3D3;
+        font-size: 0.32rem;
+        color: #333;
+        padding: 0.3rem 0; }
+      .g-main .g-logistics .g-logistics-center .m-logis-detail ul {
+        color: #999;
+        position: relative; }
+        .g-main .g-logistics .g-logistics-center .m-logis-detail ul li {
+          padding: 0.3rem 0;
+          box-sizing: border-box; }
+          .g-main .g-logistics .g-logistics-center .m-logis-detail ul li .logis-detail-d {
+            border-left: 0.02px solid #D8D8D8;
+            padding: 0rem 0 0rem 0.35rem;
+            box-sizing: border-box;
+            margin-left: 0.25rem;
+            position: relative;
+            font-size: 0.26rem;
+            color: #999; }
+            .g-main .g-logistics .g-logistics-center .m-logis-detail ul li .logis-detail-d .logis-detail-content {
+              border-bottom: 1px solid #D3D3D3;
+              padding-top: 0.2rem;
+              padding-bottom: 0.2rem;
+              box-sizing: border-box; }
+              .g-main .g-logistics .g-logistics-center .m-logis-detail ul li .logis-detail-d .logis-detail-content p {
+                margin-bottom: 0.1rem; }

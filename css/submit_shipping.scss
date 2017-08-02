@@ -1,0 +1,722 @@
+//左右居中定位
+@mixin left-right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+//遮罩
+@mixin shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+}
+
+//开关
+.u-sta-box {
+  width: 1rem;
+  height: 0.6rem;
+  margin-top: 0.2rem;
+  background: transparent;
+  .u-openOn.active {
+    background: #12C286;
+  }
+  .u-openOn.active .openTwo {
+    left: 0.42rem;
+  }
+  .u-openOn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #DBDBDB;
+    position: relative;
+    .openTwo {
+      width: 0.56rem;
+      height: 0.56rem;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 0.02rem;
+      left: 0.02rem;
+      transition: left 0.2s ease-in-out;
+    }
+  }
+}
+
+.u-particulars-box {
+  width: 100%;
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  padding: 0.3rem 0.34rem 0;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 0.2rem;
+  .img-cell-box {
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 0.24rem;
+    box-sizing: border-box;
+    font-size: 0;
+    .img-cell {
+      width: 80%;
+      font-size: 0.26rem;
+      display: inline-block;
+      vertical-align: middle;
+      a {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.3rem;
+        img {
+          width: 1.3rem;
+          height: 1.3rem;
+        }
+      }
+      span {
+        vertical-align: middle;
+      }
+    }
+    .img-number {
+      width: 20%;
+      font-size: 0.26rem;
+      display: inline-block;
+      vertical-align: middle;
+      direction: rtl;
+    }
+  }
+  .u-combine-shipping {
+    width: 100%;
+    border-bottom: 1px solid #E3E3E3;
+    height: 1rem;
+    position: relative;
+    font-size: 0.3rem;
+    color: #333;
+    line-height: 1rem;
+
+    .u-combine {
+      width: 45%;
+      height: 100%;
+      float: left;
+      background: url("../img/Qm.png") no-repeat;
+      background-size: 0.27rem 0.27rem;
+      background-position: 2.5rem 0.4rem;
+    }
+    
+    .u-tk,.u-vessel {
+      width: 50%;
+      height: 100%;
+      float: right;
+      background: url("../img/r-icon.png") no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: right center;
+      text-align: right;
+      padding-right: 0.9rem;
+    }
+    .u-vessel{
+        background: transparent;
+         padding-right: 0.5rem;
+    }
+    .u-close,.u-closet {
+      width: 0.28rem;
+      height: 0.28rem;
+      background: url(../img/colicon.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      right: 0.4rem;
+      margin-top: -0.14rem;
+    }
+    .u-closet{
+       
+        position: absolute;
+      top: 50%;
+      right: 0rem;
+      margin-top: -0.14rem;
+    }
+  }
+  .u-shipping-method.u-none-border {
+    border: 0;
+  }
+  .u-shipping-method {
+    width: 100%;
+    padding: 0.36rem 0;
+    border-bottom: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    font-size: 0;
+    position: relative;
+    .u-sta-box {
+      position: absolute;
+      right: 0;
+      top: -0.15rem;
+    }
+    p {
+      font-size: 0.24rem;
+      color: #999;
+    }
+    .u-tite {
+      width: 40%;
+      display: inline-block;
+      font-size: 0.3rem;
+    }
+    .u-Rarrows {
+      padding-right: 0.3rem;
+      background: url("../img/r-icon.png") no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: right center;
+      display: inline-block;
+    }
+    .money,
+    div.u-Rarrows,
+    select.u-Rarrows {
+      width: 60%;
+      display: inline-block;
+      direction: rtl;
+      font-size: 0.3rem;
+      color: #333;
+      position: relative;
+      i {
+        color: #999;
+        padding-left: 0.1rem;
+      }
+      em {
+        font-style: normal;
+      }
+      input {
+        width: 45%;
+        text-align: right;
+        background: #fff;
+        font-size: 0.3rem;
+        direction: ltr;
+      }
+    }
+    .u-delvity {
+      width: 100%;
+      font-size: 0.24rem;
+      color: #999;
+      box-sizing: border-box;
+      margin: 0.15rem 0;
+    }
+    .u-icon-box.active {
+      background: url("../img/xz-icon.png") no-repeat;
+      background-size: cover;
+    }
+    .u-icon-box {
+      width: 0.38rem;
+      height: 0.38rem;
+      background: url("../img/circle-icon.png") no-repeat;
+      background-size: cover;
+      float: left;
+    }
+    .u-particulars-center {
+      float: left;
+      padding-left: 0.2rem;
+      width: 94%;
+      .u-icon {
+        display: inline-block;
+        width: 10%;
+        height: 0.25rem;
+        background: url("../img/r-icon.png") no-repeat;
+        background-size: 0.12rem 0.25rem;
+        background-position: right center;
+      }
+    }
+    .u-title-center {
+      width: 80%;
+      .u-titles {
+        font-size: 0.3rem;
+        color: #333;
+        span {
+          float: right;
+        }
+      }
+    }
+  }
+ .u-form-two {
+   margin-top:0.2rem;
+   display: none;
+}
+.u-form-two.u-show{
+    display: block;
+}
+.u-form-two li:nth-child(2){
+    margin-left: 0.4rem;
+}
+.u-form-two li{
+    float: left;
+    font-size: 0.28rem;
+    input.u-radio{    width: 0.38rem;
+    height: 0.38rem;
+    background: url(../img/circle-icon.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 0.1rem;
+    float: left;}
+       input.u-radio.active {
+            background: url(../img/xz-icon.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+   .u-radio-text{
+        line-height: 0.58rem;
+    font-size: 0.28rem;
+    float: left;
+    margin-left: 0.18rem;
+    }
+}
+
+  
+  
+  
+  //选择国家按钮
+  .u-ship-to {
+    height: 1rem;
+    border-bottom: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    font-size: 0.3rem;
+    color: #333;
+    line-height: 1rem;
+    font-style: normal;
+    position: relative;
+    .u-flag {
+      float: left;
+      width: 0.44rem;
+      height: 0.3rem;
+      position: absolute;
+      right: 0.32rem;
+      top: 0.05rem;
+      text-align: right;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    i.u-icon {
+      display: block;
+      width: 0.14rem;
+      height: 100%;
+      float: right;
+      background: url(../img/r-icon.png) no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: center center;
+    }
+  }
+  //order_submit.html页面留言部分css
+  .u-message-box {
+    h3 {
+      font-size: 0.26rem;
+      color: #666666;
+      margin-bottom: 0.3rem;
+    }
+    textarea {
+      resize: none;
+      width: 100%;
+      border: 1px solid #E5E5E5;
+      padding: 0.15rem;
+      font-size: 0.26rem;
+    }
+    p {
+      margin-bottom: 0.3rem;
+      font-size: 0.24rem;
+      color: #999;
+    }
+  }
+}
+
+//支付方式部分css
+.u-payment-method {
+  h3.u-title-top {
+    border-bottom: 1px solid #E3E3E3;
+    font-size: 0.26rem;
+    color: #666;
+    padding: 0.1rem 0 0.35rem 0;
+        background: url(../img/Qm.png) no-repeat;
+    background-size: 0.27rem 0.27rem;
+    background-position: 2.2rem 0.1rem;
+  }
+  .u-payment-list li:last-child {
+    border: 0;
+  }
+  .u-payment-list li {
+    border-bottom: 1px solid #E3E3E3;
+    padding: 0.24rem 0;
+    position: relative;
+  }
+}
+
+.u-payment-list li .u-payment-logo {
+  width: 1.1rem;
+  height: 1.1rem;
+  float: left;
+  img {
+    width: 100%;
+  }
+}
+
+.u-payment-list li .u-payment-text {
+  width: 75%;
+  padding: 0 0.25rem;
+  float: left;
+  h3.u-payment-name {
+    font-size: 0.3rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+    margin-top: 0.12rem;
+  }
+  p {
+    font-size: 0.26rem;
+    color: #999;
+  }
+}
+
+.u-payment-list li .u-box {
+  width: 6%;
+  float: right;
+  height: 0.9rem;
+  position: relative;
+
+}
+
+.u-payment-list li .u-box .u-radio.active {
+  background: url(../img/xz-icon.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.u-payment-list li .u-box .u-radio {
+  float: right;
+  width: 0.38rem;
+  height: 0.38rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/circle-icon.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.u-order-information {
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #D3D3D3;
+  border-top: 1px solid #D3D3D3;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 0.22rem;
+  .u-add-site {
+    position: relative;
+    padding: 0.3rem 0.34rem;
+    .u-add-icon {
+      width: 0.33rem;
+      height: 0.32rem;
+      margin: 0 auto 0.15rem;
+      background: url("../img/addsite.png") no-repeat;
+      background-size: cover;
+    }
+    h3 {
+      font-size: 0.3rem;
+      color: #333333;
+      text-align: center;
+    }
+    a {
+      @include shade;
+    }
+  }
+  .u-exist-box {
+    position: relative;
+    padding: 0.3rem 0.34rem;
+    .u-cont {
+      width: 100%;
+      font-size: 0.3rem;
+      color: #333;
+      line-height: 0.4rem;
+      margin-bottom: 0.1rem;
+    }
+    .u-company-xx {
+      font-size: 0.26rem;
+      color: #666;
+      padding-right: 0.3rem;
+      line-height: 0.44rem;
+      word-wrap: break-word;
+      dd img {
+        width: 0.44rem;
+        height: 0.3rem;
+      }
+    }
+    i.u-icon {
+      display: block;
+      width: 0.14rem;
+      height: 0.25rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 0.34rem;
+      background: url("../img/r-icon.png") no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: center center;
+    }
+    a {
+      @include shade;
+    }
+  }
+  .u-order-info-content {
+    font-size: 0.26rem;
+    padding: 0.3rem 0.34rem 0.1rem;
+    li {
+      width: 100%;
+      margin-bottom: 0.2rem;
+      .u-info-name {
+        float: left;
+        color: #999;
+        em {
+          font-style: normal;
+        }
+        .u-grade {
+          display: inline-block;
+          width: 0.35rem;
+          height: 0.35rem;
+          background: #12C286;
+          border-radius: 0.03rem;
+          font-size: 0.24rem;
+          color: #fff;
+          text-align: center;
+          line-height: 0.35rem;
+        }
+      }
+      .u-info-nature {
+        float: right;
+        color: #333;
+      }
+    }
+  }
+  .u-summary {
+    padding: 0.34rem 0.34rem 0;
+    font-size: 0.28rem;
+    color: #666;
+    h3 {
+      border-bottom: 1px solid #E3E3E3;
+      padding-bottom: 0.35rem;
+    }
+  }
+}
+
+.g-submit-shipping {
+  width: 100%;
+  height: 100%;
+  .u-submit-shipping-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    .u-read-tip {
+      width: 100%;
+      border-top: 1px solid #D3D3D3;
+      border-bottom: 1px solid #D3D3D3;
+      background: #fff;
+      position: relative;
+      font-size: 0.28rem;
+      padding: 0.38rem 0.34rem;
+      margin-bottom: 0.22rem;
+      h3 {
+        margin-bottom: 0.2rem;
+      }
+      p {
+        color: #12C286;
+      }
+      .u-sta-box {
+        position: absolute;
+        right: 0.34rem;
+        top: 0.15rem;
+      }
+    }
+    .u-explain {
+      width: 100%;
+      padding: 0.3rem 0.34rem;
+      box-sizing: border-box;
+      background: #EBEBEC;
+      font-size: 0.24rem;
+      color: #999;
+      i {
+        color: #333;
+      }
+    }
+  }
+}
+
+//点击Orders Combination and Payment Policy；政策介绍，弹出页面css   and 问号弹出页面css
+.m-payment-sm .u-policy-center,
+.m-policy-js .u-policy-center,
+.m-popupcontent .u-policy-center {
+  padding: 0.3rem 0.34rem 0.2rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+  position: absolute;
+  top: 0;
+  bottom: 1.2rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  h3 {
+    font-size: 0.32rem;
+    font-weight: 500;
+    margin-bottom: 0.16rem;
+    color: #333333;
+  }
+  h4 {
+    font-size: 0.28rem;
+    font-weight: 500;
+    margin-bottom: 0.16rem;
+    color: #333333;
+  }
+  p {
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+    margin-bottom: 0.5rem;
+    i {
+      color: #FF0000;
+    }
+    a {
+      color: #12C286;
+      text-decoration: underline;
+    }
+  }
+}
+.m-payment-sm .u-btn,
+.m-policy-js .u-btn,
+.m-popupcontent .u-btn {
+  width: 100%;
+  height: 1.2rem;
+  position: fixed;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 1.2rem;
+  font-size: 0.3rem;
+  line-height: 1rem;
+  color: #fff;
+  text-align: center;
+  .u-btn-text {
+    width: 80%;
+    height: 1rem;
+    margin: 0 auto;
+    background: #12C286;
+    border-radius: 0.03rem;
+    font-size: 0.32rem;
+  }
+}
+
+//问号右侧箭头点击弹出页面的css
+.m-combine-shipping .u-combine-center {
+  width: 100%;
+  position: absolute;
+  top: 0.9rem;
+  bottom: 2rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  p {
+    border-bottom: 1px solid #E3E3E3;
+    font-size: 0.26rem;
+    color: #999;
+    padding: 0.4rem 0.34rem;
+    line-height: 0.32rem;
+  }
+  .u-combine-list {
+    padding: 0 0.34rem 0 0.34rem;
+    .u-item {
+      border-bottom: 1px solid #E3E3E3;
+      padding: 0.34rem 0;
+      .u-add-bale {
+        width: 6%;
+        float: left;
+        .radio.active {
+          background: url(../img/xz-icon.png) no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .radio {
+          vertical-align: top;
+          width: 0.38rem;
+          height: 0.38rem;
+          background: url(../img/circle-icon.png) no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+      }
+      .u-add-bale-center {
+        width: 94%;
+        padding-left: 0.2rem;
+        float: left;
+        dl {
+          width: 100%;
+          font-size: 0.26rem;
+          line-height: 0.4rem;
+          margin-bottom: 0.1rem;
+          dt {
+            width: 45%;
+            color: #999;
+            float: left;
+          }
+          dd {
+            width: 55%;
+            color: #333;
+            float: left;
+            i.active {
+              display: inline-block;
+            }
+            i {
+              display: none;
+              span {
+                color: #FF6600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.m-combine-shipping .u-bottom span {
+  font-size: 0.28rem;
+  color: #fff;
+  float: right;
+  padding: 0.2rem;
+  margin-top: 0.18rem;
+  text-align: center;
+  line-height: 0.25rem;
+  background: #000;
+  margin-right: 0.34rem;
+  border-radius: 0.03rem;
+}
+
+.m-combine-shipping .u-bottom span.u-btn1 {
+  background: #423B52;
+}
+
+.m-combine-shipping .u-bottom span.u-btn2 {
+  background: #12C286;
+}

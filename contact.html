@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/address_add.css" />
+		<title>Contact Us - Custom PCB Prototype the Easy Way - PCBway</title>
+		
+	</head>
+
+	<body>
+		<div class="g-main">
+			<!--点击u-guild的弹框-->
+			<div class="u-top-bounced">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="javascript:;">My account</a>
+
+					</li>
+					<li>
+						<a href="javascript:;">My Order</a>
+					</li>
+										<li>
+						<a href="javascript:;">My Account</a>
+		            </li>	
+				</ul>
+			</div>
+			<div class="g-address-add">
+				<!--头部-->
+				<div class="u-header">
+					<!--返回箭头-->
+					<div class="u-return">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="u-hint">Contact Us</div>
+					<!--购物车-->
+					<div class="u-position-right sprites-img">
+						<div class="u-in-title">1</div>
+					</div>
+					<!--点-->
+					<div class="u-guild"></div>
+
+				</div>
+				<div class="u-address-center">
+
+					<!--信息-->
+					<div class="u-createForm">
+						<h4>Name *</h4>
+						<div class="u-navigate-right">
+							<input type="search" class="u-box-box" placeholder="Enter your name" />
+							<div class="u-clear"></div>
+						</div>
+						<h4>Email *</h4>
+						
+						<div class="u-navigate-right">
+							<input type="text" name="" id="" class="u-box-box" placeholder="Enter your email" />
+							<div class="u-clear"></div>
+							
+						</div>
+						<h4>Phone</h4>
+						<div class="u-navigate-right">
+							<input type="text" name="" id="" placeholder="Enter your Phone" class="u-box-box" />
+							<div class="u-clear"></div>
+							
+						</div>
+					    <h4>Company</h4>
+						<div class="u-navigate-right">
+							<input type="text" name="" id="" placeholder="Enter your company" class="u-box-box" />
+							<div class="u-clear"></div>							
+						</div>
+					    <h4>Service support type *</h4>
+						<div class="u-navigate-right u-xl-select">
+							<select style="font-size: 0.28rem" name="" >
+								<option value="">Please select</option>
+                                	<option value="PCB Specification">PCB Specification</option>
+                                    <option value="SMD-Stencil">SMD-Stencil</option>
+                                    <option value="PCB Assembly">PCB Assembly</option>
+									<option value="My Orders">My Orders</option>
+									<option value="My Account">My Account</option>
+                                    <option value="Payment">Payment</option>
+                                    <option value="Track your packages">Track your packages</option>
+                                    <option value="Returns &amp; Refunds">Returns &amp; Refunds</option>
+                                    <option value="Other">Other</option>
+							</select>
+						</div>
+						
+						<div class="u-navigate-hint">		
+							<h4>How can we help? *</h4>
+							<textarea style="font-size: 0.28rem;" name="" rows="3" cols="5" placeholder="Please tell us how we can help you. For example, PCB Capabilities, SMT, Lead time, Payment."></textarea>
+						</div>
+                         <h4>Which contact method do you prefer? *</h4>
+						<div class="u-navigate-right">
+							<ul class="u-form-three cleartfix">
+									<li>
+										<input type="radio" class="u-radio active">
+										<label class="u-radio-text" for="u-click9">Email</label>
+									</li>
+									<li>
+										<input type="radio" class="u-radio">
+										<label class="u-radio-text" for="u-click10">Phone</label>
+									</li>
+								</ul>					
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="u-bottom-btn" style="background: #12C186">
+				<span>Submit</span>
+				</div>
+			</div>
+
+
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+	$(function() {		
+	//顶部input点击清空
+	 $('input').bind('click',function(e){
+	 	$('.u-clear').hide();
+	 	$(this).next('.u-clear').show();
+	 	$(this).focus();
+	 	e.stopPropagation();
+	 })
+        $('.u-clear').click(function(e){
+        	$(this).prev('input').val('').focus();
+        	e.stopPropagation();
+        })
+	 $(document).click(function(){
+	 	$('.u-clear').hide();
+	 })
+   
+            //email phone选择
+            $('.u-form-three li').find('.u-radio').click(function(){
+            	$('.u-form-three li .u-radio').removeClass('active')
+            	$(this).addClass('active');
+            })
+})
+</script>

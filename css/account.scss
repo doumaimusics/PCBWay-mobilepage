@@ -1,0 +1,376 @@
+//左右居中定位
+@mixin left-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+//覆盖定位
+@mixin shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.g-account {
+    width: 100%;
+    height: 100%;
+    background: #EBEBEC;
+    .m-header {
+        width: 100%;
+        height: 0.99rem;
+        border-bottom: 1px solid #D3D3D3;
+        text-align: center;
+        line-height: 1rem;
+        color: #333;
+        font-size: 0.32rem;
+        background: #fff;
+        
+    }
+    .u-user {
+        width: 100%;
+        background: #fff;
+         border-bottom: 1px solid #D3D3D3;
+        .my-person-info {
+            width: 100%;
+            padding: 0.15rem 0.3rem;
+            display: inline-block;
+            vertical-align: text-top;
+            position: relative;
+            .my-img-wrap {
+                width: 1.26rem;
+                height: 1.26rem;
+                background: url("../img/portrait.png") no-repeat;
+                background-size: cover;
+                background-position: center center;
+                float: left;
+                margin: 0.15rem 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .u-xinxi {
+                width: 80%;
+                float: left;
+                padding: 0rem 0.15rem 0rem 0.15rem;
+                margin-top: 0.3rem;
+                .u-name-box {
+                    font-size: 0.32rem;
+                    font-weight: 700;
+                    color: #333;
+                    width: 100%;
+                    margin-bottom: 0.15rem;
+                    .u-name {
+                        max-width: 4.5rem;
+                        margin-right: 0.1rem;
+                        overflow: hidden;
+                        float: left;
+                        -webkit-line-clamp: 1;
+                        -moz-line-clamp: 1;
+                        -ms-line-clamp: 1;
+                        -o-line-clamp: 1;
+                        line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        -moz-box-orient: vertical;
+                        -ms-box-orient: vertical;
+                        -o-box-orient: vertical;
+                        box-orient: vertical;
+                        display: -webkit-box;
+                        display: -moz-box;
+                        display: -ms-box;
+                        display: -o-box;
+                        display: box;
+                    }
+                    .u-grade {
+                        padding: 0.05rem;
+                        background: #12C286;
+                        border-radius: 0.03rem;
+                        font-size: 0.24rem;
+                        color: #fff;
+                        text-align: center;
+                        vertical-align: text-top;
+                        float: left;
+                    }
+                }
+                .u-email-accounts {
+                    width: 5rem;
+                    font-size: 0.26rem;
+                    color: #3A3E4A;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    float: left;
+                }
+            }
+            .head-meassage {
+                width: 0.14rem;
+                height: 0.25rem;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0.3rem;
+                margin: auto;
+                background: url("../img/r-icon.png") no-repeat;
+                background-size: cover;
+            }
+            a {
+                @include shade;
+            }
+        }
+        .my-watch {
+            width: 100%;
+            height: 1.2rem;
+            border-top: 1px solid #EBEBEC;
+           
+            font-size: 0.26rem;
+            color: #333;
+            text-align: center;
+            p {
+                width: 100%;
+                font-size: 0.32rem;
+                color: #f60;
+                font-weight: 700;
+            }
+            span {
+                color: #333;
+            }
+            .u-Coupons {
+                width: 49.5%;
+                height: 100%;
+                float: left;
+                border-right: 1px solid #EBEBEC;
+                position: relative;
+                padding: 0.2rem 0;
+                box-sizing: border-box;
+            }
+            .u-messages {
+                width: 50%;
+                float: right;
+                height: 100%;
+                position: relative;
+                padding: 0.2rem 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+    //中间
+    .m-center-box {
+        width: 100%;
+        position: absolute;
+        top: 4.1rem;
+        bottom: 0;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .u-PCB-content {
+        width: 100%;
+        margin-top: 0.22rem;
+        margin-bottom: 1.6rem;
+        border-top: 1px solid #d3d3d3;
+        em {
+            float: right;
+            width: 0.14rem;
+            height: 100%;
+            background: url(../img/r-icon.png) no-repeat;
+            background-size: 0.14rem 0.25rem;
+            background-position: center center;
+        }
+        .u-item {
+            background: #fff;
+            height: 0.94rem;
+            padding: 0 0.3rem 0 0.4rem;
+            box-sizing: border-box;
+            position: relative;
+            border-bottom: 1px solid #EBEBEC;
+            i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_01.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+            span {
+                font-size: 0.3rem;
+                color: #333;
+                line-height: 0.95rem;
+                float: left;
+                margin-left: 0.68rem;
+            }
+            a {
+                @include shade;
+            }
+        }
+        .u-PCB-list {
+            width: 100%;
+            padding: 0 0.32rem;
+            box-sizing: border-box;
+            background: #fff;
+            border-bottom: 1px solid #d3d3d3;
+            margin-bottom: 0.22rem;
+            li:last-child {
+                border: none;
+            }
+            li {
+                height: 0.95rem;
+                border-bottom: 1px solid #EBEBEC;
+                position: relative;
+                span {
+                    font-size: 0.3rem;
+                    color: #333;
+                    line-height: 0.95rem;
+                    position: absolute;
+                    left: 0rem;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                .u-count {
+                    width: 30%;
+                    height: 100%;
+                    font-size: 0.3rem;
+                    color: #999;
+                    line-height: 0.95rem;
+                    position: absolute;
+                    right: 0.3rem;
+                    top: 0;
+                    text-align: right;
+                }
+            }
+            a {
+                @include shade
+            }
+        }
+        .u-item-list-box {
+            background: #fff;
+            padding: 0 0.34rem;
+            box-sizing: border-box;
+            border-top: 1px solid #D3D3D3;
+            border-bottom: 1px solid #D3D3D3;
+            margin-bottom: 0.22rem;
+            li:last-child {
+                border: none;
+            }
+            li {
+                height: 0.95rem;
+                border-bottom: 1px solid #EBEBEC;
+                position: relative;
+                span {
+                    font-size: 0.3rem;
+                    color: #333;
+                    line-height: 0.95rem;
+                    position: absolute;
+                    left: 0.7rem;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                a {
+                    @include shade;
+                }
+            }
+            li:child(1) i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_08.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+            li:child(2) i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_02.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+            li:nth-child(3) i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_03.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+            li:nth-child(4) i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_04.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+            li:nth-child(5) i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_05.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+            li:nth-child(6) i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_06.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+            li:nth-child(7) i {
+                display: block;
+                width: 0.42rem;
+                @include top-bottom;
+                height: 100%;
+                background: url(../img/message_07.png) no-repeat;
+                background-size: 0.42rem 0.44rem;
+                background-position: center center;
+            }
+        }
+        .u-btn-out {
+            width: 100%;
+            padding: 0 0.32rem;
+            margin-bottom: 0.22rem;
+            button {
+                width: 100%;
+                border: 1px solid #D3D3D3;
+                background: #fff;
+                font-size: 0.3rem;
+                color: #333;
+                line-height: 0.9rem;
+                border-radius: 0.03rem;
+                float: left;
+            }
+        }
+    }
+}

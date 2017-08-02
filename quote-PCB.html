@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />	
+	 <meta name="apple-touch-fullscreen" content="yes"><!-- //启用webapp全屏模式 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- //启用webapp全屏模式 -->
+	<title>quote</title>
+	<link rel="stylesheet" href="css/public.css" />
+	<link rel="stylesheet" href="css/quote.css" />
+</head>
+
+<body>
+<!--计价整体大框架-->
+<div class="g-main">
+					<!--点击u-guild的弹框-->
+	<div class="u-top-bounced">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="javascript:;">My account</a>
+						</li>
+						<li>
+							<a href="javascript:;">My Order</a>
+						</li>					<li>
+						<a href="javascript:;">My Account</a>
+		            </li>	
+					</ul>
+				</div>
+	<!--计价页面大框架-->
+	<div class="m-quote">
+		<!--计价页面头部-->
+		<div class="m-header-box">
+			<div class="u-header">
+				<!--返回箭头-->
+				<div class="u-return"><a href="javascript:;"></a></div>
+				<div class="u-hint">PCB Instant Quote</div>
+				<!--购物车-->
+				<div class="u-position-right sprites-img">
+					<div class="u-in-title">1</div>
+				</div>
+				<!--点-->
+				<div class="u-guild"></div>
+
+			</div>
+			<ul class="u-top-title cleartfix">
+				<li class="active" id="0">
+					<a href="quote-PCB.html">PCB</a>
+				</li>
+				<li class="" id="1">
+					<a href="quote-SMD.html">SMD-Stencil</a>
+				</li>
+				<li class="" id="2">
+					<a href="quote-Assembly.html">Assembly</a>
+				</li>
+				<li class="" id="3">
+					<a href="quote-Flexible.html">Flexible PCBs</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<!--计价页面中间部分-->
+		<div class="m-center-box">
+			<!--PCB-->
+			<div class="u-content">
+				<!--尺寸计算-->
+				<div class="u-mian-block">
+					<!--Board type-->
+					<div class="u-board-type">
+						<!--boaed 标题-->
+						<!--问号-->
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Board type
+							</h3>
+							<i class="u-smintip" data-index=1></i>
+						</div>
+						<!--boaed选项-->
+						<ul class="u-form-col cleartfix">
+							<li class="u-left">
+								<input type="radio" class="u-radio active" id="u-click0" />
+								<label class="u-radio-text" for="u-click0">Single <br>pieces</label>
+							</li>
+							<li>
+								<input type="radio" class="u-radio" id="u-click1" />
+								<label class="u-radio-text" for="u-click1">Panel by<br>Customer</label>
+							</li>
+							<li>
+								<input type="radio" class="u-radio" id="u-click2" />
+								<label class="u-radio-text" for="u-click2">Panel by<br>PCBWay</label>
+							</li>
+						</ul>
+						<div class="u-dropdown-toggle">
+							<!--点击第三弹出的弹框-->
+							<div class="u-list-search-filter" style="display: none;">
+								<div class="u-pulldown-box">
+									<div class="u-list-search-title u-none-border">
+										<h3 class="u-list-search-row-title">
+											Panel requirements:
+										</h3>
+									</div>
+
+								</div>
+								<ul class="u-form-three cleartfix">
+									<div class="sedname">Edge Rails:</div>
+									<li class="u-left">
+										<input type="radio" class="u-radio active" id="u-click3"/>
+										<label class="u-radio-text u-radio-text-two" for="u-click3">Yes</label>
+									</li>
+									<li>
+										<input type="radio" class="u-radio" id="u-click4"/>
+										<label class="u-radio-text u-radio-text-two" for="u-click4">No </label>
+									</li>
+								</ul>											
+										<textarea name="" rows="5" cols="5" class="u-textarea" style="resize: none;" placeholder="e.g. Panel in 2*3, size of the break-away rail, total 5 panels=total 30 individual boards"></textarea>
+							</div>
+
+							<!--点击第二个弹出的弹框-->
+							<div class="u-list-search-filter">
+								<div class="u-pulldown-box">
+									<div class="u-list-search-title u-none-border">
+										<h3 class="u-list-search-row-title">
+											Route Process
+										</h3>
+										<i class="u-smintip" data-index=4></i>
+
+									</div>
+									<!--第二个弹出框的下拉-->
+
+									<div class="u-position-rel cleartfix">
+										<select name="" class="u-form-control">
+											<option value="">--</option>
+											<option value="">Panel as V-Scoring</option>
+											<option value="">Panel as Tab Route</option>
+											<option value="">Both V-Scoring&amp;Tab-routing</option>
+										</select>
+										<div class="u-bank_xljt"></div>
+									</div>
+
+								</div>
+
+								<div class="u-list-search-title u-none-border">
+									<h3 class="u-list-search-row-title">
+										X-out Allowance in Panel
+									</h3>
+									<i class="u-smintip" data-index=5></i>
+
+								</div>
+								<ul class="u-form-two cleartfix">
+									<li class="u-left">
+										<input type="radio" class="u-radio active" id="u-click5"/>
+										<label class="u-radio-text u-radio-text-two" for="u-click5">Accept</label>
+									</li>
+									<li>
+										<input type="radio" class="u-radio" id="u-click6"/>
+										<label class="u-radio-text u-radio-text-two" for="u-click6">Not Accept</label>
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+					</div>
+					<!--different和size的盒子-->
+					<div class="u-calculate-box">
+						<!--Different Design in Panel-->
+						<div class="u-design-box">
+							<!--Design标题问号-->
+							<div class="u-list-search-title u-none-border">
+								<h3 class="u-list-search-row-title">
+									Different Design in Panel
+								</h3>
+								<i class="u-smintip" data-index=2></i>
+
+							</div>
+							<!--加减-->
+							<div class="u-number-box cleartfix">
+								<div class="u-cut"></div>
+								<input type="number" pattern="[0-9]*" autocomplete="off" class="u-text" value="1" />
+								<div class="u-add"></div>
+							</div>
+						</div>
+						<!--Size (single)-->
+						<div class="u-size-box">
+							<!--Size (single)标题问号-->
+							<div class="u-list-search-title u-none-border">
+								<h3 class="u-list-search-row-title">
+									Size (single)
+								</h3>
+								<i class="u-smintip" data-index=3></i>
+
+							</div>
+							<!--尺寸-->
+							<div class="u-input-group cleartfix">
+								<input type="number" value="" step="0.01" placeholder="Length" id="Length"/>
+								<div class="u-sign"></div>
+								<input type="number" value="" step="0.01" placeholder="Width" id="Width"/>
+								<div class="u-unit02">mm</div>
+								<div class="u-btn">
+									inch'↔mm
+								</div>
+							</div>
+						</div>
+						<!--Quantity (single)-->
+						<div class="u-quantity-box">
+							<!--quantity (single)标题问号-->
+							<div class="u-list-search-title u-none-border">
+								<h3 class="u-list-search-row-title">
+									Quantity (single)
+								</h3>
+							</div>
+							<div class="u-choose-num cleartfix" id="s-seek1">
+								<input type="text" placeholder="Please select quantity" id="number1" disabled="disabled">
+								<div class="u-unit">
+									pcs
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--产品筛选组合-->
+				<div class="u-mian-block">
+					<!---->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Layers
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list1 cleartfix">
+
+							<li class="on-list on-none">
+
+								1 Layer
+								<em class="u-sign"></em>
+							</li>
+							<li class="active on-none">
+								2 Layer
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-layer-order">
+								4 Layer
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list on-layer-order">
+								6 Layer
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-layer-order">
+								8 Layer
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								10 Layer
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list">
+								12 Layer
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								14 Layer
+								<em class="u-sign"></em>
+							</li>
+						</ul>
+						<div class="u-Layer-select">
+
+							<div class="u-title-box cleartfix">
+								<div class="u-select-title">Copper layer</div>
+								<div class="u-select-list1">
+
+									<select name="" class="u-input-select1">
+										<option value="">--</option>
+										<option value="">Top laye</option>
+										<option value="">Bottom layer</option>
+										<option value="">None</option>
+									</select>
+									<div class="u-bank_xljt"></div>
+								</div>
+							</div>
+
+
+							<div class="u-title-box cleartfix">
+								<div class="u-select-title">Soldermask</div>
+								<div class="u-select-list1">
+									<select name="" class="u-input-select1">
+										<option value="">--</option>
+										<option value="">Top side</option>
+										<option value="">Bottom side</option>
+										<option value="">Both sides</option>
+										<option value="">None</option>
+
+									</select>
+
+									<div class="u-bank_xljt"></div>
+								</div>
+							</div>
+
+							<div class="u-title-box cleartfix">
+								<div class="u-select-title">Silkscreen Legend</div>
+								<div class="u-select-list1">
+
+									<select name="" class="u-input-select1">
+										<option value="">--</option>
+										<option value="">Top side</option>
+										<option value="">Bottom side</option>
+										<option value="">Both sides</option>
+										<option value="">None</option>
+
+									</select>
+									<div class="u-bank_xljt"></div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+					<!--Material-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Material
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list2 cleartfix">
+
+							<li class="on-list active">
+								Normal<br> FR-4 Board
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-none1">
+								Aluminum<br> Board
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								Blind vias<br> Board
+								<em class="u-sign"></em>
+							</li>
+
+						</ul>
+					</div>
+					<!--FR4-TG-->
+					<div class="u-displnone1">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								FR4-TG
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list3 cleartfix">
+
+							<li class="on-list active">
+								TG 130-140
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								TG 150-160
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								TG 170-180
+								<em class="u-sign"></em>
+							</li>
+
+						</ul>
+					</div>
+					<!--Thickness-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Thickness
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list4 cleartfix">
+
+							<li class="on-list">
+								0.4mm
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								0.6mm
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								0.8mm
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list">
+								1.0mm
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								1.2mm
+								<em class="u-sign"></em>
+							</li>
+							<li class="active">
+								1.6mm
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list">
+								2.0mm
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								2.4mm
+								<em class="u-sign"></em>
+							</li>
+
+						</ul>
+
+					</div>
+					<!--Min Track/Spacing-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Min Track/Spacing
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list5 cleartfix">
+
+							<li class="on-list">
+								4/4mil
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								5/5mil
+								<em class="u-sign"></em>
+							</li>
+							<li class="active">
+								6/6mil
+								<em class="u-sign"></em>
+							</li>
+
+						</ul>
+					</div>
+					<!--Min Hole Size-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Min Hole Size
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list6 cleartfix">
+							<li class="on-list">
+								0.2mm
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								0.25mm
+								<em class="u-sign"></em>
+							</li>
+							<li class="active">
+								0.3mm
+								<em class="u-sign"></em>
+							</li>
+						</ul>
+					</div>
+					<!--Solder Mask-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Solder Mask
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list7 cleartfix">
+
+							<li class="on-list active">
+
+								<i class="u-fangkc" style="background:#55B457;"></i> Green
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								<i class="u-fangkc" style="background:#FF0000;"></i> Red
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								<i class="u-fangkc" style="background:#FFF000;"></i> Yellow
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list">
+								<i class="u-fangkc" style="background:#004EFF;"></i> Blue
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								<i class="u-fangkc" style="background:#FFFFFF;"></i> White
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								<i class="u-fangkc" style="background:#000000;"></i> Black
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list">
+								<i class="u-fangkc" style="background:#B400FF;"></i> Purple
+
+								<br>&nbsp;
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								<i class="u-fangkc" style="background: #989898;"></i> Matt
+								<br> black
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								<i class="u-fangkc" style="background: #12C286;"></i> Matt
+
+								<em class="u-sign"></em>
+								<br> green
+							</li>
+							<li class="on-list">
+								None
+								<em class="u-sign"></em>
+							</li>
+
+						</ul>
+					</div>
+					<!--Silkscreen-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Silkscreen
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list8 cleartfix">
+
+							<li class="on-list active">
+								<i class="u-fangkc" style="background: #FFFFFF;"></i> White
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								<i class="u-fangkc" style="background: #000;"></i> Black
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								None
+								<em class="u-sign"></em>
+							</li>
+
+						</ul>
+					</div>
+					<!--Surface Finish-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Surface Finish
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list9 cleartfix">
+
+							<li class="on-list active">
+								HASL with<br> lead
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								HASL lead<br> free
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								Immersion<br> gold
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list">
+								Hard Gold
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								OSP
+								<em class="u-sign"></em>
+							</li>
+						</ul>
+						<!--登录以后显示出来点击HASL with lead 进行选择-->
+						<div class="u-choice">
+							<ul class="u-form-two cleartfix">
+								<li class="u-left">
+									<input type="radio" class="u-radio" id="u-click7">
+									<label class="u-radio-text u-radio-text-two" for="u-click7">Accept</label>
+								</li>
+								<li>
+									<input type="radio" class="u-radio" id="u-click8">
+									<label class="u-radio-text u-radio-text-two" for="u-click8">Not Accept</label>
+								</li>
+							</ul>
+							<p>
+								Tick "Yes" means you accept we might change "HASL" to "ENIG" at our discretion without extra charge.Thanks!
+							</p>
+
+						</div>
+
+					</div>
+					<!--Via Process-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Via Process
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list10 cleartfix">
+
+							<li class="on-list active">
+								Tenting<br> vias
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								Plugged<br> vias
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								Vias not<br> covered
+								<em class="u-sign"></em>
+							</li>
+
+						</ul>
+					</div>
+					<!--Finished Copper-->
+					<div class="u-product-screening">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Finished Copper
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list11 cleartfix">
+
+							<li class="on-list active">
+								1 oz Cu
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								2 oz Cu
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								3 oz Cu
+								<em class="u-sign"></em>
+							</li>
+							<li class="on-list">
+								4 oz Cu
+								<em class="u-sign"></em>
+							</li>
+						</ul>
+					</div>
+					<!--Inner Copper:-->
+					<div class="u-displnone">
+						<div class="u-list-search-title">
+							<h3 class="u-list-search-row-title">
+								Inner Copper:
+							</h3>
+						</div>
+
+						<ul class="u-options-box u-options-list0 cleartfix">
+
+							<li class="on-list active">
+								1 oz
+								<em class="u-sign"></em>
+							</li>
+							<li>
+								1.5 oz
+								<em class="u-sign"></em>
+							</li>
+						</ul>
+					</div>
+                    
+                    <!--+ Add PO No.(Optional)-->	
+                    <div class="special_options">
+                    	<h3 class="add_title">+ Add PO No.(Optional)</h3>
+                    	<div class="add_input-box">
+                    		<input type="text" placeholder="83701379189297afghbnoaigh"/>
+                    	</div>
+                    	<div class="record_box">
+                    		<ul>
+                    			<li>15151511515151</li>
+                    			<li>15151511515151</li>
+                    		</ul>
+                    	</div>
+                    </div>
+                    	
+                    <!--Special Options-->
+                    <div class="special_options">
+                    	<div class="u-switch-box cleartfix">
+                    		<div class="u-swith">
+                    			<i></i>
+                    		</div>
+                    		<div class="u-info-box">
+                    			<h3>Special Options</h3>
+                    			<p>Plated half hole,Sideplating,Custom Stack up,Impedance control</p>
+                    		</div>
+                    	</div>
+                    	
+                    
+                    	
+                    	
+                      <div class="u-special-options-box">
+                        <div class="soldermask_select_box">
+                    		<h3 class="soldermask_title">Peelable Soldermask:</h3>
+                    		<select name="" class="soldermask_select">
+                    			<option value="">None1</option>
+                    			<option value="">None2</option>
+                    			<option value="">None3</option>
+                    			<option value="">None4</option>
+                    		</select>
+                    	</div>
+                        	
+                        	
+                    		<dl>
+                    			<dt>Plated half hole:</dt>
+                    			<dd>
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check">
+                    			      <label for="">Yes</label>
+                    			   </div> 
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check active">
+                    			      <label for="">No</label>
+                    			   </div>  
+                    			</dd>
+                    		</dl>
+                    		<dl>
+                    			<dt>Sideplating:</dt>
+                    			<dd>
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check">
+                    			      <label for="">Yes</label>
+                    			   </div> 
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check active">
+                    			      <label for="">No</label>
+                    			   </div>  
+                    			</dd>
+                    		</dl>
+                    		<dl>
+                    			<dt>Custom Stack up:</dt>
+                    			<dd>
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check">
+                    			      <label for="">Yes</label>
+                    			   </div> 
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check active">
+                    			      <label for="">No</label>
+                    			   </div>  
+                    			</dd>
+                    		</dl>
+                    		<dl>
+                    			<dt>Impedance control:</dt>
+                    			<dd>
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check">
+                    			      <label for="">Yes</label>
+                    			   </div> 
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check active">
+                    			      <label for="">No</label>
+                    			   </div>  
+                    			</dd>
+                    		</dl>
+                    		<dl>
+                    			<dt>Countersink:</dt>
+                    			<dd>
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check">
+                    			      <label for="">Yes</label>
+                    			   </div> 
+                    			   <div class="u-yn-box">
+                    			   	  <input type="radio" class="u-check active">
+                    			      <label for="">No</label>
+                    			   </div>  
+                    			</dd>
+                    		</dl>
+                    	</div>
+                    </div>
+					<!--说明信息-->
+					<div class="u-product-screening u-padd">
+						<div class="u-list-search-title u-none-border">
+							<h3 class="u-list-search-row-title">
+								Other Special request
+							</h3>
+
+						</div>
+<textarea rows="5" cols="10" class="u-footer-explain" placeholder="Fill in any details to make it as clear as possible for us to understand your requirements."></textarea>
+
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!--计价页面底部-->
+		<div class="m-footer-box">
+			<div class="u-reset">Reset</div>
+			<div class="u-Calculate-box">
+				Calculate
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+
+		<!--问号的弹框-->
+		<div class="u-tishi"></div>
+	</div>
+
+	<!--全屏遮罩-->
+	<div class="g-slide-mask"></div>
+	<!--PCB inch'↔mm的弹出页-->
+	<div class="m-inch-box">
+		<div class="m-top">
+			<div class="u-close"></div>
+			Inch → mm conversion
+		</div>
+		<div class="m-inch-center">
+
+			<p class="u-hint">If you enter in units of inches and press the [Convert] button, it will be converted into units of millimeters in the quotation form.</p>
+			<div class="u-calculate cleartfix">
+				<div class="u-xcalcu">
+					<label for="" class="u-fx">X＝</label>
+					<input type="number" step="0.01" name=""  value="" class="u-number xnumber" />
+					<label for="" class="u-dw">inch</label>
+				</div>
+
+				<div class="u-ycalcu">
+					<label for="" class="u-fx">Y＝</label>
+					<input type="number" step="0.01" name=""  value="" class="u-number ynumber" />
+					<label for="" class="u-dw">inch</label>
+				</div>
+			</div>
+			<div class="m-btn">
+				Submit
+			</div>
+		</div>
+
+	</div>
+	<!--PCB Quantity点击弹出的页面-->
+	<div class="m-quantity-box">
+		<div class="m-top">
+			<div class="u-close"></div>
+			Please Select
+		</div>
+		<div class="u-quan-box">
+			<ul class="u-ul-list cleartfix">
+				<li>
+					<input type="radio" value="5" name="countNumer" class="radio">
+					<span>5</span>
+				</li>
+				<li>
+					<input type="radio" value="10" name="countNumer" class="radio">
+					<span>10</span>
+				</li>
+				<li>
+					<input type="radio" value="15" name="countNumer" class="radio">
+					<span>15</span>
+				</li>
+				<li>
+					<input type="radio" value="20" name="countNumer" class="radio">
+					<span>20</span>
+				</li>
+				<li>
+					<input type="radio" value="25" name="countNumer" class="radio">
+					<span>25</span>
+				</li>
+				<li>
+					<input type="radio" value="30" name="countNumer" class="radio">
+					<span>30</span>
+				</li>
+				<li>
+					<input type="radio" value="40" name="countNumer" class="radio">
+					<span>40</span>
+				</li>
+				<li>
+					<input type="radio" value="50" name="countNumer" class="radio">
+					<span>50</span>
+				</li>
+				<li>
+					<input type="radio" value="75" name="countNumer" class="radio">
+					<span>75</span>
+				</li>
+				<li>
+					<input type="radio" value="100" name="countNumer" class="radio">
+					<span>100</span>
+				</li>
+				<li>
+					<input type="radio" value="125" name="countNumer" class="radio">
+					<span>125</span>
+				</li>
+				<li>
+					<input type="radio" value="150" name="countNumer" class="radio">
+					<span>150</span>
+				</li>
+				<li>
+					<input type="radio" value="200" name="countNumer" class="radio">
+					<span>200</span>
+				</li>
+				<li>
+					<input type="radio" value="250" name="countNumer" class="radio">
+					<span>250</span>
+				</li>
+				<li>
+					<input type="radio" value="300" name="countNumer" class="radio">
+					<span>300</span>
+				</li>
+				<li>
+					<input type="radio" value="350" name="countNumer" class="radio">
+					<span>350</span>
+				</li>
+				<li>
+					<input type="radio" value="400" name="countNumer" class="radio">
+					<span>400</span>
+				</li>
+				<li>
+					<input type="radio" value="450" name="countNumer" class="radio">
+					<span>450</span>
+				</li>
+				<li>
+					<input type="radio" value="500" name="countNumer" class="radio">
+					<span>500</span>
+				</li>
+				<li>
+					<input type="radio" value="600" name="countNumer" class="radio">
+
+					<span>600</span>
+				</li>
+				<li>
+					<input type="radio" value="700" name="countNumer" class="radio">
+					<span>700</span>
+				</li>
+				<li>
+					<input type="radio" value="800" name="countNumer" class="radio">
+					<span>800</span>
+				</li>
+				<li>
+					<input type="radio" value="900" name="countNumer" class="radio">
+					<span>900</span>
+				</li>
+				<li>
+					<input type="radio" value="1000" name="countNumer" class="radio">
+					<span>1000</span>
+				</li>
+				<li>
+					<input type="radio" value="1500" name="countNumer" class="radio">
+					<span>1500</span>
+				</li>
+				<li>
+					<input type="radio" value="2000" name="countNumer" class="radio">
+					<span>2000</span>
+				</li>
+				<li>
+					<input type="radio" value="2500" name="countNumer" class="radio">
+					<span>2500</span>
+				</li>
+				<li>
+					<input type="radio" value="3000" name="countNumer" class="radio">
+					<span>3000</span>
+				</li>
+				<li>
+					<input type="radio" value="3500" name="countNumer" class="radio">
+					<span>3500</span>
+				</li>
+				<li>
+					<input type="radio" value="4000" name="countNumer" class="radio">
+					<span>4000</span>
+				</li>
+				<li>
+					<input type="radio" value="4500" name="countNumer" class="radio">
+					<span>4500</span>
+				</li>
+				<li>
+					<input type="radio" value="5000" name="countNumer" class="radio">
+					<span>5000</span>
+				</li>
+				<li>
+					<input type="radio" value="5500" name="countNumer" class="radio">
+					<span>5500</span>
+				</li>
+				<li>
+					<input type="radio" value="6000" name="countNumer" class="radio">
+					<span>6000</span>
+				</li>
+				<li>
+					<input type="radio" value="6500" name="countNumer" class="radio">
+					<span>6500</span>
+				</li>
+				<li>
+					<input type="radio" value="7000" name="countNumer" class="radio">
+							<span>7000</sapn>
+				</li>
+				<li>
+					<input type="radio" value="7500" name="countNumer" class="radio">
+					<span>7500</span>
+				</li>
+				<li>
+					<input type="radio" value="8000" name="countNumer" class="radio">
+					<span>8000</span>
+				</li>
+				
+				
+			<div class="u-input-box cleartfix">
+				<div class="u-other">Other</div>
+				<div class="u-srbox">
+					<input type="number" value="" id="number2" placeholder="Please enter a quantity" /> pcs
+				</div>
+			</div>
+				
+			</ul>
+		
+		</div>
+		
+	    <div class="u-bottom">
+			   <div class="u-Cancel">Cancel</div>
+			   <div class="u-Submit">Submit</div>
+	    </div>
+	</div>
+   
+   
+   	
+   <!--点击4.6.8弹出的页面-->
+    <div class="m-layer-order-box">    	
+		<div class="m-top">
+			<div class="u-close"></div>
+			Please fill in the layer order
+		</div>
+		
+		<div class="u-center">
+			<div class="m-layer-content">
+    		
+    	
+            <h3 class="u-layer-order">Please fill in the layer order from top to bottom here.</h3>
+	        <div class="u-layer-text">
+	        	<div class="u-layer-input-box cleartfix">
+	        		<label for="" class="s-layer-label">L1:</label>
+	        	    <input type="text" class="s-layer-input"/>	        		
+	        	</div>
+	        	<div class="u-layer-input-box cleartfix">
+	        		<label for="" class="s-layer-label">L2:</label>
+	        	<input type="text" class="s-layer-input"/>        		
+	        	</div>
+	        	<div class="u-layer-input-box cleartfix">
+	        		<label for="" class="s-layer-label">L3:</label>
+	        	<input type="text" class="s-layer-input"/>        		
+	        	</div>
+	        	<div class="u-layer-input-box cleartfix">
+	        		<label for="" class="s-layer-label">L4:</label>
+	        	    <input type="text" class="s-layer-input"/>	        		
+	        	</div>
+	        	<div class="u-layer-input-box cleartfix">
+	        		<label for="" class="s-layer-label">L5:</label>
+	        	    <input type="text" class="s-layer-input"/>	        		
+	        	</div>
+	        	<div class="u-layer-input-box cleartfix">
+	        		<label for="" class="s-layer-label">L6:</label>
+	        	    <input type="text" class="s-layer-input"/>	        		
+	        	</div>
+
+	        </div>
+	        </div>
+		</div>
+		<div class="u-bottom">
+			<div class="u-Cancel">Cancel</div>
+			<div class="u-Submit">Submit</div>
+		</div>
+
+	</div>
+   
+   
+   	
+   	
+   	
+   <!--报价结果弹出页面-->
+ 	<div class="m-quote-results">
+
+               <!--计价结果中间-->
+            <div class="m-results-center">
+                <!--PCB Price-->
+                <div class="u-PCB-Price-box">
+                	<div class="u-pcb-price-title">PCB Price</div>
+                	<div class="u-pcb-price-center">
+                		<ul class="u-pcb-center-title cleartfix">
+                			<li>Build Time</li>
+                			<li>Quantity</li>
+                			<li>Total</li>
+                		</ul>
+                		<div class="u-pcb-center-inner">
+                			<div class="u-pcb-price-input">
+                				<input type="radio" class="u-radio active">
+                			</div>
+                			<div class="u-options-field">
+                				<div class="u-time">6-7 days</div>
+                				<div class="u-quantity">20</div>
+                				<div class="u-tota">US $37</div>
+                			</div>                			
+                		</div>
+                		<div class="u-pcb-center-inner">
+                			<div class="u-pcb-price-input">
+                				<input type="radio" class="u-radio">
+                			</div>
+                			<div class="u-options-field">
+                				<div class="u-time">6-7 days</div>
+                				<div class="u-quantity">20</div>
+                				<div class="u-tota">US $37</div>
+                			</div>
+                			
+                		</div>
+                			 
+                		                                                 
+                		
+                	</div>
+
+                	
+               
+                </div>
+                <!--Shipping Method-->
+                <div class="u-shipping-method-box">
+                    <div class="u-shipping-method">
+                    	<div class="u-tite">Shipping Method</div>
+                    	<select >
+                                          
+                          <option value="1">DHL</option>                      
+                          <option value="">HK post</option>
+                          <option value="4">SF Express</option>                      
+                          <option value="6">EMS</option>                      
+                          <option value="7">E-packet</option>                      
+                          <option value="2">Other shpping way</option>                      
+                        </select>
+                		
+                		<i class="u-icon"></i>
+                	</div>
+                	<div class="u-ship-to">
+                		Ship To
+                	     <div class="u-flag">
+                		     <img src="img/flag03.jpg" alt="" />
+                	     </div>
+                		<i class="u-icon"></i>
+                	</div>
+                	<div class="u-delvity">
+                	      <span>3-5 Days,  wt: 1.85kg,  US $25</span>
+                     </div>
+                	<div class="price-info">
+                		<h3>Final price is subject to our review.</h3>
+                		<ul class="price-info-list">
+                			<li class="cleartfix">
+                				<span class="info-title">PCB Cost</span>
+                				<span class="info-value">
+                					US $ 
+                					<span>37</span> 
+                				</span>
+                			</li>
+                			<li class="cleartfix">
+                				<span class="info-title">shipping</span>
+                				<span class="info-value">
+                					US $ 
+                					<span>25</span> 
+                				</span>
+                			</li>
+                		</ul> 
+                	</div>
+                	
+                </div>
+                <!--email-->
+                <div class="u-email">
+                	<label for=""></label>
+                	<input type="email" name="" id="email" value="" required="" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="u-email" placeholder="Email">
+                </div>
+               <!--Manufacturing Guidelines-->
+               <div class="u-manu-guid">
+               	   <div class="u-manu-guid-title">Manufacturing Guidelines</div> 	  
+               	   <textarea rows="5" cols="10" placeholder="Fill in any PCB details to make it as clear as possible for us to understand your requirements." class="u-footer-explain"></textarea>
+               </div>
+            </div>
+                                                     
+               <!--计价结果底部-->
+            <div class="m-results-footer-box">
+			      <div class="u-total">
+			      	Total: <span>US $62</span>
+			      </div>
+			      <div class="add-to-cart">
+			      	Add to Cart
+			      	<a href="order_list_01.html"></a>
+			      </div>
+		     </div>
+
+	</div>
+
+			<!--选择国家页面-->
+<div class="m-state-select">
+    	<div class="m-top">
+		<div class="u-close"></div>
+			please Select
+		 </div>
+    	 <div class="tit_fixed">
+    	 	<p>A</p>
+    	 </div>
+    	<div class="u-state-list-box" id="lanjiaz">
+    		
+    		<!--系统推荐的国家-->
+    		<div class="tit">
+    			<p class="">A</p>
+    		</div>
+    		<ul class="u-state-list skipA">
+    			<li class="cleartfix">
+    	    		<div class="u-flag">
+    	    			<img src="img/grey.gif" alt="" data-url="img/flag01.jpg" />
+    	    		</div>
+    	            <div class="u-state-center tick">COMMONWEALTH NO. MARIANA ISLANDS</div>    	            
+    	     
+    	    	</li>
+    			<li class="cleartfix">
+    	    		<div class="u-flag">
+    	    			<img src="img/grey.gif" alt="" data-url="img/flag01.jpg" />	    			
+    	    		</div>
+    	            <div class="u-state-center">COMMONWEALTH NO. MARIANA ISLANDS</div>   	            
+    	    	</li>
+    		</ul>   
+    	</div>
+    	<div class="ce">
+					<ul class="zi">
+						<li class="key">A</li>
+						<li class="key">B</li>
+						<li class="key">C</li>
+						<li class="key">D</li>
+						<li class="key">E</li>
+						<li class="key">F</li>
+						<li class="key">G</li>
+						<li class="key">H</li>
+						<li class="key">I</li>
+						<li class="key">J</li>
+						<li class="key">K</li>
+						<li class="key">L</li>
+						<li class="key">M</li>
+						<li class="key">N</li>
+						<li class="key">O</li>
+						<li class="key">P</li>
+						<li class="key">Q</li>
+						<li class="key">R</li>
+						<li class="key">S</li>
+						<li class="key">T</li>
+						<li class="key">U</li>
+						<li class="key">V</li>
+						<li class="key">W</li>
+						<li class="key">X</li>
+						<li class="key">Y</li>
+						<li class="key">Z</li>
+					</ul>
+	    </div>
+ </div>		
+	
+
+
+
+</div>
+</body>
+
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script src="js/public.js"></script>
+
+<script>
+	$(function() {
+		//懒加载		
+	$(".m-state-select .u-state-list li img").lazyload({
+		effect : "fadeIn"
+	});
+		//点击问号弹出提示
+		$('.u-smintip').click(function() {
+			var index = $(this).data("index") - 1;
+//				console.log(index)
+			my1.confirms(index);
+			$('.g-slide-mask').show();
+			$('.u-tishi').show();
+		})
+		var my1 = {
+			confirms: function(index) {
+				var spanlCons = [
+					"The full board are by only one single board or be arrayed with the same or different PCBs",
+					"it means- we will charge extra panel costs when there are different kinds in <b>1</b> PCB  design. For same kinds, it needn't charge.",
+					"Input the maximum length and width of the board",
+					"How those boards connected in the panel",
+					"Bad PCBs existed in panel",
+					"If you ordered pcb already on PCBWay, you only need to select the pcb order number here so we can use the file from this pcb order to do stencil.",
+					"We normally will reduce apatures for ICs to make stencil, so if don't want to change the apatures, please note it when place the order.",
+					"The number of BOM line items.",
+					"Number of SMT parts on each board (including fine pitch and leadless).",
+					"Number of ICs with more than 16pins and SMD irregular parts with more than 10pins on each board.(SOP,QFP,QFN,BGA)",
+					"Number of through-hole parts on each board(DIP NO.)",
+					"If single pcb qty is more than 20pcs or the part solering points are less than 100,then we suggest do panel.Or we may charge extra wastage fee.",
+					"If you ordered pcb already on PCBWay, you only need to select the pcb order number here so we can use the file from this pcb order to do assembly.",
+					"Are parts mounted on one side only, or both sides?",
+					" It is the order# that you have placed with PCBWay.com and it is still unshipped."
+				];
+				var confirmsHtml = '<span>' + spanlCons[index] + '</span>'
+				$('.u-tishi').html(confirmsHtml);
+			}
+			}
+
+		//Boaed选项的点击效果
+		$('.u-board-type .u-form-col li .u-radio').click(function() {
+			$('.u-board-type .u-form-col li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		//AssemblyBoaed选项的点击效果
+		$('.u-board-type .u-form-col2 li .u-radio').click(function() {
+			$('.u-board-type .u-form-col2 li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		$('#u-click0').click(function() {
+			$('.u-board-type .u-dropdown-toggle').hide();
+		})
+		$('#u-click1').click(function() {
+			$('.u-board-type .u-dropdown-toggle').show();
+			$('.u-board-type .u-dropdown-toggle .u-list-search-filter:first').hide();
+		})
+		$('#u-click2').click(function() {
+			$('.u-board-type .u-dropdown-toggle').show();
+
+			$('.u-board-type .u-dropdown-toggle .u-list-search-filter:first').show();
+		})
+
+		//弹框下X-out Allowance in Panel的选择Js
+		$('.u-board-type .u-form-two li .u-radio').click(function() {
+			$('.u-board-type .u-form-two li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		//弹框下Yes NO的选择Js
+		$('.u-board-type .u-form-three li .u-radio').click(function() {
+			$('.u-board-type .u-form-three li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+
+		//Surface Finish下弹框的js
+		$('.u-product-screening .u-form-two li .u-radio').click(function() {
+			$('.u-product-screening .u-form-two li .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		// Route Process 下模拟selest
+		$('.u-pulldown-box .u-position-rel').click(function() {
+			$('.u-pulldown-box .u-bank_xl').show();
+		})
+		$('.u-pulldown-box .u-bank_xl .u-hotBank-list').bind('touchend', function() {
+			$('.u-pulldown-box .u-bank_xl').hide();
+			$('#chose_input').val($(this).attr('title'));
+		})
+
+		//Route Process加减
+		var init = 1;
+		function number(type) {
+			if(type === 'jia') {
+				++init;
+			} else
+			if(type === 'jian') {
+				--init;
+				if(init < 1) {
+					return init = 0;
+				}
+			}
+			return init;
+		}
+		//增加数量
+		$('.u-design-box .u-number-box .u-add').click(function() {
+			var text = $(this).closest('.u-number-box').find('input');
+			var $cut = $(this).closest('.u-number-box').find('.u-cut')
+			init = text.val();
+			text.val(number('jia', $(this)))
+		})
+		//减少数量
+		$('.u-design-box .u-number-box .u-cut').click(function() {
+			var text = $(this).closest('.u-number-box').find('input');
+			init = text.val();
+			var reslut = number('jian');
+			if(reslut > 0) {
+				text.val(reslut);
+			} else {
+				text.val(reslut);
+			}
+		})
+		//PCB产品筛选组合js   u-Layer-select
+		$('.u-product-screening .u-options-list1 li:first').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').show();
+		})
+		$('.u-product-screening .u-options-list1 li:first').nextAll('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+		})
+
+		$('.u-product-screening .u-options-list1 li').click(function() {
+			if($(this).hasClass('on-none')){
+				$('.u-displnone').hide();
+			}else{
+				$('.u-displnone').show();
+			}
+		})
+		$('.u-product-screening .u-options-list2').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+			if($(this).hasClass('on-none1')){
+				$('.u-displnone1').hide();
+			}else{
+				$('.u-displnone1').show();
+			}
+		})
+
+		$('.u-product-screening .u-options-list3').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+
+		})
+		$('.u-product-screening .u-options-list4').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+
+		})
+		$('.u-product-screening .u-options-list5').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+
+		})
+		$('.u-product-screening .u-options-list6').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+
+		})
+		$('.u-product-screening .u-options-list7').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+		})
+		$('.u-product-screening .u-options-list8').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+		})
+		$('.u-product-screening .u-options-list9').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+		})
+		$('.u-product-screening .u-options-list10').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+		})
+		$('.u-product-screening .u-options-list11').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+		})
+		$('.u-displnone .u-options-list0').find('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-Layer-select').hide();
+		})
+		
+		
+//		**************************************
+            //点击4.6.8层板的js
+               $('.on-layer-order').click(function(){
+		              	$('.g-slide-mask').show();               	
+	                   $('.m-layer-order-box').addClass('active');
+             })
+//		**************************************
+               
+		//点击inch'↔mm 弹出m-inch-box页面的js
+		$('.u-mian-block .u-calculate-box .u-input-group .u-btn').click(function() {
+			$('.g-slide-mask').show();
+			$('.m-inch-box').addClass('active');
+		})
+	
+		$('.g-main .m-inch-box .m-inch-center .m-btn').click(function() {
+			$('.g-slide-mask').hide();
+			$('.m-inch-box').removeClass('active');
+			//首先判断弹出框里是否有值，当两个inpput同时有值时，就传给当前页面
+			if(!$('.xnumber').val()==''&&!$('.ynumber').val()==''){
+				if($('.u-top-title li#0').hasClass('active')){
+					$('#Length').val($('.xnumber').val());
+					$('#Width').val($('.ynumber').val());
+					$('.xnumber').val('');
+					$('.ynumber').val('');
+				}
+				if($('.u-top-title li#3').hasClass('active')){
+					$('#Length2').val($('.xnumber').val());
+					$('#Width2').val($('.ynumber').val());
+					$('.xnumber').val('');
+					$('.ynumber').val('');
+				}
+			}else{
+				$('.xnumber').val('');
+				$('.ynumber').val('');
+			}
+		})
+
+
+		////PCB Quantity点击弹出页面的js
+		$('#s-seek1').click(function(){
+			$('.g-slide-mask').show();
+			$('.m-quantity-box').addClass('active');
+		})
+		$('.u-bottom .u-Cancel').click(function(){
+			$('.g-slide-mask').hide();
+			$('.m-quantity-box').removeClass('active');
+		})
+
+
+
+		$('.u-bottom .u-Submit').bind('click',function(){
+			$('#number1').val($('#number2').val());
+			$('.g-slide-mask').hide();
+			$('.m-quantity-box').removeClass('active');
+		})
+		$('.m-quantity-box .u-quan-box li .radio').bind('click',function() {
+			$('.m-quantity-box .u-quan-box li .radio').removeClass('active');
+			$(this).addClass('active');
+			$('.g-slide-mask').hide();
+			$('.m-quantity-box').removeClass('active');
+			$('#number1').val($(this).attr('value'));
+		})
+		//底部刷新
+		$('.u-reset').click(function() {
+			location.reload();
+		
+		})
+
+//新功能的js
+$('.special_options .u-switch-box').click(function(){
+	$('.special_options .u-switch-box .u-swith').find('i').toggleClass('active');
+	$('.u-special-options-box').toggleClass('active');
+})
+	})
+</script>

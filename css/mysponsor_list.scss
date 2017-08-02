@@ -1,0 +1,158 @@
+//左右居中定位
+@mixin left-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+//覆盖定位
+@mixin shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.xian:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 0.55rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #E3E3E3;
+}
+
+.u-sponsor-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    .u-Reviews-box {
+        width: 100%;
+        padding: 0.24rem 0.05rem 0;
+        font-size: 0;
+        .u-Reviews {
+            width: 50%;
+            float: left;
+            margin-bottom: 0.22rem;
+            .u-Reviews-conter {
+                background: #fff;
+                margin: 0 0.1rem;
+                .u-appraise-cont-box {
+                    position: relative;
+                    .u-appraise-img {
+                        height: 1.85rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .u-Customer {
+                        font-size: 0;
+                        margin: 0.2rem 0;
+                        padding: 0 0.19rem;
+                        img {
+                            width: 0.35rem;
+                            height: 0.24rem;
+                            vertical-align: middle;
+                            display: inline-block;
+                        }
+                        span {
+                            width: 30%;
+                            color: #666;
+                            vertical-align: middle;
+                            margin-left: 0.1rem;
+                            font-size: 0.24rem;
+                            display: inline-block;
+                            overflow: hidden;
+                            white-space: normal;
+                            text-overflow: ellipsis;
+                            -ms-text-overflow: ellipsis;
+                        }
+                        i {
+                            float: right;
+                            color: #999999;
+                            vertical-align: middle;
+                            font-size: 0.24rem;
+                            display: inline-block;
+                        }
+                    }
+                    p.u-Customer-p {
+                        font-size: 0.26rem;
+                        color: #333;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        text-overflow: ellipsis;
+                        margin-bottom: 0.2rem;
+                        padding: 0 0.2rem;
+                        height: 1.5rem;
+                    }
+                }
+                .s-commen {
+                    width: 100%;
+                    height: 0.55rem;
+                    border-top: 1px solid #E3E3E3;
+                    font-size: 0;
+                    position: relative;
+                    .s-t-1,
+                    .s-t-2 {
+                        width: 50%;
+                        height: 100%;
+                        display: inline-block;
+                        span {
+                            float: left;
+                            font-size: 0.24rem;
+                            color: #999;
+                            margin-left: 0.45rem;
+                        }
+                    }
+                    .s-t-1 .u-icon-ck {
+                        float: left;
+                        margin: 0.15rem 0.2rem;
+                        width: 0.32rem;
+                        height: 0.25rem;
+                        background: url("../img/Sprites.png") no-repeat;
+                        background-size: 3rem 5rem;
+                        background-position: -2rem -1.56rem;
+                    }
+                    .s-t-2 .u-icon-ck {
+                        float: left;
+                        margin: 0.15rem 0.2rem;
+                        width: 0.32rem;
+                        height: 0.25rem;
+                        background: url("../img/Sprites.png") no-repeat;
+                        background-size: 3rem 5rem;
+                        background-position: -2.37 rem -1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

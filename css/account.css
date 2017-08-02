@@ -1,0 +1,336 @@
+.g-account {
+  width: 100%;
+  height: 100%;
+  background: #EBEBEC; }
+  .g-account .m-header {
+    width: 100%;
+    height: 0.99rem;
+    border-bottom: 1px solid #D3D3D3;
+    text-align: center;
+    line-height: 1rem;
+    color: #333;
+    font-size: 0.32rem;
+    background: #fff; }
+  .g-account .u-user {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #D3D3D3; }
+    .g-account .u-user .my-person-info {
+      width: 100%;
+      padding: 0.15rem 0.3rem;
+      display: inline-block;
+      vertical-align: text-top;
+      position: relative; }
+      .g-account .u-user .my-person-info .my-img-wrap {
+        width: 1.26rem;
+        height: 1.26rem;
+        background: url("../img/portrait.png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+        float: left;
+        margin: 0.15rem 0; }
+        .g-account .u-user .my-person-info .my-img-wrap img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
+      .g-account .u-user .my-person-info .u-xinxi {
+        width: 80%;
+        float: left;
+        padding: 0rem 0.15rem 0rem 0.15rem;
+        margin-top: 0.3rem; }
+        .g-account .u-user .my-person-info .u-xinxi .u-name-box {
+          font-size: 0.32rem;
+          font-weight: 700;
+          color: #333;
+          width: 100%;
+          margin-bottom: 0.15rem; }
+          .g-account .u-user .my-person-info .u-xinxi .u-name-box .u-name {
+            max-width: 4.5rem;
+            margin-right: 0.1rem;
+            overflow: hidden;
+            float: left;
+            -webkit-line-clamp: 1;
+            -moz-line-clamp: 1;
+            -ms-line-clamp: 1;
+            -o-line-clamp: 1;
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+            -o-box-orient: vertical;
+            box-orient: vertical;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-box;
+            display: -o-box;
+            display: box; }
+          .g-account .u-user .my-person-info .u-xinxi .u-name-box .u-grade {
+            padding: 0.05rem;
+            background: #12C286;
+            border-radius: 0.03rem;
+            font-size: 0.24rem;
+            color: #fff;
+            text-align: center;
+            vertical-align: text-top;
+            float: left; }
+        .g-account .u-user .my-person-info .u-xinxi .u-email-accounts {
+          width: 5rem;
+          font-size: 0.26rem;
+          color: #3A3E4A;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          float: left; }
+      .g-account .u-user .my-person-info .head-meassage {
+        width: 0.14rem;
+        height: 0.25rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0.3rem;
+        margin: auto;
+        background: url("../img/r-icon.png") no-repeat;
+        background-size: cover; }
+      .g-account .u-user .my-person-info a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto; }
+    .g-account .u-user .my-watch {
+      width: 100%;
+      height: 1.2rem;
+      border-top: 1px solid #EBEBEC;
+      font-size: 0.26rem;
+      color: #333;
+      text-align: center; }
+      .g-account .u-user .my-watch p {
+        width: 100%;
+        font-size: 0.32rem;
+        color: #f60;
+        font-weight: 700; }
+      .g-account .u-user .my-watch span {
+        color: #333; }
+      .g-account .u-user .my-watch .u-Coupons {
+        width: 49.5%;
+        height: 100%;
+        float: left;
+        border-right: 1px solid #EBEBEC;
+        position: relative;
+        padding: 0.2rem 0;
+        box-sizing: border-box; }
+      .g-account .u-user .my-watch .u-messages {
+        width: 50%;
+        float: right;
+        height: 100%;
+        position: relative;
+        padding: 0.2rem 0;
+        box-sizing: border-box; }
+  .g-account .m-center-box {
+    width: 100%;
+    position: absolute;
+    top: 4.1rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+  .g-account .u-PCB-content {
+    width: 100%;
+    margin-top: 0.22rem;
+    margin-bottom: 1.6rem;
+    border-top: 1px solid #d3d3d3; }
+    .g-account .u-PCB-content em {
+      float: right;
+      width: 0.14rem;
+      height: 100%;
+      background: url(../img/r-icon.png) no-repeat;
+      background-size: 0.14rem 0.25rem;
+      background-position: center center; }
+    .g-account .u-PCB-content .u-item {
+      background: #fff;
+      height: 0.94rem;
+      padding: 0 0.3rem 0 0.4rem;
+      box-sizing: border-box;
+      position: relative;
+      border-bottom: 1px solid #EBEBEC; }
+      .g-account .u-PCB-content .u-item i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_01.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }
+      .g-account .u-PCB-content .u-item span {
+        font-size: 0.3rem;
+        color: #333;
+        line-height: 0.95rem;
+        float: left;
+        margin-left: 0.68rem; }
+      .g-account .u-PCB-content .u-item a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto; }
+    .g-account .u-PCB-content .u-PCB-list {
+      width: 100%;
+      padding: 0 0.32rem;
+      box-sizing: border-box;
+      background: #fff;
+      border-bottom: 1px solid #d3d3d3;
+      margin-bottom: 0.22rem; }
+      .g-account .u-PCB-content .u-PCB-list li:last-child {
+        border: none; }
+      .g-account .u-PCB-content .u-PCB-list li {
+        height: 0.95rem;
+        border-bottom: 1px solid #EBEBEC;
+        position: relative; }
+        .g-account .u-PCB-content .u-PCB-list li span {
+          font-size: 0.3rem;
+          color: #333;
+          line-height: 0.95rem;
+          position: absolute;
+          left: 0rem;
+          top: 0;
+          bottom: 0;
+          margin: auto; }
+        .g-account .u-PCB-content .u-PCB-list li .u-count {
+          width: 30%;
+          height: 100%;
+          font-size: 0.3rem;
+          color: #999;
+          line-height: 0.95rem;
+          position: absolute;
+          right: 0.3rem;
+          top: 0;
+          text-align: right; }
+      .g-account .u-PCB-content .u-PCB-list a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto; }
+    .g-account .u-PCB-content .u-item-list-box {
+      background: #fff;
+      padding: 0 0.34rem;
+      box-sizing: border-box;
+      border-top: 1px solid #D3D3D3;
+      border-bottom: 1px solid #D3D3D3;
+      margin-bottom: 0.22rem; }
+      .g-account .u-PCB-content .u-item-list-box li:last-child {
+        border: none; }
+      .g-account .u-PCB-content .u-item-list-box li {
+        height: 0.95rem;
+        border-bottom: 1px solid #EBEBEC;
+        position: relative; }
+        .g-account .u-PCB-content .u-item-list-box li span {
+          font-size: 0.3rem;
+          color: #333;
+          line-height: 0.95rem;
+          position: absolute;
+          left: 0.7rem;
+          top: 0;
+          bottom: 0;
+          margin: auto; }
+        .g-account .u-PCB-content .u-item-list-box li a {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin: auto; }
+      .g-account .u-PCB-content .u-item-list-box li:nth-child(1) i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_08.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }    
+      .g-account .u-PCB-content .u-item-list-box li:nth-child(2) i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_02.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }
+      .g-account .u-PCB-content .u-item-list-box li:nth-child(3) i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_03.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }
+      .g-account .u-PCB-content .u-item-list-box li:nth-child(4) i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_04.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }
+      .g-account .u-PCB-content .u-item-list-box li:nth-child(5) i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_05.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }
+      .g-account .u-PCB-content .u-item-list-box li:nth-child(6) i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_06.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }
+      .g-account .u-PCB-content .u-item-list-box li:nth-child(7) i {
+        display: block;
+        width: 0.42rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+        background: url(../img/message_07.png) no-repeat;
+        background-size: 0.42rem 0.44rem;
+        background-position: center center; }
+    .g-account .u-PCB-content .u-btn-out {
+      width: 100%;
+      padding: 0 0.32rem;
+      margin-bottom: 0.22rem; }
+      .g-account .u-PCB-content .u-btn-out button {
+        width: 100%;
+        border: 1px solid #D3D3D3;
+        background: #fff;
+        font-size: 0.3rem;
+        color: #333;
+        line-height: 0.9rem;
+        border-radius: 0.03rem;
+        float: left; }

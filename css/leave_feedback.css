@@ -1,0 +1,255 @@
+.g-leave {
+  width: 100%;
+  height: 100%; }
+
+.m-content {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .m-content .u-content-list {
+    width: 100%; }
+    .m-content .u-content-list .u-car-li:nth-child(1) {
+      border-top: none; }
+    .m-content .u-content-list .u-car-li {
+      background: #fff;
+      margin-bottom: 0.2rem;
+      border-top: 1px solid #D3D3D3;
+      border-bottom: 1px solid #D3D3D3; }
+      .m-content .u-content-list .u-car-li .u-car-content {
+        padding: 0 0.34rem; }
+        .m-content .u-content-list .u-car-li .u-car-content .u-car-details {
+          padding-bottom: 0.4rem;
+          padding-top: 0.34rem; }
+          .m-content .u-content-list .u-car-li .u-car-content .u-car-details .u-details-img {
+            width: 1.95rem;
+            height: 1.95rem;
+            border: 1px solid #E3E3E3;
+            border-radius: 0.03rem;
+            float: left; }
+            .m-content .u-content-list .u-car-li .u-car-content .u-car-details .u-details-img img {
+              width: 100%;
+              height: 100%; }
+          .m-content .u-content-list .u-car-li .u-car-content .u-car-details .u-details-xq {
+            width: 70%;
+            height: 1.96rem;
+            float: left;
+            font-size: 0.26rem;
+            color: #999;
+            padding-left: 0.25rem;
+            box-sizing: border-box; }
+            .m-content .u-content-list .u-car-li .u-car-content .u-car-details .u-details-xq .item-basic-info {
+              height: 1.2rem;
+              font-size: 0.28rem;
+              color: #333;
+              padding: 0.1rem 0; }
+            .m-content .u-content-list .u-car-li .u-car-content .u-car-details .u-details-xq p {
+              margin-top: 0.1rem; }
+      .m-content .u-content-list .u-car-li .u-text {
+        width: 100%;
+        padding: 0 0.34rem; }
+        .m-content .u-content-list .u-car-li .u-text textarea {
+          width: 100%;
+          border: 1px solid #E3E3E3;
+          border-radius: 0.03rem;
+          padding: 0.2rem;
+          line-height: 0.28rem;
+          font-size: 0.26rem;
+          color: #333;
+          resize: none; }
+      .m-content .u-content-list .u-car-li .u-pics-box {
+        width: 100%;
+        border-bottom: 1px solid #E3E3E3;
+        padding: 0.35rem 0.34rem;
+        font-size: 0; }
+      .m-content .u-content-list .u-car-li .u-pics {
+        display: inline-block;
+        font-size: 0; }
+        .m-content .u-content-list .u-car-li .u-pics img {
+          border: 1px solid #E3E3E3;
+          border-radius: 0.03rem;
+          display: inline-block;
+          width: 1.6rem;
+          height: 1.6rem;
+          margin-right: 0.1rem;
+          margin-bottom: 0.15rem; }
+      .m-content .u-content-list .u-car-li .input-file-box {
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 1px solid #E3E3E3;
+        border-radius: 0.03rem;
+        display: inline-block;
+        margin-right: 0.1rem;
+        margin-bottom: 0.15rem;
+        background: url("../img/slr-icon.png") no-repeat;
+        background-size: 0.73rem 0.55rem;
+        background-position: center center;
+        position: relative; }
+        .m-content .u-content-list .u-car-li .input-file-box input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%; }
+      .m-content .u-content-list .u-car-li .u-stars {
+        padding: 0.3rem 0.34rem;
+        font-size: 0;
+        color: #333; }
+        .m-content .u-content-list .u-car-li .u-stars span {
+          font-size: 0.32rem;
+          vertical-align: text-bottom; }
+        .m-content .u-content-list .u-car-li .u-stars .u-score {
+          width: 65%;
+          display: inline-block;
+          margin-left: 1.5rem; }
+          .m-content .u-content-list .u-car-li .u-stars .u-score li {
+            width: 0.46rem;
+            height: 0.46rem;
+            background: url("../img/score2.png") no-repeat;
+            background-size: cover;
+            float: left;
+            margin-left: 0.3rem; }
+          .m-content .u-content-list .u-car-li .u-stars .u-score li.active {
+            background: url("../img/score1.png") no-repeat;
+            background-size: cover; }
+
+.g-feedback {
+  width: 100%;
+  height: 100%; }
+  .g-feedback .u-feedack-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .g-feedback .u-feedack-center .u-item {
+      width: 100%;
+      margin-bottom: 0.2rem;
+      background: #fff; }
+      .g-feedback .u-feedack-center .u-item .u-personinfo-box {
+        padding: 0.34rem; }
+        .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-head-portrait {
+          width: 15%;
+          float: left; }
+          .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-head-portrait .u-portrait {
+            display: block;
+            width: 0.96rem;
+            height: 0.96rem;
+            border-radius: 50%;
+            background: url("../img/portrait2.png") no-repeat;
+            background-size: cover; }
+        .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-personinfo {
+          width: 85%;
+          float: left;
+          padding-left: 0.15rem; }
+          .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-personinfo .u-info {
+            width: 100%;
+            font-size: 0.26rem;
+            color: #333; }
+            .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-personinfo .u-info span {
+              margin-right: 0.25rem; }
+            .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-personinfo .u-info img {
+              width: 0.44rem;
+              height: 0.3rem;
+              vertical-align: bottom; }
+            .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-personinfo .u-info .u-djx {
+              width: 34.5%;
+              height: 0.4rem;
+              display: inline-block;
+              background: url("../img/score4.png") repeat-x;
+              background-size: 0.4rem 0.4rem;
+              background-position: 0 0;
+              float: right; }
+              .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-personinfo .u-info .u-djx .u-hx {
+                width: 100%;
+                height: 0.4rem;
+                display: inline-block;
+                background: url("../img/score3.png") repeat-x;
+                background-size: 0.4rem 0.4rem;
+                background-position: 0 0; }
+          .g-feedback .u-feedack-center .u-item .u-personinfo-box .u-personinfo .u-time {
+            margin-top: 0.3rem;
+            font-size: 0.24rem;
+            color: #999; }
+      .g-feedback .u-feedack-center .u-item p.u-pltext {
+        font-size: 0.28rem;
+        color: #333;
+        margin-bottom: 0.2rem;
+        line-height: 0.36rem;
+        padding: 0 0.34rem; }
+      .g-feedback .u-feedack-center .u-item .u-feedack-img {
+        margin-bottom: 0.2rem;
+        padding: 0 0.34rem; }
+        .g-feedback .u-feedack-center .u-item .u-feedack-img img {
+          width: 1.4rem;
+          height: 1.4rem; }
+      .g-feedback .u-feedack-center .u-item .u-goodsinfo {
+        background: #F8F8F8;
+        padding: 0 0.34rem;
+        position: relative; }
+        .g-feedback .u-feedack-center .u-item .u-goodsinfo .u-details-img {
+          width: 1.6rem;
+          height: 1.6rem;
+          border: 1px solid #E3E3E3;
+          float: left;
+          background: #fff; }
+          .g-feedback .u-feedack-center .u-item .u-goodsinfo .u-details-img img {
+            width: 100%;
+            height: 100%; }
+        .g-feedback .u-feedack-center .u-item .u-goodsinfo .u-details-center {
+          width: 76%;
+          float: left;
+          padding-left: 0.25rem; }
+          .g-feedback .u-feedack-center .u-item .u-goodsinfo .u-details-center p.item-basic-info {
+            font-size: 0.28rem;
+            color: #333;
+            margin-bottom: 0.1rem;
+            margin-top: 0.1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2; }
+          .g-feedback .u-feedack-center .u-item .u-goodsinfo .u-details-center p.u-usbox {
+            font-size: 0.26rem;
+            margin-top: 0.4rem;
+            color: #999; }
+        .g-feedback .u-feedack-center .u-item .u-goodsinfo a {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin: auto; }
+      .g-feedback .u-feedack-center .u-item .u-ratehistory {
+        background: #fff;
+        padding: 0.45rem 0.34rem 0.3rem; }
+        .g-feedback .u-feedack-center .u-item .u-ratehistory .s-t-1 {
+          width: 20%;
+          float: left;
+          font-size: 0.24rem;
+          color: #999;
+          margin-right: 0.2rem; }
+        .g-feedback .u-feedack-center .u-item .u-ratehistory .s-t-1 .u-icon-ck {
+          float: left;
+          width: 0.32rem;
+          height: 0.25rem; }
+          .g-feedback .u-feedack-center .u-item .u-ratehistory .s-t-1 .u-icon-ck span {
+            float: left;
+            margin-left: 0.45rem; }
+        .g-feedback .u-feedack-center .u-item .u-ratehistory .s-t-1:nth-child(1) .u-icon-ck {
+          background: url("../img/Sprites.png") no-repeat;
+          background-size: 3rem 5rem;
+          background-position: -2rem -1.56rem; }
+        .g-feedback .u-feedack-center .u-item .u-ratehistory .s-t-1:nth-child(2) .u-icon-ck {
+          background: url(../img/Sprites.png) no-repeat;
+          background-size: 3rem 5rem;
+          background-position: -2.37rem -1.6rem; }
+        .g-feedback .u-feedack-center .u-item .u-ratehistory .s-t-1:nth-child(3) .u-icon-ck {
+          background: url(../img/mes-icon.png) no-repeat;
+          background-size: 0.24rem 0.24rem;
+          background-position: 0rem 0rem; }

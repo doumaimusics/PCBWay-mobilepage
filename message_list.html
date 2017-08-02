@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/order_detail.css" />
+		<title>Message</title>
+	</head>
+
+	<body>
+		<div class="g-main">
+			<!--点击u-guild的弹框-->
+			<div class="u-top-bounced">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="javascript:;">My account</a>
+
+					</li>
+					<li>
+						<a href="javascript:;">My Order</a>
+					</li>
+										<li>
+						<a href="javascript:;">My Account</a>
+		            </li>	
+				</ul>
+			</div>
+			<div class="g-message">
+				<!--页面头部-->
+				<div class="u-header">
+					<!--返回箭头-->
+					<div class="u-return">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="u-hint">Message</div>
+					<!--购物车-->
+					<div class="u-position-right sprites-img">
+						<div class="u-in-title">1</div>
+					</div>
+					<!--点-->
+					<div class="u-guild"></div>
+
+				</div>
+				<!--中间-->
+				<div class="u-messages-center">
+					<ul class="u-messages-list">
+						<li class="u-list-item">
+							<p class="u-wrote"><em>Me</em> wrote
+							<span class="u-time">2/20/2017 6:24:42 PM</span>
+							</p>
+						
+							<p class="u-intro">Please pay more attention to your transaction security when purchase. </p>
+						</li>
+					</ul>
+					<ul class="u-chat-list">
+						<li class="u-list-item">
+							<p class="u-wrote"><em>me</em> wrote
+							  <span class="u-time">2/20/2017 6:24:42 PM</span>
+							</p>
+							<p class="u-intro">Please pay more attention to your transaction security when purchase. </p>
+						</li>
+						<li class="u-list-item">
+							<p class="u-wrote"><em>PCBWay</em> wrote 
+							  <span class="u-time">2/20/2017 6:24:42 PM</span>
+							</p>
+							<p class="u-intro">Please pay more attention to your transaction security when purchase. </p>
+						</li>
+						<li class="u-list-item">
+							<p class="u-wrote"><em>me</em> wrote
+							  <span class="u-time">2/20/2017 6:24:42 PM</span>
+							</p>
+							<p class="u-intro">Please pay more attention to your transaction security when purchase. </p>
+						</li>
+						<li class="u-list-item">
+							<p class="u-wrote"><em>PCBWay</em> wrote 
+							  <span class="u-time">2/20/2017 6:24:42 PM</span>
+							</p>
+							<p class="u-intro">Please pay more attention to your transaction security when purchase. </p>							
+						</li>
+						<div class="u-chat-btn-box cleartfix">
+							<div class="u-chat-btn">Reply</div>
+						</div>
+					</ul>
+					<!--上一页下一页-->
+					<div class="paging-box" style="position:relative; bottom: 0; margin-top: 0.4rem; margin-bottom: 0.3rem;">
+						<div class="u-paging">
+							<div class="paging-L active">Previous</div>
+							<div class="paging-R">Next</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="u-bottom-btn">
+					<span class="u-spanicon"></span>
+
+					<span>Add new suggest</span>
+
+				</div>
+			</div>
+			<!--没有优惠券显示的页面-->
+			<div class="u-null-center active" style="background: url(img/wu-icon3.png) no-repeat #fff;background-size:1.69rem 1.42rem;background-position: center 3.35rem;">
+
+				<span class="u-spanicon"></span>
+				<span>Sorry! No message yet.</span>
+			</div>
+			<!--遮罩-->
+			<div class="g-slide-mask"></div>
+			<!--点击底部按钮弹出留言页面-->
+			<div class="m-step-details">
+				<div class="m-top">
+					<div class="u-close"></div>
+					Post Message
+				</div>
+				<!--中间-->
+				<div class="u-leave-feedback-center">
+					<h3 class="u-lf-title">Content</h3>
+					<textarea name="" id="" cols="30" rows="5" placeholder="Please enter your new suggest..."></textarea>
+					<div class="u-btn-submit">
+					    <input type="submit" value="Post Message" style="width: 100%;height: 100%; background: #12C186; color: #fff; font-size: 0.32rem;"/>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+	$(function() {
+		$('.u-bottom-btn').click(function() {
+			$('.g-slide-mask').show();
+			$('.m-step-details').addClass('active');
+		})
+
+	})
+</script>

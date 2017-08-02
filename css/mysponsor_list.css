@@ -1,0 +1,139 @@
+.xian:after {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 0.55rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background: #E3E3E3;
+}
+
+.u-sponsor-center {
+	width: 100%;
+	position: absolute;
+	top: 1rem;
+	bottom: 0;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.u-sponsor-center .u-Reviews-box {
+	width: 100%;
+	padding: 0.24rem 0.05rem 0;
+	font-size: 0;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews {
+	width: 50%;
+	float: left;
+	margin-bottom: 0.22rem;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter {
+	background: #fff;
+	margin: 0 0.1rem;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box {
+	position: relative;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box .u-appraise-img {
+	height: 1.85rem;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box .u-appraise-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box .u-Customer {
+	font-size: 0;
+	margin: 0.2rem 0;
+	padding: 0 0.19rem;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box .u-Customer img {
+	width: 0.35rem;
+	height: 0.24rem;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box .u-Customer span {
+	width: 30%;
+	color: #666;
+	vertical-align: middle;
+	margin-left: 0.1rem;
+	font-size: 0.24rem;
+	display: inline-block;
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box .u-Customer i {
+	float: right;
+	color: #999999;
+	vertical-align: middle;
+	font-size: 0.24rem;
+	display: inline-block;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .u-appraise-cont-box p.u-Customer-p {
+	font-size: 0.26rem;
+	color: #333;
+	height: 1.5rem;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	margin-bottom: 0.2rem;
+	padding: 0 0.2rem;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .s-commen {
+	width: 100%;
+	height: 0.55rem;
+	border-top: 1px solid #E3E3E3;
+	font-size: 0;
+	position: relative;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .s-commen .s-t-1,
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .s-commen .s-t-2 {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .s-commen .s-t-1 span,
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .s-commen .s-t-2 span {
+	float: left;
+	font-size: 0.24rem;
+	color: #999;
+	margin-left: 0.45rem;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .s-commen .s-t-1 .u-icon-ck {
+	float: left;
+	margin: 0.15rem 0.2rem;
+	width: 0.32rem;
+	height: 0.25rem;
+	background: url("../img/Sprites.png") no-repeat;
+	background-size: 3rem 5rem;
+	background-position: -2rem -1.56rem;
+}
+
+.u-sponsor-center .u-Reviews-box .u-Reviews .u-Reviews-conter .s-commen .s-t-2 .u-icon-ck {
+	float: left;
+	margin: 0.15rem 0.2rem;
+	width: 0.32rem;
+	height: 0.25rem;
+	background: url("../img/Sprites.png") no-repeat;
+	background-size: 3rem 5rem;
+	background-position: -2.37rem -1.6rem;
+}

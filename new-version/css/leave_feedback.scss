@@ -1,0 +1,453 @@
+//左右居中定位
+@mixin left-right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+//覆盖定位
+@mixin shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+}
+
+
+.u-detail-center {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.u-content-list .u-car-li:nth-child(1) {
+  border-top: none;
+}
+
+.u-content-list .u-car-li {
+  background: #fff;
+  margin-bottom: 0.22rem;
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.u-car-li .u-car-content {
+  padding: 0 0.34rem;
+  .u-car-details {
+    padding-bottom: 0.4rem;
+    padding-top: 0.34rem;
+  }
+}
+
+.u-car-content .u-details-img {
+  width: 1.95rem;
+  height: 1.95rem;
+  border: 1px solid #EBEBEC;
+  border-radius: 0.03rem;
+  float: left;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.u-car-content .u-details-xq {
+  width: 70%;
+  height: 1.96rem;
+  float: left;
+  font-size: 0.26rem;
+  color: #999;
+  padding-left: 0.25rem;
+  box-sizing: border-box;
+  .item-basic-info {
+    height: 1.1rem;
+    font-size: 0.28rem;
+    color: #333;
+    padding: 0.1rem 0;
+    //                          overflow: hidden;
+    //                          white-space:nowrap;
+    //                          text-overflow:ellipsis;
+  }
+  p {
+    margin-top: 0.1rem;
+  }
+}
+
+.u-car-li .u-import-box {
+  padding: 0 0.34rem;
+  margin: 0 0 0.4rem 0;
+  height: 0.68rem;
+  input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid #EBEBEC;
+    padding-left: 0.15rem;
+    font-size: 0.26rem;
+  }
+}
+
+.u-car-li .u-text {
+  width: 100%;
+  padding: 0 0.34rem;
+  position: relative;
+
+  .u-text-box {
+    border: 1px solid #EBEBEC;
+    height: 1.84rem;
+  }
+  textarea {
+    width: 100%;
+    border-radius: 0.03rem;
+    padding: 0.2rem;
+    line-height: 0.28rem;
+    font-size: 0.26rem;
+    color: #333;
+    resize: none;
+  }
+  .textarea-count {
+    font-size: 0.26rem;
+    position: absolute;
+    bottom: 0.15rem;
+    right: 0.5rem;
+    color: #333;
+    .textareaTotal {
+      color: #B2B4B8;
+    }
+  }
+}
+
+.u-car-li .u-pics-box {
+  width: 100%;
+  border-bottom: 1px solid #EBEBEC;
+  padding: 0.35rem 0.34rem;
+  font-size: 0;
+  .u-hint {
+    font-size: 0.24rem;
+    color: #999;
+    line-height: 0.3rem;
+  }
+}
+
+//上传图片css
+.u-pics-box .u-pics {
+  display: inline-block;
+  font-size: 0;
+  margin-bottom: 0.2rem;
+  .up-img{
+    border: 1px solid #EBEBEC;
+    border-radius: 0.03rem;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.1rem;
+    margin-bottom: 0.15rem;
+  }
+}
+
+.u-pics .z_file{
+     width: 1.6rem;
+height: 1.6rem;
+border: 1px solid #EBEBEC;
+border-radius: 0.03rem;
+display: inline-block;
+margin-right: 0.1rem;
+margin-bottom: 0.15rem;
+background: url("../img/slr-icon.png") no-repeat;
+background-size: 0.73rem 0.55rem;
+background-position: center center;
+position: relative; 
+input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+
+.u-pics .up-section{
+    border-radius: 0.03rem;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.1rem;
+    margin-bottom: 0.15rem;
+    position: relative;
+  .up-span{
+       display: block;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9;
+    background: rgba(0,0,0,.5);
+  }
+  .close-upimg{
+      width: 0.4rem;
+      height: 0.4rem;
+          position: absolute;
+    top:0.06rem;
+    right:0.06rem;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  .up-img{
+          display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .img-name-p{display: none;}
+}
+
+.mask {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+
+.mask-content {
+    width:5.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left:-2.7rem;
+    margin-top: -0.8rem;
+    background: white;
+    height: 1.6rem;
+    text-align: center;
+    border-radius:0.03rem ;
+    
+    .del-p {
+    color: #555;
+    height:0.94rem;
+    line-height: 0.94rem;
+    font-size: 0.24rem;
+    border-bottom: 1px solid #D1D1D1;
+}
+.check-p{
+        height: 0.66rem;
+    line-height: 0.66rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    span{
+            width: 49%;
+    display:block;
+    float: left;
+    text-align: center;
+    color: #d4361d;
+    font-size:0.24rem;
+    }
+    .del-com {
+     border-right: 1px solid #D1D1D1;
+    }
+}
+}
+}
+
+.u-detail-center .u-stars {
+  padding: 0.3rem 0.34rem;
+  font-size: 0;
+  color: #333;
+  span {
+    width: 30%;
+    float: left;
+    font-size: 0.32rem;
+    line-height: 0.5rem;
+  }
+}
+
+.u-stars .u-score {
+  width: 60%;
+  display: inline-block;
+  margin-left: 10%;
+  li {
+    width: 0.46rem;
+    height: 0.46rem;
+    background: url("../img/score2.png") no-repeat;
+    background-size: cover;
+    float: left;
+    margin-left: 0.3rem;
+  }
+  li.active {
+    background: url("../img/score1.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+//评价
+.u-detail-center .u-assess-box {
+  background: #fff;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
+  .u-assess-title {
+    padding: 0 0.34rem;
+    border-bottom: 1px solid #EBEBEC;
+    font-size: 0.32rem;
+    color: #666;
+    line-height: 1rem;
+    background: url(../img/woman-icon.png) no-repeat;
+    background-size: 0.32rem 0.36rem;
+    background-position: 0.34rem center;
+    span {
+      margin-left: 0.58rem;
+    }
+  }
+}
+
+//底部
+.u-footer-box {
+  width: 100%;
+  height: 1rem;
+  border-top: 1px solid #D3D3D3;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  padding: 0 0.34rem;
+  overflow: hidden;
+  .u-btn-l, .u-btn-r {
+    width: 47%;
+    height: 0.72rem;
+    text-align: center;
+    line-height: 0.72rem;
+    margin-top: 0.13rem;
+    border-radius: 0.03rem;
+    font-size: 0.3rem;
+  }
+  .u-btn-l {
+    float: left;
+    border: 1px solid #12C286;
+    color: #12C286;
+  }
+  .u-btn-r {
+    float: right;
+    background: #12C286;
+    color: #fff;
+  }
+}
+
+//点击产品弹出产品详情页面
+//         <!--点击u-car-content弹出的页面产品详情页-->
+//             点击Repeat Order弹出的页面产品详情页
+.g-product-Detail.active{
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+}
+
+
+.g-product-Detail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    background: #fff;
+    z-index: 1000;
+        transform: translate3d(100%,0,0);
+        -webkit-transform: translate3d(100%,0,0);
+        -ms-transform: translate3d(100%,0,0);
+        -moz-transform: translate3d(100%,0,0);
+        -o-transform: translate3d(100%,0,0);
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -ms-trasnition: all 0.3s ease-out;
+    }
+   .g-product-Detail .m-center-content.u-none-bottom{
+        
+        padding: 0.5rem 0.34rem 0rem 0.34rem;
+    }
+   .g-product-Detail .m-center-content {
+        width: 100%;
+        position: absolute;
+        bottom: 1rem;
+        top: 0rem;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.3rem 0.34rem 1rem 0.34rem;
+        box-sizing: border-box;
+         }
+
+        
+        
+       .m-center-content .m-center-list-box.u-none-border {
+            border: 0;
+            margin-bottom: 0;
+        }
+        .m-center-content .m-center-list-box {
+            border-bottom: 1px solid #E3E3E3;
+            margin-bottom: 0.4rem;
+            padding-bottom: 0.3rem;
+            box-sizing: border-box; }
+           .m-center-list-box dl {
+                width: 100%;
+                height: auto;
+                line-height: 0.5rem;
+                font-size: 0.26rem;
+                dt {
+                    width: 45%;
+                    float: left;
+                    color: #999;
+                }
+                dd.u-green {
+                    color: #12C286;
+                }
+                dd {
+                    width: 55%;
+                    color: #333;
+                    float: left;
+                }
+            }
+       
+       .m-center-content .m-total-price {
+            width: 100%;
+            padding: 0 0.34rem;
+            box-sizing: border-box;
+            font-size: 0.28rem;
+            color: #999;
+            direction: rtl;
+            i {
+                font-size: 0.32rem;
+                color: #f60;
+            }
+        }
+   

@@ -1,0 +1,232 @@
+.u-tick:after {
+  content: '';
+  display: block;
+  width: 0.26rem;
+  height: 0.2rem;
+  background: url("../img/tick.png") no-repeat;
+  background-size: cover;
+  margin-top: -0.1rem;
+  position: absolute;
+  top: 50%;
+  right: 0.3rem; }
+
+.g-home {
+  width: 100%;
+  height: 100%; }
+
+.m-search-box {
+  width: 100%;
+  background: #fff;
+  padding: 0.19rem 0.15rem;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  border-bottom: 1px solid #D3D3D3; }
+  .m-search-box .m-search-inner {
+    width: 100%;
+    height: 0.68rem;
+    border-radius: 0.05rem;
+    padding-left: 0.15rem;
+    background: #EBEBEC;
+    position: relative; }
+
+.m-search-inner input {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #EBEBEC;
+  font-size: 0.26rem; }
+
+.m-search-inner .m-search-clear {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: url(../img/colicon-icon.png) no-repeat;
+  background-size: 0.28rem 0.28rem;
+  background-position: center center; }
+
+.m-search-inner .m-search-icon {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/search-icon.png) no-repeat #12C286;
+  background-size: 0.28rem 0.28rem;
+  background-position: center center;
+  border-top-right-radius: 0.05rem;
+  border-bottom-right-radius: 0.05rem; }
+
+.u-detail-center {
+  width: 100%;
+  position: absolute;
+  top: 2.07rem;
+  bottom: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.u-detail-center .m-search-show {
+  width: 100%;
+  background: #EBEBEC;
+  font-size: 0.24rem;
+  color: #999999;
+  text-align: center;
+  line-height: 1rem;
+  border-bottom: 1px solid #D3D3D3; }
+
+.u-feedack-list {
+  margin-bottom: 0.4rem; }
+
+.u-feedack-list .u-item {
+  width: 100%;
+  margin-bottom: 0.22rem;
+  background: #fff; }
+  .u-feedack-list .u-item .u-personinfo-box {
+    padding: 0.34rem 0.34rem 0.24rem; }
+
+.u-personinfo-box .u-head-portrait {
+  width: 15%;
+  float: left; }
+  .u-personinfo-box .u-head-portrait .u-portrait {
+    display: block;
+    width: 0.96rem;
+    height: 0.96rem;
+    border-radius: 50%;
+ }
+  .u-personinfo-box .u-head-portrait .u-portrait img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+ }
+.u-personinfo-box .u-personinfo {
+  width: 85%;
+  float: left;
+  padding-left: 0.15rem; }
+
+.u-personinfo h3 {
+  font-size: 0.3rem;
+  color: #333;
+  line-height: 0.5rem;
+  margin-bottom: 0.18rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .u-personinfo h3 span {
+    color: #12C286; }
+
+.u-personinfo .u-info {
+  width: 100%;
+  font-size: 0.26rem;
+  color: #333; }
+  .u-personinfo .u-info span {
+    margin-right: 0.12rem; }
+  .u-personinfo .u-info img {
+    width: 0.44rem;
+    height: 0.3rem;
+    vertical-align: bottom; }
+
+.u-info .u-djx {
+  width: 34.5%;
+  height: 0.4rem;
+  display: inline-block;
+  background: url("../img/score4.png") repeat-x;
+  background-size: 0.4rem 0.4rem;
+  background-position: 0 0;
+  float: right; }
+  .u-info .u-djx .u-hx {
+    width: 100%;
+    height: 0.4rem;
+    display: inline-block;
+    background: url("../img/score3.png") repeat-x;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0 0; }
+
+.u-item .u-projects {
+  padding: 0 0.34rem;
+  position: relative; }
+  .u-item .u-projects a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto; }
+  .u-item .u-projects p.u-pltext {
+    font-size: 0.26rem;
+    color: #333;
+    line-height: 0.36rem;
+    border-bottom: 1px solid #EBEBEC;
+    padding-bottom: 0.2rem; }
+    .u-item .u-projects p.u-pltext span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3; }
+
+.u-item .u-ratehistory {
+  background: #fff;
+  padding: 0.3rem 0.34rem; }
+
+.u-ratehistory .s-t-1 {
+  float: left;
+  font-size: 0.24rem;
+  color: #999;
+  margin-right: 0.24rem; }
+
+.u-ratehistory .s-t-1 .u-icon-ck {
+  float: left;
+  width: 0.32rem;
+  height: 0.25rem; }
+  .u-ratehistory .s-t-1 span {
+    float: left;
+    margin-left: 0.1rem; }
+
+.u-ratehistory .s-t-1:nth-child(1) .u-icon-ck {
+  background: url("../img/Sprites.png") no-repeat;
+  background-size: 3rem 5rem;
+  background-position: -2rem -1.56rem; }
+
+.u-ratehistory .s-t-1:nth-child(2) .u-icon-ck {
+  background: url(../img/mes-icon2.png) no-repeat;
+  background-size: 0.26rem 0.24rem;
+  background-position: 0rem 0rem; }
+
+.u-ratehistory .s-t-1:nth-child(3) .u-icon-ck {
+  background: url(../img/ax-icon.png) no-repeat;
+  background-size: 0.3rem 0.26rem;
+  background-position: 0rem center; }
+
+.page-box {
+  width: 100%;
+  height: 0.8rem;
+  margin-bottom: 1.5rem; }
+
+.page-box .u-paging {
+  width: 2.6rem;
+  height: 100%;
+  margin: 0 auto; }
+
+.page-box .paging-L.active, .page-box .paging-R.active {
+  background: #12C286;
+  color: #fff; }
+
+.page-box .paging-L {
+  width: 1.2rem;
+  float: left;
+  background: #ddd;
+  font-size: 0.24rem;
+  color: #666666;
+  text-align: center;
+  line-height: 0.6rem; }
+
+.page-box .paging-R {
+  width: 1.2rem;
+  float: right;
+  background: #ddd;
+  font-size: 0.24rem;
+  color: #666666;
+  text-align: center;
+  line-height: 0.6rem; }

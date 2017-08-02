@@ -1,0 +1,362 @@
+//左右居中定位
+@mixin left-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+//上下居中定位
+@mixin top-bottom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+//正中间定位
+@mixin zhong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+//覆盖定位
+@mixin shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+//伪类圆点
+.li-icon:before {
+    content: '';
+    width: 0.12rem;
+    height: 0.12rem;
+    background: url("../img/li-icon.png") no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+}
+//capabilities_list.html页面css
+.g-main .g-capabilities {
+    width: 100%;
+    height: 100%;
+    .u-capabilities-center {
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+        bottom: 0;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        .u-banner-box {
+            width: 100%;
+            height: 2.64rem;
+            background: url("../img/capabilities/pcbbanner.jpg") no-repeat;
+            background-size: cover;
+            color: #fff;
+            padding: 0.75rem 0.34rem 0;
+            h3 {
+                font-size: 0.34rem;
+                margin-bottom: 0.3rem;
+            }
+            p {
+                font-size: 0.24rem;
+            }
+        }
+
+    }
+    //公用的列表样式 
+    .u-inner-list {
+        width: 100%;
+        margin-bottom: 1.22rem;
+        li.u-border {
+            border-bottom: none;
+            border-top: 1px solid #E3E3E3;
+            position: relative;
+            i.icon-top {
+                display: block;
+                width: 0.27rem;
+                height: 0.15rem;
+                background: url("../img/T-icon1.png") no-repeat;
+                background-size: cover;
+                @include top-bottom;
+                right: 0;
+            }
+            i {
+                display: block;
+                width: 0.27rem;
+                height: 0.15rem;
+                background: url("../img/T-icon2.png") no-repeat;
+                background-size: cover;
+                @include top-bottom;
+                right: 0;
+            }
+        }
+        li {
+            border-bottom: 1px solid #E3E3E3;
+            padding: 0.36rem 0.34rem;
+            font-size: 0.28rem;
+            color: #333;
+            position: relative;
+            a {
+                @include shade;
+            }
+            i {
+                color: #12C286;
+            }
+            em {
+                font-style: normal;
+                float: left;
+                width: 10%;
+            }
+            span {
+                width: 90%;
+                float: left;
+                padding-right: 0.15rem;
+                padding-left: 0.1rem;
+            }
+        }
+    }
+}
+.u-capabilities-center .u-list-box {
+    width: 100%;
+    background: #fff;
+    .u-list-title {
+        background: #F7F7F7;
+        font-size: 0;
+        border-bottom: 1px solid #D3D3D3;
+        li.active {
+            border-bottom: 2px solid #12C286;
+            color: #12C186;
+        }
+        li {
+            width: 50%;
+            display: inline-block;
+            color: #999999;
+            font-size: 0.3rem;
+            text-align: center;
+            line-height: 1rem;
+        }
+    }
+    .u-list-center {
+        width: 100%;
+        .u-inner.active {
+            display: block;
+        }
+        .u-inner {
+            display: none;
+        }
+    }
+}
+
+//capabilities.html页面css
+.g-capabilities .u-pcb-capabilities-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    h3,
+    h5 {
+        font-size: 0.32rem;
+        line-height: 0.4rem;
+        font-weight: bold;
+        color: #333;
+        border-bottom: 1px solid #E3E3E3;
+        padding: 0.35rem 0 0.2rem;
+    }
+    h5 {
+        font-size: 0.28rem;
+    }
+    .u-referral-title {
+        padding: 0 0.34rem 0.35rem;
+        margin-bottom: 0.2rem;
+        background: #fff;
+        //     p.isSearch.menu_chioce{display: block;}
+        p.isSearch {
+            margin-bottom: 0.4rem;
+            margin-top: 0;
+            padding: 0 0.34rem;
+            color: #999;
+        }
+        p {
+            font-size: 0.26rem;
+            line-height: 0.32rem;
+            color: #333;
+            margin-top: 0.24rem;
+            i {
+                font-weight: bold;
+            }
+            a {
+                color: #00A63F;
+            }
+        }
+        .u-table-box {
+            padding: 0.3rem 0 0;
+            .u-table-title {
+                width: 100%;
+                background: #E4F2FF;
+                color: #333;
+                line-height: 0.8rem;
+                li:nth-child(1) {
+                    width: 49.5%;
+                    border-right: 1px solid #fff;
+                }
+                li:nth-child(2) {
+                    width: 50%;
+                }
+                li {
+                    font-size: 0.24rem;
+                    float: left;
+                    padding-left: 0.15rem;
+                }
+            }
+            .u-table-content.bg-color {
+                background: #F4F7FA;
+            }
+            .u-table-content {
+                border-bottom: 1px solid #e5e5e5;
+                .u-table-conten-list {
+                    border-bottom: 1px dotted #dddddd;
+                    padding: 0.25rem 0;
+                    font-size: 0;
+                    li {
+                        font-size: 0.24rem;
+                        color: #333;
+                        width: 50%;
+                        display: inline-block;
+                        padding-left: 0.15rem;
+                        vertical-align: text-top;
+                    }
+                }
+                h4 {
+                    padding: 0.25rem 0.15rem;
+                    font-size: 0.24rem;
+                    color: #999;
+                }
+            }
+        }
+    }
+    .u-referral-title .disc-uil {
+        padding: 0.34rem 0 0.2rem;
+        li {
+            font-size: 0.26rem;
+            color: #333;
+            margin-bottom: 0.1rem;
+            position: relative;
+            padding-left: 0.34rem;
+        }
+    }
+}
+//pcb-service.html页面列表点击弹出页面css
+.m-step-details .u-step-center {
+    width: 100%;
+    position: absolute;
+    top: 0.9rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 0.34rem;
+    h3 {
+        font-size: 0.28rem;
+        font-weight: bold;
+        color: #333;
+        border-bottom: 1px solid #E3E3E3;
+        padding: 0.35rem 0 0.2rem;
+    }
+    p {
+        font-size: 0.26rem;
+        line-height: 0.32rem;
+        color: #333;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+    img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+//assembly-capabilities.html表格css
+.u-table-box .u-table-title-two {
+    width: 100%;
+    background: #E4F2FF;
+    color: #333;
+    line-height: 0.8rem;
+    li:nth-child(1){
+        width:29.5%;
+        border-right: 1px solid #fff;
+    }
+       li:nth-child(2){
+        width:70%;
+    }
+    li {
+        font-size: 0.24rem;
+        float: left;
+        padding-left: 0.15rem;
+    }
+}
+.u-table-box .u-table-content dl.bg-color{background: #F4F7FA;}
+.u-table-box .u-table-content dl{
+    width: 100%;
+    border-bottom:1px solid #e5e5e5;
+    font-size: 0;
+    
+    dt{
+        width: 30%;
+        display: inline-block;
+        font-size: 0.26rem;
+        color: #333;
+        padding-left: 0.15rem;
+        vertical-align: top;
+        margin-top: 0.28rem;
+            h6{
+            font-size: 0.26rem;
+            }
+    }
+    dd{
+        width: 70%;
+        display: inline-block;
+        font-size: 0.24rem;
+        color: #999;
+        h3{border-bottom: none;
+            font-size: 0.26rem;
+            color: #999;
+            padding: 0.2rem 0 0;
+        }
+        p.u-dashed{border-bottom: 1px dotted #dddddd;}
+        p{padding-bottom: 0.2rem;}
+    }
+}
+
+
+//about.htmlcss
+.u-referral-title .u-about-bn{
+    width: 6.92rem;
+    height: 2.76rem;
+    margin: 0 auto;
+    background:url(../img/about-bn.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 0.9rem;
+}
+.u-referral-title .u-d-drop1{
+    width: 6.49rem;
+    height: 6.33rem;
+    background:url(../img/aboutgj2.png) no-repeat;
+    background-size: cover;
+    margin-top: 0.5rem;    
+}
+//why_business.html
+.u-referral-title .desc-img-box{
+    width: 6.82rem;
+    height: 2.80rem;
+    margin: 0.4rem auto;
+    img{
+      width: 100%;    
+    }    
+}

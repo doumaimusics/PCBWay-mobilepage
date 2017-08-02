@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--<meta name="apple-touch-fullscreen" content="yes"> //启用webapp全屏模式-->
+		<!--<meta name="apple-mobile-web-app-capable" content="yes"> //启用webapp全屏模式-->
+		<title>home</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/index_0316.css" />
+
+	</head>
+
+	<body>
+		<!--首页整体大框架-->
+		<div class="g-main">
+			<!--点击u-guild弹出的-->
+			<div class="u-top-bounced" id="u-hometop">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="javascript:;">My account</a>
+
+					</li>
+					<li>
+						<a href="javascript:;">My Order</a>
+
+					</li>
+				</ul>
+			</div>
+
+			<!--首页页面大框架-->
+			<div class="g-home">
+                <div class="u-header-pc">
+                	<div class="u-header-pc-btn">GO BACK PC CLIENT</div>
+                	<a href="javascript:;"></a>
+                </div>
+				<!--首页头部-->
+				<div class="u-header">
+					<div class="u-drawer sprites-img"></div>
+					<div class="u-logo sprites-img"></div>
+					<div class="u-position-right sprites-img">
+						<div class="u-in-title">1</div>
+					</div>
+					<!--购物车-->
+					<div class="u-guild"></div>
+				</div>
+				
+					
+					
+				<!--首页中间部分-->
+				<div class="m-center">
+					<!--中间计价部分-->
+					<div class="m-quoteNow">
+						<div class="u-xian-bg"></div>
+						<h3 class="u-iq-title">One-stop solution for PCB<br>manufacturing and assembly</h3>
+						<!--计价选项卡-->
+						<div class="u-tab-box">
+							<div class="u-tab-title cleartfix">
+								<ul class="u-tab-ul">
+									<li class="active">PCB</li>
+									<li>SMD-Stencil</li>
+									<li>Assembly</li>
+									<li>Flexible PCBs</li>
+
+								</ul>
+							</div>
+							<ul class="u-center-nav">
+								<li class="u-new-inner active cleartfix">
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>Dimensions</dt>
+											<dd>
+												<input type="text" placeholder="Length" class="u-input" />
+												<i></i>
+												<input type="text" placeholder="Width" class="u-input" />
+												<div class="u-dw">mm</div>
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation fr">
+										<div class="u-Dl-L">
+											<dt>Quantity</dt>
+											<dd>
+												<select id="num" name="num" class="u-xuanz">
+													<option value="">Choose Num (pcs)</option>
+													<option value="5">5</option>
+													<option value="10">10</option>
+													<option value="15">15</option>
+													<option value="20">20</option>
+													<option value="25">25</option>
+													<option value="30">30</option>
+													<option value="40">40</option>
+													<option value="50">50</option>
+													<option value="75">75</option>
+													<option value="100">100</option>
+													<option value="-1">100+</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>Layers</dt>
+											<dd>
+												<select id="Layersquote" name="Layersquote" class="u-xuanz">
+													<option value="1">1 Layer</option>
+													<option value="2" selected="selected">2 Layers</option>
+													<option value="4">4 Layers</option>
+													<option value="6">6 Layers</option>
+													<option value="8">8 Layers</option>
+													<option value="10">10 Layers</option>
+													<option value="12">12 Layers</option>
+													<option value="14">14 Layers</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation fr">
+										<div class="u-Dl-L">
+											<dt>Thickness</dt>
+											<dd>
+												<select name="Thicknessquote" id="Thicknessquote" class="u-xuanz">
+													<option value="">Thickness</option>
+													<option value="0.4">0.4mm</option>
+													<option value="0.6">0.6mm</option>
+													<option value="0.8">0.8mm</option>
+													<option value="1.0">1.0mm</option>
+													<option value="1.2">1.2mm</option>
+													<option value="1.6" selected="selected">1.6mm</option>
+													<option value="2.0">2.0mm</option>
+													<option value="2.4">2.4mm</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+									<div class="u-btn">
+										<a href="javascript:;">Quote Now </a>
+									</div>
+								</li>
+								<li class="u-new-inner">
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>Stencil type:</dt>
+											<dd class="u-dd">
+												<div class="u-select ">
+													<input type="radio" class="u-radio active">
+													<label class="u-radio-text">Framework</label>
+												</div>
+												<div class="u-select">
+													<input type="radio" class="u-radio u-radio1">
+													<label class="u-radio-text u-radio-text1">Non-framework</label>
+												</div>
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation fr">
+										<div class="u-Dl-L">
+											<dt>Size (mm)</dt>
+											<dd>
+												<select name="indexStencilSize" id="indexStencilSize" class="u-xuanz">
+													<option value="">Choose Size (mm)</option>
+													<option value="7">370 × 470 mm $30.00</option>
+													<option value="12">420 × 520 mm $40.00</option>
+													<option value="13">450 × 550 mm $65.00</option>
+													<option value="8">584 × 584 mm $75.00</option>
+													<option value="10">550 × 650 mm $70.00</option>
+													<option value="14">736 × 736 mm $85.00</option>
+													<option value="11">400 × 600 mm $36.00</option>
+													<option value="15">400 × 800 mm $60.00</option>
+													<option value="16">400 × 1000 mm $65.00</option>
+													<option value="17">500 × 800 mm $75.00</option>
+													<option value="18">400 × 1200 mm $75.00</option>
+													<option value="19">400 × 1400 mm $80.00</option>
+													<option value="20">500 × 1200 mm $75.00</option>
+													<option value="21">500 × 1400 mm $75.00</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>Stencil Side</dt>
+											<dd>
+												<select name="indexStencilSide" class="u-xuanz">
+													<option value="1">Top</option>
+													<option value="2">Bottom</option>
+													<option value="3">Top+Bottom(On Single Stencil)</option>
+													<option value="4">Top &amp; Bottom(On Separate Stencil)</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation fr">
+										<div class="u-Dl-L">
+											<dt>Quantity</dt>
+											<dd>
+												<input type="text" class="u-input1" placeholder="1" />
+											</dd>
+										</div>
+									</dl>
+									<div class="u-btn">
+										<a href="javascript:;">Quote Now </a>
+									</div>
+
+								</li>
+								<li class="u-new-inner">
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>Quantity</dt>
+											<dd>
+												<input type="text" class="u-input1" placeholder="Estimated PCBA Qty" />
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation fr">
+										<div class="u-Dl-L">
+											<dt>NO. of Unique Parts</dt>
+											<dd>
+												<input type="text" class="u-input1" placeholder="Number of Unique Parts" />
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>SMT Pads</dt>
+											<dd>
+												<input type="text" class="u-input1" placeholder="Total number" />
+											</dd>
+										</div>
+									</dl>
+									<dl class="u_valuation fr">
+										<div class="u-Dl-L">
+											<dt>Thru-Holes</dt>
+											<dd>
+												<input type="text" class="u-input1" placeholder="Total number" />
+											</dd>
+										</div>
+									</dl>
+
+									<div class="u-btn">
+										<a href="javascript:;">Quote Now </a>
+									</div>
+								</li>
+								<li class="u-new-inner">
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>Dimensions</dt>
+											<dd>
+												<input type="text" placeholder="Length" class="u-input" />
+												<i></i>
+												<input type="text" placeholder="Width" class="u-input" />
+												<div class="u-dw">mm</div>
+											</dd>
+										</div>
+									</dl>
+
+									<dl class="u_valuation fr">
+										<div class="u-Dl-L">
+											<dt>Quantity</dt>
+											<dd>
+												<input type="text" class="u-input1" placeholder="Flexible Qty" />
+											</dd>
+										</div>
+									</dl>
+
+									<dl class="u_valuation fl">
+										<div class="u-Dl-L">
+											<dt>Layers</dt>
+											<dd>
+												<select id="Layersquote" name="Layersquote" class="u-xuanz">
+													<option value="1" selected="selected">1 Layer</option>
+													<option value="2">2 Layers</option>
+													<option value="4">4 Layers</option>
+													<option value="6">6 Layers</option>
+												</select>
+											</dd>
+										</div>
+									</dl>
+
+									<div class="u-btn">
+										<a href="javascript:;">Quote Now </a>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--成交展示部分-->
+					<div class="m-module-con">
+
+						<!--承诺-->
+						<ul class="u-safeguard cleartfix">
+
+							<li class="u-list u-border-right">
+								<i class="u-list1 sprites-img"></i>
+								<span class="u-list-text">Best Value</span>
+							</li>
+							<li class="u-list u-border-right">
+								<i class="u-list2 sprites-img"></i>
+
+								<span class="u-list-text">Fast Turnarounds</span>
+
+							</li>
+							<li class="u-list">
+								<i class="u-list3 sprites-img"></i>
+								<span class="u-list-text">Low Minimums</span>
+							</li>
+
+						</ul>
+
+
+						<!--从下向上滚动-->
+						<div class="u-latest">
+							<div class="u-latest-logo sprites-img"></div>
+							<div class="smarticker1 demo">
+								<ul>
+									<li class="u-cell">
+										<dl class="cleartfix">
+											<dt>01-02</dt>
+											<dd>
+												<img src="img/flag01.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+										<dl class="cleartfix">
+											<dt>01-03</dt>
+											<dd>
+												<img src="img/flag02.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+									</li>
+									<li class="u-cell">
+										<dl class="cleartfix">
+											<dt>02-02</dt>
+											<dd>
+												<img src="img/flag01.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+										<dl class="cleartfix">
+											<dt>02-02</dt>
+											<dd>
+												<img src="img/flag02.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+									</li>
+									<li class="u-cell">
+										<dl class="cleartfix">
+											<dt>03-02</dt>
+											<dd>
+												<img src="img/flag01.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+										<dl class="cleartfix">
+											<dt>03-02</dt>
+											<dd>
+												<img src="img/flag02.jpg" alt="" />
+												<span class="u-text">R***ard</span>
+												<i class="u-money">$2,030.00</i>
+											</dd>
+										</dl>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+					<!--Super Deals-->
+					<div class="m-show-module">
+						<div class="u-title">
+							Super Deals
+							<i class="sprites-img"></i>
+							<a href="javascript:;"></a>
+						</div>
+						<ul class="u-mui-flex cleartfix">
+							<li class="u-flex-left">
+								<h3 class="u-flex-h3">No Hidden Cost</h3>
+								<p class="u-flex-p1">1-2layers 100*100mm<br> 3-5 Days Delivery</p>
+								<p class="u-flex-p1 u-flex-p2"><span>US $10.00</span>/10pcs</p>
+								<div class="u-flex-img">
+									<img src="img/IMG01.jpg" alt="" />
+									<div class="u-price-content">
+
+									</div>
+								</div>
+								<a href="quote-PCB.html"></a>
+							</li>
+							<li class="u-flex-right">
+								<h3 class="u-flex-h3">Best Value</h3>
+								<p class="u-flex-p1">L≤100mm W≤100mm<br> 4 layers 4-6 Days Delivery</p>
+								<p class="u-flex-p1 u-flex-p2"><span>US $53.00</span>/10pcs</p>
+								<div class="u-flex-img">
+									<img src="img/IMG02.jpg" alt="" />
+									<div class="u-price-content u-two">
+
+									</div>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+						</ul>
+
+						<ul class="u-mui-flex u-fc cleartfix">
+							<li class="u-right-border">
+								<h3 class="u-flex-h3">1-14 layers<br>PCB Fab</h3>
+								<div class="u-flex-img">
+									<img src="img/IMG03.jpg" alt="" />
+
+								</div>
+								<p class="u-flex-p1 u-flex-p2"><span>US $10.00</span><br>/10pcs</p>
+
+								<a href="#"></a>
+							</li>
+							<li class="u-right-border">
+								<h3 class="u-flex-h3">PCBA lead time<br> 3-5 days</h3>
+								<div class="u-flex-img">
+									<img src="img/IMG04.jpg" alt="" />
+
+								</div>
+								<p class="u-flex-p1 u-flex-p2"><span>US $25.00</span><br>/starting price</p>
+
+								<a href="#"></a>
+							</li>
+							<li>
+								<h3 class="u-flex-h3">PCBA provides<br> free stencil</h3>
+								<div class="u-flex-img">
+									<img src="img/IMG05.jpg" alt="" />
+
+								</div>
+								<p class="u-flex-p1 u-flex-p2"><span>US $25.00</span><br>/10pcs</p>
+
+								<a href="javascript:;"></a>
+							</li>
+						</ul>
+
+					</div>
+					<!--Just for you-->
+					<div class="m-show-module">
+						<div class="u-title">
+							Just for you
+							<i class="sprites-img"></i>
+							<a href="http://www.baidu.com"></a>
+						</div>
+						<!--lunbo-->
+						<div class="container">
+							<div class="swiper">
+								<div class="item">
+									<a href="javascript:;">
+										<!--1-->
+										<div class="u-banner-logo"></div>
+										<div class="u-banner1">
+											<img src="img/banner1.jpg" />
+										</div>
+										<div class="u-banner-text">
+											<h3>Basic Specs<br><span>1-10 Layers</span></h3>
+											<p>
+												Turn time: As fast as 24 hours<br>Qty req.: 5 - 10000+<br>Materials: FR4,Aluminum<br>Finished copper: 1-3 oz<br>
+											</p>
+										</div>
+									</a>
+								</div>
+								<div class="item">
+
+									<a href="javascript:;">
+										<!--2-->
+										<div class="u-banner-logo"></div>
+										<div class="u-banner1">
+											<img src="img/banner2.jpg" />
+										</div>
+										<div class="u-banner-text">
+											<h3>Full Feature<br><span>1 - 20 Layers</span></h3>
+											<p>
+												Turn time: Same Day - 5 weeks<br>Qty req.: 1 - 10000+<br>Board type: High-Temp.FR4, Flex,Flex-rigid, HDI, Rogers, etc.<br>
+											</p>
+										</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:;">
+										<!--3-->
+										<div class="u-banner-logo"></div>
+										<div class="u-banner1">
+											<img src="img/banner3.jpg" />
+										</div>
+										<div class="u-banner-text">
+											<h3>PCB Assembly<br><span>Turnkey/Kitted/Hybrid</span></h3>
+											<p>
+												Turn time: 2 days - 3 weeks<br>Qty req.: 1 - 10000+<br>Capability: SMT & Supply Parts<br>Soldering: Machine+Hand<br>
+											</p>
+										</div>
+									</a>
+								</div>
+
+							</div>
+							<div class="progress-bar">
+								<i></i>
+								<i></i>
+								<i></i>
+
+							</div>
+						</div>
+
+						<!--banner-->
+						<div class="u-tbanner">
+							<img src="img/banner.jpg" />
+						</div>
+					</div>
+					<!--评论点赞部分-->
+					<div class="m-appraise-module">
+						<div class="u-appraise-title">
+							<ul class="u-appraise-ul cleartfix">
+								<li class="active">Customer Reviews</li>
+								<li>Sponsor projects</li>
+
+							</ul>
+						</div>
+						<ul class="u-appraise-content">
+							<!--Customer Reviews-->
+							<li class="u-appraise-li active">
+								<div class="u-Reviews-box cleartfix">
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>9998</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>2800</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>5450</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>6666</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>65153</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>9845</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>9918</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>5646</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="m-more">
+									<a href="javascript:;">
+										View All
+										<i class="u-more-icon"></i>
+									</a>
+								</div>
+							</li>
+							<!--Sponsor projects-->
+							<li class="u-appraise-li">
+								<div class="u-Reviews-box cleartfix">
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>598</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>854</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>9998</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>2800</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>9998</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>2800</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="u-Reviews">
+										<div class="u-Reviews-conter">
+											<div class="u-appraise-cont-box">
+												<div class="u-appraise-img">
+													<img src="img/svp1.jpg" alt="" />
+												</div>
+												<div class="u-Customer">
+													<img src="img/flag03.jpg" alt="" />
+													<span>S***ds</span>
+													<i class="u-time">2017-014-16</i>
+												</div>
+												<p class="u-Customer-p">
+													Developed a variable input constant output switching...
+												</p>
+												<a href="javascript:;"></a>
+											</div>
+
+											<div class="s-comment cleartfix">
+												<div class="s-t-1">
+													<i class="u-icon-ck">
+												<span>9998</span>
+											</i>
+
+												</div>
+												<div class="s-t-2">
+													<i class="u-icon-ck">
+												<span>2800</span>
+											</i>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="m-more">
+									<a href="javascript:;">
+										View All
+										<i class="u-more-icon"></i>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!--首页底部-->
+				<div class="m-footer">
+					<li class="u-ft1 active">
+						<a href="javascript:;">Home</a>
+					</li>
+					<li class="u-ft2">
+						<a href="javascript:;">PCBA</a>
+					</li>
+					<li class="u-ft3">
+						<a href="quote-PCB.html">Quote</a>
+					</li>
+					<li class="u-ft4">
+						<a href="javascript:;">Cart</a>
+						<div class="u-in-title">1</div>
+					</li>
+					<li class="u-ft5">
+						<a href="My-Account.html">My Account</a>
+					</li>
+				</div>
+			</div>
+			<!--首页侧边导航大框架-->
+			<!--遮罩-->
+			<div class="g-slide-mask"></div>
+			<div class="g-swipe-wrapper">
+				<div class="m-drawer-loginInfo">
+					<div class="u-portrait">
+						<img src="img/portrait.png" alt="" />
+					</div>
+					<!--登录注册-->
+					<div class="u-drawer-unlogin">
+						<a href="user-login.html" class="u-sign-In">Sign In</a>
+						<a href="register.html" class="u-join-free">Join Free</a>
+					</div>
+				</div>
+				<ul class="u-drawer-box">
+					<li class="u-home">
+						<a href="javascript:;">
+							<i class="u-icon1 sprites-img"></i>
+							<span>Home</span>
+						</a>
+					</li>
+					<!--当有新消息的时候添加attention类进行提示-->
+					<li class="attention">
+						<a href="javascript:;">
+							<i class="u-icon2 sprites-img"></i>
+							<span>My Orders</span>
+						</a>
+					</li>
+					<li class="attention">
+						<a href="javascript:;">
+							<i class="u-icon3 sprites-img"></i>
+							<span>Cart</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="u-drawer-box ">
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon4 sprites-img"></i>
+							<span>Feedback</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon5 sprites-img"></i>
+							<span>Sponsorships</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="u-drawer-box ">
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon6 sprites-img"></i>
+							<span>PCB Assembly</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon7 sprites-img"></i>
+							<span>Capabilities </span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon8 sprites-img"></i>
+							<span>Why</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="u-drawer-box ">
+					<li>
+						<a href="javascript:;">
+							<i class="u-icon9 sprites-img"></i>
+							<span>About PCBWay</span>
+						</a>
+					</li>
+
+				</ul>
+				<div class="u-statement">
+					<p>Custom PCB Prototype the Easy Way!<br>Shenzhen JDB Technology Co., Ltd</p>
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/iswiper.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript">
+	//	产品展示从下向上轮播
+	function AutoScroll(obj) {
+		$(obj).find("ul:first").animate({
+			marginTop: "-1.35rem"
+		}, 500, function() {
+			$(this).css({
+				marginTop: "0px"
+			}).find("li:first").appendTo(this);
+		});
+	}
+	$(document).ready(function() {
+		setInterval('AutoScroll(".demo")', 3000);
+	});
+
+	$(function() {
+		
+		  //首页滑动顶部消失
+	 	var cubuk_seviye = $('.m-center').scrollTop();
+    var header_yuksekligi = $('.u-header-pc').outerHeight();
+
+    $('.m-center').scroll(function() {
+        var kaydirma_cubugu = $('.m-center').scrollTop();
+        if (kaydirma_cubugu > header_yuksekligi){$('.u-header-pc').addClass('active');
+                $('.u-header ').addClass('active')
+                $('.m-center').addClass('active')
+                $('#u-hometop').removeClass('u-hometop');
+       }else {
+       	$('.u-header-pc').removeClass('active');
+                $('.u-header ').removeClass('active')
+                $('.m-center').removeClass('active')
+                $('#u-hometop').addClass('u-hometop');
+                
+               
+       }
+
+        if (kaydirma_cubugu > cubuk_seviye){$('.u-header-pc').removeClass('sabit');} 
+        else {$('.u-header-pc').addClass('sabit');}				
+
+        cubuk_seviye = $('.m-center').scrollTop();	
+     });
+
+		
+		//首页计价部分选项卡
+		$(".u-tab-box .u-tab-title .u-tab-ul").find("li").click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.u-tab-box .u-center-nav li').removeClass('active');
+			var index = $(this).index();
+			$('.u-tab-box .u-center-nav').find('li').eq(index).addClass('active');
+		})
+		//SMD-Stencil页面的js
+		$('.u-new-inner .u_valuation .u-select .u-radio').click(function() {
+			$('.u-new-inner .u_valuation .u-select .u-radio').removeClass('active');
+			$(this).addClass('active');
+		})
+		//评论部分选项卡
+		$('.m-appraise-module .u-appraise-title .u-appraise-ul').find('li').on('touchend', function() {
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.m-appraise-module .u-appraise-content li').removeClass('active');
+			var index = $(this).index();
+			$('.m-appraise-module .u-appraise-content li').eq(index).addClass('active');
+		})
+		//banner轮播
+		//		var gallery = mui('.mui-slider');
+		//		gallery.slider({
+		//			interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+		//		});
+		window.swiper = new Swiper({
+			// 横屏切换
+			direction: 'horizontal',
+			// 自动切换，自动切换必须同时 infinite:true
+			autoSwitch: true,
+			// 首尾循环
+			infinite: true,
+			// 缓动
+			easing: "cubic-bezier(.10, .71, .39, .93)",
+			// 进度条
+			progressBar: true
+		});
+
+		//点赞效果
+		$('.u-Reviews-conter .s-comment .s-t-2 .u-icon-ck').click(function() {
+			$(this).toggleClass('active');
+			var classname = $(this).attr('class');
+			var zan_num = parseInt($('>span', this).text());
+			if(classname == 'u-icon-ck active') {
+				zan_num += 1;
+				$('>span', this).text(zan_num);
+			} else if(classname == 'u-icon-ck') {
+				zan_num -= 1;
+				$('>span', this).text(zan_num);
+			}
+		})
+
+		//点击顶部图标左侧导航划出		
+		$('.g-home .u-header .u-drawer').click(function(e) {
+			var wh = $('.g-home').height();
+			$('.g-slide-mask').css('height', wh).show();
+			$('.g-main .g-swipe-wrapper').css('height', wh).addClass('g-moved');
+		});
+
+		//点击导航Home左侧导航消失
+		$('.u-drawer-box .u-home').click(function() {
+			$('.g-slide-mask').hide();
+			$('.g-main .g-swipe-wrapper').removeClass('g-moved');
+		})
+	})
+</script>

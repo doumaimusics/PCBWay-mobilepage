@@ -1,0 +1,87 @@
+.g-payment-center {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  font-size: 0.26rem;
+  background: #ffffff; }
+
+.m-top-center {
+  padding: 0.4rem 0.34rem 0.3rem;
+  overflow: hidden;
+  background: url(../img/pay-logo2.png) center 0.5rem no-repeat;
+  background-size: 1rem; }
+  .m-top-center .pany_jg {
+    margin-top: 1.4rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.3rem; }
+    .m-top-center .pany_jg p.center_left {
+      text-align: center; }
+    .m-top-center .pany_jg p {
+      margin-bottom: 0.2rem; }
+      .m-top-center .pany_jg p span {
+        color: #f60; }
+  .m-top-center h3 {
+    font-size: 0.34rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+    line-height: 0.48rem; }
+  .m-top-center p {
+    color: #666;
+    line-height: 0.36rem; }
+    .m-top-center p a {
+      color: #12C286;
+      text-decoration: underline; }
+
+.m-payment-table {
+  background: #f2f3f7;
+  padding: 0 0.34rem; }
+  .m-payment-table dl:last-child {
+    border: 0; }
+  .m-payment-table dl {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0.3rem 0; }
+    .m-payment-table dl dt {
+      width: 30%;
+      float: left;
+      color: #999999; }
+    .m-payment-table dl dd {
+      width: 70%;
+      float: left;
+      color: #333;
+      line-height: 0.32rem;
+      padding-left: 0.15rem; }
+      .m-payment-table dl dd i {
+        color: #FF0000; }
+
+.m-payment-explain {
+  padding: 0.32rem 0.34rem; }
+  .m-payment-explain p {
+    color: #999999;
+    margin-bottom: 0.2rem;
+    line-height: 0.32rem; }
+    .m-payment-explain p i {
+      color: #FF0000; }
+
+.g-payment-center .expressage {
+  width: 100%; }
+  .g-payment-center .expressage img {
+    width: 100%; }
+
+.m-results-footer-box {
+  padding: 0.2rem 0.34rem; }
+  .m-results-footer-box .u-back-btn,
+  .m-results-footer-box .u-payment-btn {
+    float: left;
+    padding: 0 0.28rem;
+    border-radius: 0.03rem;
+    font-size: 0.28rem;
+    color: #fff;
+    line-height: 0.6rem; }
+  .m-results-footer-box .u-back-btn {
+    background: #423B52; }
+  .m-results-footer-box .u-payment-btn {
+    background: #12C286;
+    margin-left: 0.3rem; }

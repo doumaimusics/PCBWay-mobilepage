@@ -1,0 +1,121 @@
+.g-main .u-payment-wait {
+  width: 100%;
+  height: 100%;
+  padding-top: 5.6rem;
+  position: relative;
+  background: url("../img/pay-logo1.png") #fff no-repeat;
+  background-size: 2.83rem 0.74rem;
+  background-position: center 4rem; }
+  .g-main .u-payment-wait p {
+    font-size: 0.28rem;
+    color: #999;
+    text-align: center; }
+
+@-webkit-keyframes line-scale-pulse-out {
+  0% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1); }
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4); }
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1); } }
+
+@keyframes line-scale-pulse-out {
+  0% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1); }
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4); }
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1); } }
+  .g-main .u-payment-wait .loader-inner {
+    width: 0.9rem;
+    margin: 0.65rem auto; }
+    .g-main .u-payment-wait .loader-inner li {
+      background-color: #12C286;
+      width: 0.06rem;
+      height: 0.7rem;
+      border-radius: 0.03rem;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      float: left;
+      margin-left: 0.1rem;
+      -webkit-animation: line-scale-pulse-out 0.9s 0s infinite;
+      animation: line-scale-pulse-out 0.9s 0s infinite; }
+    .g-main .u-payment-wait .loader-inner li:nth-child(1),
+    .g-main .u-payment-wait .loader-inner li:nth-child(5) {
+      -webkit-animation-delay: 0.4s !important;
+      animation-delay: 0.4s !important; }
+    .g-main .u-payment-wait .loader-inner li:nth-child(2),
+    .g-main .u-payment-wait .loader-inner li:nth-child(4) {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s; }
+
+.g-main .u-payment-failed {
+  background: url("../img/pay-logo3.png") #fff no-repeat;
+  background-size: 1.74rem 1.74rem;
+  background-position: center 1.3rem; }
+
+.g-main .u-payment-succeed, .u-payment-failed {
+  width: 100%;
+  height: 100%;
+  padding: 3.75rem 0.34rem 0;
+  background: url("../img/pay-logo2.png") #fff no-repeat;
+  background-size: 1.74rem 1.74rem;
+  background-position: center 1.3rem; }
+  .g-main .u-payment-succeed p, .u-payment-failed p {
+    font-size: 0.28rem;
+    color: #999;
+    text-align: center;
+    line-height: 0.36rem; }
+    .g-main .u-payment-succeed p a, .u-payment-failed p a {
+      color: #12C186; }
+  .g-main .u-payment-succeed .u-title-box, .u-payment-failed .u-title-box {
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 0.5rem; }
+    .g-main .u-payment-succeed .u-title-box h3, .u-payment-failed .u-title-box h3 {
+      font-size: 0.4rem;
+      margin-bottom: 0.25rem; }
+    .g-main .u-payment-succeed .u-title-box h4, .u-payment-failed .u-title-box h4 {
+      font-size: 0.3rem; }
+  .g-main .u-payment-succeed .u-center-box, .u-payment-failed .u-center-box {
+    border-bottom: 1px solid #E3E3E3;
+    padding: 0rem 0 0.4rem 0;
+    margin-bottom: 0.5rem; }
+    .g-main .u-payment-succeed .u-center-box ul, .u-payment-failed .u-center-box ul {
+      margin-bottom: 0.3rem; }
+      .g-main .u-payment-succeed .u-center-box ul li, .u-payment-failed .u-center-box ul li {
+        text-align: center;
+        font-size: 0.28rem;
+        color: #333;
+        margin-bottom: 0.25rem; }
+        .g-main .u-payment-succeed .u-center-box ul li span, .u-payment-failed .u-center-box ul li span {
+          color: #FF6600; }
+  .g-main .u-payment-succeed .u-btn-box, .u-payment-failed .u-btn-box {
+    width: 4.7rem;
+    margin: 0 auto;
+    background: #12C186;
+    border-radius: 0.03rem;
+    line-height: 0.8rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    font-size: 0.32rem; }
+    .g-main .u-payment-succeed .u-btn-box a, .u-payment-failed .u-btn-box a {
+      color: #fff;
+      display: block; }
+  .g-main .u-payment-succeed .u-skip, .u-payment-failed .u-skip {
+    font-size: 0.28rem;
+    text-align: center; }
+    .g-main .u-payment-succeed .u-skip a, .u-payment-failed .u-skip a {
+      color: #12c286; }
+    .g-main .u-payment-succeed .u-skip .u-xian, .u-payment-failed .u-skip .u-xian {
+      width: 0.02rem;
+      margin: 0 0.35rem;
+      color: #12c286; }

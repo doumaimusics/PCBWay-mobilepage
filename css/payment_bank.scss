@@ -1,0 +1,148 @@
+//左右居中定位
+@mixin left-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+//遮罩
+@mixin shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.g-payment-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.26rem;
+    background: #ffffff;
+}
+
+.m-top-center {
+    padding: 0.4rem 0.34rem 0.3rem;
+    overflow: hidden;
+    background: url(../img/pay-logo2.png) center 0.5rem no-repeat;
+    background-size: 1rem;
+    .pany_jg {
+        margin-top: 1.4rem;
+        margin-bottom: 0.2rem;
+        font-size: 0.3rem;
+        p.center_left {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 0.2rem;
+            span {
+                color: #f60;
+            }
+        }
+    }
+    h3 {
+        font-size: 0.34rem;
+        color: #333;
+        margin-bottom: 0.2rem;
+        line-height: 0.48rem;
+    }
+    p {
+        color: #666;
+        line-height: 0.36rem;
+        a {
+            color: #12C286;
+            text-decoration: underline;
+        }
+    }
+}
+
+.m-payment-table {
+    background: #f2f3f7;
+    padding: 0 0.34rem;
+    dl:last-child {
+        border: 0;
+    }
+    dl {
+        border-bottom: 1px solid #E5E5E5;
+        padding: 0.3rem 0;
+        dt {
+            width: 30%;
+            float: left;
+            color: #999999;
+        }
+        dd {
+            width: 70%;
+            float: left;
+            color: #333;
+            line-height: 0.32rem;
+            padding-left: 0.15rem;
+            i {
+                color: #FF0000;
+            }
+        }
+    }
+}
+
+.m-payment-explain {
+    padding: 0.32rem 0.34rem;
+    p {
+        color: #999999;
+        margin-bottom: 0.2rem;
+        line-height: 0.32rem;
+        i {
+            color: #FF0000;
+        }
+    }
+}
+
+.g-payment-center .expressage {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+//底部
+.m-results-footer-box {
+    padding: 0.2rem 0.34rem;
+    .u-back-btn,
+    .u-payment-btn {
+        float: left;
+        padding: 0 0.28rem;
+        border-radius: 0.03rem;
+        font-size: 0.28rem;
+        color: #fff;
+        line-height: 0.6rem;
+    }
+    .u-back-btn {
+        background: #423B52;
+    }
+    .u-payment-btn {
+        background: #12C286;
+        margin-left: 0.3rem;
+    }
+}

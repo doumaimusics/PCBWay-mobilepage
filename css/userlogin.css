@@ -1,0 +1,284 @@
+.u-account-box, .u-pass-box {
+  height: 0.85rem;
+  border-bottom: 1px solid #C8C7CC;
+  position: relative; }
+  .u-account-box input, .u-pass-box input {
+    float: left;
+    height: 100%;
+    width: 85%;
+    color: #333;
+    font-size: 0.32rem; }
+  .u-account-box input::-webkit-input-placeholder, .u-pass-box input::-webkit-input-placeholder {
+    color: #C8C7CC; }
+    .u-icon-box3{display: none;}  
+  .u-account-box .u-icon-box1, .u-account-box .u-icon-box2, .u-account-box .u-icon-box3, .u-account-box .u-icon-box4, .u-account-box .u-icon-box5, .u-pass-box .u-icon-box1, .u-pass-box .u-icon-box2, .u-pass-box .u-icon-box3, .u-pass-box .u-icon-box4, .u-pass-box .u-icon-box5 {
+    width: 10%;
+    height: 100%;
+    float: right;
+    position: relative; }
+    .u-account-box .u-icon-box1 i.u-icon1, .u-account-box .u-icon-box2 i.u-icon1, .u-account-box .u-icon-box3 i.u-icon1, .u-account-box .u-icon-box4 i.u-icon1, .u-account-box .u-icon-box5 i.u-icon1, .u-pass-box .u-icon-box1 i.u-icon1, .u-pass-box .u-icon-box2 i.u-icon1, .u-pass-box .u-icon-box3 i.u-icon1, .u-pass-box .u-icon-box4 i.u-icon1, .u-pass-box .u-icon-box5 i.u-icon1 {
+      width: 0.27rem;
+      height: 0.15rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      background-size: 3rem 5rem;
+      background-position: 0rem -3.39rem; }
+    .u-account-box .u-icon-box1 i.u-icon4, .u-account-box .u-icon-box2 i.u-icon4, .u-account-box .u-icon-box3 i.u-icon4, .u-account-box .u-icon-box4 i.u-icon4, .u-account-box .u-icon-box5 i.u-icon4, .u-pass-box .u-icon-box1 i.u-icon4, .u-pass-box .u-icon-box2 i.u-icon4, .u-pass-box .u-icon-box3 i.u-icon4, .u-pass-box .u-icon-box4 i.u-icon4, .u-pass-box .u-icon-box5 i.u-icon4 {
+      width: 0.28rem;
+      height: 0.28rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      background-size: 3rem 5rem;
+      background-position: -1.36rem -3.27rem; }
+    .u-account-box .u-icon-box1 i.u-icon2, .u-account-box .u-icon-box2 i.u-icon2, .u-account-box .u-icon-box3 i.u-icon2, .u-account-box .u-icon-box4 i.u-icon2, .u-account-box .u-icon-box5 i.u-icon2, .u-pass-box .u-icon-box1 i.u-icon2, .u-pass-box .u-icon-box2 i.u-icon2, .u-pass-box .u-icon-box3 i.u-icon2, .u-pass-box .u-icon-box4 i.u-icon2, .u-pass-box .u-icon-box5 i.u-icon2 {
+      width: 0.51rem;
+      height: 0.33rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      background-position: -0.5rem -3.27rem;
+      background-size: 3rem 5rem; }
+    .u-account-box .u-icon-box1 i.u-icon3, .u-account-box .u-icon-box2 i.u-icon3, .u-account-box .u-icon-box3 i.u-icon3, .u-account-box .u-icon-box4 i.u-icon3, .u-account-box .u-icon-box5 i.u-icon3, .u-pass-box .u-icon-box1 i.u-icon3, .u-pass-box .u-icon-box2 i.u-icon3, .u-pass-box .u-icon-box3 i.u-icon3, .u-pass-box .u-icon-box4 i.u-icon3, .u-pass-box .u-icon-box5 i.u-icon3 {
+      width: 0.51rem;
+      height: 0.23rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      background-position: -1.95rem -3.27rem;
+      background-size: 3rem 5rem; }
+
+.g-sign-in {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 1004; }
+  .g-sign-in .m-header {
+    width: 100%;
+    height: 1rem;
+    border-bottom: 1px solid #D3D3D3;
+    padding: 0 0 0 0.33rem;
+    box-sizing: border-box;
+    position: relative; }
+    .g-sign-in .m-header .u-close {
+      width: 0.33rem;
+      height: 100%;
+      position: relative;
+      float: left;
+      z-index: 1; }
+      .g-sign-in .m-header .u-close i {
+        display: block;
+        width: 0.33rem;
+        height: 0.33rem;
+        background-size: 3rem 5rem;
+        background-position: -2.62rem -2.71rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+      .g-sign-in .m-header .u-close a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto; }
+    .g-sign-in .m-header .u-sign-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      font-size: 0.32rem;
+      color: #333;
+      line-height: 1rem; }
+  .g-sign-in .m-user-inner {
+    padding: 0.35rem 0.34rem 0 0.34rem;
+    box-sizing: border-box; }
+    .g-sign-in .m-user-inner .u-button-box {
+      width: 5.44rem;
+      height: 0.9rem;
+      text-align: center;
+      line-height: 0.9rem;
+      background: #12C286;
+      margin: 0.45rem auto;
+      position: relative;
+      border-radius: 0.03rem; }
+      .g-sign-in .m-user-inner .u-button-box a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto;
+        color: #fff;
+        font-size: 0.32rem; }
+    .g-sign-in .m-user-inner .u-forgot-pass {
+      width: 100%;
+      margin-bottom: 0.3rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.24rem;
+      line-height: 0.4rem;
+      position: relative; }
+      .g-sign-in .m-user-inner .u-forgot-pass a {
+        text-decoration: underline;
+        color: #999; }
+    .g-sign-in .m-user-inner i {
+      color: #12C186; }
+    .g-sign-in .m-user-inner .u-join {
+      text-align: center;
+      line-height: 0.4rem;
+      color: #999;
+      font-size: 0.28rem; }
+      .g-sign-in .m-user-inner .u-join a {
+        color: #12C286; }
+  .g-sign-in .m-facrbook {
+    width: 5.44rem;
+    height: 0.9rem;
+    text-align: center;
+    line-height: 0.9rem;
+    background: #2553B4;
+    margin: 1rem auto;
+    border-radius: 0.03rem;
+    font-size: 0.32rem; }
+    .g-sign-in .m-facrbook .u-facrbook-icon {
+      width: 0.32rem;
+      height: 100%;
+      background: url(../img/f-book.png) no-repeat 0rem center;
+      background-size: 0.32rem 0.58rem;
+      margin-left: 0.55rem;
+      float: left; }
+    .g-sign-in .m-facrbook a {
+      color: #fff;
+      display: block; }
+
+.g-main .g-sign-in p.u-with {
+  font-size: 0.26rem;
+  color: #999;
+  line-height: 0.32rem;
+  padding: 0.5rem 0.34rem;
+  box-sizing: border-box; }
+  .g-main .g-sign-in p.u-with a {
+    color: #12C286; }
+
+.g-main .g-sign-in .m-content-box {
+  padding: 0 0.34rem; }
+  .g-main .g-sign-in .m-content-box .u-email-box {
+    position: relative;
+    height: 1rem;
+    border-bottom: 1px solid #C8C7CC; }
+    .g-main .g-sign-in .m-content-box .u-email-box input::-webkit-input-placeholder {
+      color: #C8C7CC; }
+    .g-main .g-sign-in .m-content-box .u-email-box .u-email {
+      width: 90%;
+      height: 100%;
+      float: left;
+      font-size: 0.32rem; }
+    .g-main .g-sign-in .m-content-box .u-email-box .u-gb-icon {
+      width: 10%;
+      height: 100%;
+      float: right;
+      background: url(../img/colicon.png) no-repeat;
+      background-position: center center;
+      background-size: 0.28rem 0.28rem; }
+  .g-main .g-sign-in .m-content-box .u-btn {
+    width: 5.44rem;
+    height: 0.9rem;
+    background: #12C286;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+    margin: 0.5rem auto;
+    border-radius: 0.03rem; }
+
+.g-main .g-sign-in .m-pass-send {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  bottom: 0rem;
+  padding: 2rem 0.34rem 0 0.34rem;
+  box-sizing: border-box;
+  position: relative; }
+  .g-main .g-sign-in .m-pass-send .u-xlicon {
+    width: 1.58rem;
+    height: 1.58rem;
+    background: url(../img/xl.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0rem; }
+  .g-main .g-sign-in .m-pass-send p {
+    text-align: center;
+    font-size: 0.28rem;
+    color: #333; }
+  .g-main .g-sign-in .m-pass-send .u-btn {
+    width: 80%;
+    height: 1rem;
+    background: #12C186;
+    margin: 0.5rem auto;
+    border-radius: 0.1rem;
+    position: relative; }
+    .g-main .g-sign-in .m-pass-send .u-btn a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.32rem;
+      font-weight: 700;
+      line-height: 1rem;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto; }
+
+.g-change-pass .u-change-center {
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  left: 0; }
+  .g-change-pass .u-change-center p {
+    padding: 0.4rem 0.34rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.26rem;
+    color: #999;
+    background: #EBEBEC; }
+  .g-change-pass .u-change-center .u-change-pass-box {
+    width: 100%;
+    padding: 0.2rem 0.34rem; }
+  .g-change-pass .u-change-center .u-update-box {
+    width: 6.82rem;
+    margin: 0.58rem auto;
+    background: #12C286;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #fff;
+    font-size: 0.32rem;
+    position: relative;
+    border-radius: 0.05rem; }
+    .g-change-pass .u-change-center .u-update-box a {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto; }

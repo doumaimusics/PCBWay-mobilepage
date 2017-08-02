@@ -1,0 +1,298 @@
+//左右居中定位
+@mixin left-right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+//遮罩
+@mixin shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+}
+
+//开关
+.u-sta-box {
+  width: 1rem;
+  height: 0.6rem;
+  margin-top: 0.2rem;
+  background: transparent;
+  .u-openOn.active {
+    background: #12C286;
+  }
+  .u-openOn.active .openTwo {
+    left: 0.42rem;
+  }
+  .u-openOn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #DBDBDB;
+    position: relative;
+    .openTwo {
+      width: 0.56rem;
+      height: 0.56rem;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 0.02rem;
+      left: 0.02rem;
+      transition: left 0.2s ease-in-out;
+    }
+  }
+}
+
+.g-submit-shipping {
+  width: 100%;
+  height: 100%;
+  .u-orderpay-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 1.65rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+  }
+}
+
+.u-orderpay-center .u-order-total {
+  padding: 0.6rem 0;
+  color: #333;
+  text-align: center;
+  h3 {
+    font-size: 0.26rem;
+    margin-bottom: 0.34rem;
+  }
+  p {
+    font-size: 0.4rem;
+    i {
+      font-size: 0.64rem;
+    }
+  }
+}
+.u-particulars-box.active{background: #ccc;}
+.u-particulars-box {
+  width: 100%;
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  padding: 0.2rem 0.34rem 0;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 0.2rem;
+
+  .u-shipping-method.u-none-border {
+    border: 0;
+  }
+  .u-shipping-method {
+    width: 100%;
+    padding: 0.12rem 0;
+    border-bottom: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    font-size: 0;
+    position: relative;
+    .u-sta-box {
+      position: absolute;
+      right: 0;
+      top: -0.2rem;
+    }
+
+    .u-delvity {
+      width: 100%;
+      font-size: 0.24rem;
+      color: #999;
+      box-sizing: border-box;
+      margin: 0.15rem 0;
+    }
+    .u-title-center {
+      width: 80%;
+      .u-titles {
+        font-size: 0.3rem;
+        color: #333;
+        span {
+          float: right;
+        }
+      }
+    }
+  }
+
+}
+
+//支付方式部分css
+.u-payment-method {
+  h3.u-title-top {
+    border-bottom: 1px solid #E3E3E3;
+    font-size: 0.26rem;
+    color: #666;
+    padding: 0.1rem 0 0.35rem 0;
+    background: url(../img/Qm.png) no-repeat;
+    background-size: 0.27rem 0.27rem;
+    background-position: 2.2rem 0.1rem;
+  }
+  .u-payment-list li:last-child {
+    border: 0;
+  }
+  .u-payment-list li {
+    border-bottom: 1px solid #E3E3E3;
+    padding: 0.24rem 0;
+    position: relative;
+  }
+}
+
+.u-payment-list li .u-payment-logo {
+  width: 1.1rem;
+  height: 1.1rem;
+  float: left;
+  img {
+    width: 100%;
+  }
+}
+
+.u-payment-list li .u-payment-text {
+  width: 75%;
+  padding: 0 0.25rem;
+  float: left;
+  h3.u-payment-name {
+    font-size: 0.3rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+    margin-top: 0.12rem;
+  }
+  p {
+    font-size: 0.26rem;
+    color: #999;
+  }
+}
+
+.u-payment-list li .u-box {
+  width: 6%;
+  float: right;
+  height: 0.9rem;
+  position: relative;
+
+}
+
+.u-payment-list li .u-box .u-radio.active {
+  background: url(../img/xz-icon.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.u-payment-list li .u-box .u-radio {
+  float: right;
+  width: 0.38rem;
+  height: 0.38rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/circle-icon.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+//底部
+.u-pay-now {
+  width: 100%;
+  height: 1.6rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  .u-pay-btn {
+    width: 6.82rem;
+    height: 0.9rem;
+    border-radius: 0.03rem;
+    background: #FF6600;
+    text-anchor: center;
+    line-height: 0.9rem;
+    @include zhong;
+    border: none;
+    font-size: 0.32rem;
+    color: #fff;
+  }
+}
+
+//点击支付弹出页面的css
+.m-payment-sm .u-policy-center {
+  padding: 0.3rem 0.34rem 0.2rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+  position: absolute;
+  top: 0;
+  bottom: 1.2rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  h3 {
+    font-size: 0.32rem;
+    font-weight: 500;
+    margin-bottom: 0.16rem;
+    color: #333333;
+  }
+  h4 {
+    font-size: 0.28rem;
+    font-weight: 500;
+    margin-bottom: 0.16rem;
+    color: #333333;
+  }
+  p {
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+    margin-bottom: 0.5rem;
+    i {
+      color: #FF0000;
+    }
+    a {
+      color: #1B62E6;
+      text-decoration: underline;
+    }
+  }
+}
+
+.m-payment-sm .u-btn {
+  width: 100%;
+  height: 1.2rem;
+  position: fixed;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 1.2rem;
+  font-size: 0.3rem;
+  line-height: 1rem;
+  color: #fff;
+  text-align: center;
+  .u-btn-text {
+    width: 80%;
+    height: 1rem;
+    margin: 0 auto;
+    background: #12C286;
+    border-radius: 0.03rem;
+    font-size: 0.32rem;
+  }
+}
+
+

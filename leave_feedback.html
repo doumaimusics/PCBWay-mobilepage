@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/leave_feedback.css" />
+		<title>Leave Feedback</title>
+	</head>
+
+	<body>
+		<div class="g-main">
+								<!--点击u-guild的弹框-->
+						<div class="u-top-bounced">
+							<ul>
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="javascript:;">My account</a>
+
+								</li>
+								<li>
+									<a href="javascript:;">My Order</a>
+								</li>
+													<li>
+						<a href="javascript:;">My Account</a>
+		            </li>	
+							</ul>
+						</div>
+			<div class="g-leave">
+				<!--页面头部-->
+				<div class="m-header-box">
+					<div class="u-header">
+						<!--返回箭头-->
+						<div class="u-return">
+							<a href="javascript:;"></a>
+						</div>
+						<div class="u-hint">Leave Feedback</div>
+						<!--购物车-->
+						<div class="u-position-right sprites-img">
+							<div class="u-in-title">1</div>
+						</div>
+						<!--点-->
+						<div class="u-guild"></div>
+
+					</div>
+				</div>
+				<!--中间内容-->
+				<div class="m-content">
+					<ul class="u-content-list">
+						<li class="u-car-li">
+							<div class="u-car-content">
+								<div class="u-car-details cleartfix">
+									<div class="u-details-img">
+										<img src="img/img_03.jpg" alt="" />
+									</div>
+									<div class="u-details-xq">
+										<div class="item-basic-info">
+											10mm * 10mm ,Thickness:1.6 mm, 2 Layers, Finished Copper:1 oz Cu...
+										</div>
+										<p class="pcb-sort">Product No:W00002AXS333</p>
+										<p class="Build-Time">
+											<span style="color: #333;">US $141.00</span> &amp; 10 pieces
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="u-text">
+								<textarea name="" id="" cols="30" rows="5" placeholder="Write down the experience and use the experience to help other small partners ~"></textarea>
+							</div>
+							<!--上传图片-->
+                            <div class="u-pics-box">
+                            	
+                            	<div class="u-pics" id="fileList">
+                            		
+                            		<div class="input-file-box" id="input-file-box">                            	
+							               <input type="file" id="fileElem" multiple accept="image/*"  onchange="handleFiles(this)">                            	
+                                    </div>  
+                            	</div>   	                	
+                            </div>
+							<div class="u-stars">
+								<span>Score</span>
+								<ul class="u-score">
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+								</ul>
+							</div>
+						</li>	
+					</ul>
+				</div>
+
+				<!--底部-->
+				<div class="m-results-footer-box u-footer-none">
+					<div class="u-total">
+						<div class="check-box">
+							<input type="checkbox" class="check" name="" id="" value="" />
+						</div>
+						<div class="all">Anonymous</div>
+					</div>
+
+					<div class="add-to-cart" style="background: #12C286;">Publish</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+					//上传照片功能
+    window.URL = window.URL || window.webkitURL;	 
+    var fileElem = document.getElementById("fileElem"),
+    fileList = document.getElementById("fileList");
+    var InpitFileBox=document.getElementById('input-file-box')
+    function handleFiles(obj) {
+        var files = obj.files,
+        img = new Image();
+        if(window.URL){
+            img.src = window.URL.createObjectURL(files[0]); 
+            img.onload = function(e) {
+                window.URL.revokeObjectURL(this.src); //图片加载后，释放object URL
+            }
+            fileList.insertBefore(img,InpitFileBox);
+           
+        }else if(window.FileReader){
+            var reader = new FileReader();
+            reader.readAsDataURL(files[0]);
+            reader.onload = function(e){
+                img.src = this.result;
+                fileList.insertBefore(img,InpitFileBox);
+            }
+        }else{
+            //ie
+            obj.select();
+            obj.blur();
+            var nfile = document.selection.createRange().text;
+            document.selection.empty();
+            img.src = nfile;
+            img.onload=function(){
+            }
+              fileList.insertBefore(img,InpitFileBox);
+
+        }
+    }
+	$(function() {
+
+		//底部js
+		$('.check-box').find('.check').click(function() {
+			$(this).toggleClass('active')
+		})
+		//评价星星js
+        
+		var btn = true;
+		$('.u-score').find('li').click(function() {
+			if(btn) {
+				var index = $(this).index();				
+				$(this).nextAll().removeClass('active')
+				$(this).prevAll().addClass('active');
+				$(this).addClass('active');
+			    if ( index==0&$(this).next().hasClass('active') ){			    	
+			    	$(this).toggleClass('active');
+			    }
+			}
+		})	
+	})
+</script>

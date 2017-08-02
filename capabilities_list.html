@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>PCB Capabilities - Custom PCB Prototype the Easy Way - PCBway</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/action_page.css" />
+
+	</head>
+
+	<body>
+		<!--首页整体大框架-->
+		<div class="g-main">
+			<!--点击u-guild弹出的-->
+			<div class="u-top-bounced" id="u-hometop">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="javascript:;">My account</a>
+					</li>
+					<li>
+						<a href="javascript:;">My Order</a>
+					</li>
+										<li>
+						<a href="javascript:;">My Account</a>
+		            </li>	
+				</ul>
+			</div>
+			<div class="g-capabilities">
+				<!--头部-->
+				<div class="u-header">
+						<!--返回箭头-->
+						<div class="u-return">
+							<a href="javascript:;"></a>
+						</div>
+						<div class="u-hint">PCB Capabilities</div>
+						<!--购物车-->
+						<div class="u-position-right sprites-img">
+							<div class="u-in-title">1</div>
+						</div>
+						<!--点-->
+						<div class="u-guild"></div>
+
+				</div>
+				<!--中间内容-->
+                <div class="u-capabilities-center">
+                	<div class="u-banner-box">
+                		<h3>PCBWay PCB Capabilities</h3>
+                		<p>PCBWay has prototype PCB,PCB Production<br> fabrication and pcb assembly capabilities.</p>
+                	</div>
+                	<div class="u-list-box">
+                		<ul class="u-list-title">
+                			<li class="active">PCB Capabilities</li>
+                			<li>PCBA Capabilities</li>
+                		</ul>
+                		<div class="u-list-center">
+                			<div class="u-inner active">
+                				<ul class="u-inner-list">
+                					<li class="icon-right">
+                						PCB Capabilities
+                						<a href="capabilities.html"></a>
+                					</li>
+                					<li class="icon-right">
+                						Quickturn PCB Fabrication
+                						<a href="quickturn-pcb-fabrication.html"></a>                						
+                					</li>
+                                    <li class="icon-right">
+                						PCB Prototyping
+                						<a href="pcb-prototyping.html"></a>
+                						
+                					</li>
+                					<li class="icon-right">
+                						Low-volume Production
+                						<a href="low-volume-production.html"></a>
+                					</li>
+                					<li class="icon-right">
+                						Production Process
+                						<a href="pcb-service.html"></a>
+                					</li>
+                					<li class="icon-right">
+                						PCB Products
+                						<a href="pcb-products.html"></a>
+                					</li>
+                					<li class="icon-right">
+                						FAQ of PCB
+                						<a href="faq-of-pcb.html"></a>
+                					</li>
+                				</ul>
+                			
+                			</div>
+                			<div class="u-inner">
+                				<ul class="u-inner-list">
+                				    <li class="icon-right">
+                						PCBA Capability
+                						<a href="assembly-capabilities.html"></a>
+                					</li>
+                					<li class="icon-right">
+                						Special Reminders
+                						<a href="assembly-special-remind.html"></a>                						
+                					</li>
+                                    <li class="icon-right">
+                						File Requirements
+                						<a href="assembly-file-requirements.html"></a>
+                						
+                					</li>
+                					<li class="icon-right">
+                						PCB Assembly FAQ
+                						<a href="assembly-faq.html"></a>
+                					</li>
+                					<li class="icon-right">
+                						Production Process
+                						<a href="assembly-process.html"></a>
+                					</li>
+                					<li class="icon-right">
+                						PCB Assembly Products
+                						<a href="assembly-products.html"></a>
+                					</li>
+                				</ul>	
+                			</div>
+                		</div>
+                	</div>
+                </div>
+					
+				<!--首页底部-->
+				<div class="m-footer">
+					<li class="u-ft1 active">
+						<a href="javascript:;">Home</a>
+					</li>
+					<li class="u-ft2">
+						<a href="javascript:;">PCBA</a>
+					</li>
+					<li class="u-ft3">
+						<a href="quote-PCB.html">Quote</a>
+					</li>
+					<li class="u-ft4">
+						<a href="javascript:;">Cart</a>
+						<div class="u-in-title">1</div>
+					</li>
+					<li class="u-ft5">
+						<a href="My-Account.html">My Account</a>
+					</li>
+				</div>
+			</div>
+
+
+		</div>
+	</body>
+
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+	$('.u-list-box .u-list-title').find('li').click(function(){
+		$('.u-list-box .u-list-title').find('li').removeClass('active');
+		$('.u-list-box .u-list-center').find('.u-inner').removeClass('active');
+		$(this).addClass('active');
+		var index=$(this).index();
+		$('.u-list-box .u-list-center').find('.u-inner').eq(index).addClass('active');
+	})
+</script>

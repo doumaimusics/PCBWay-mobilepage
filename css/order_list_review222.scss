@@ -1,0 +1,649 @@
+//左右居中定位
+@mixin left-right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+//上下居中定位
+@mixin top-bottom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+//正中间定位
+@mixin zhong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+//覆盖定位
+@mixin shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+}
+
+//公用input check
+.check-box.u-margin {
+  margin-right: 0.3rem;
+}
+
+.check-box {
+  width: 0.38rem;
+  height: 100%;
+  float: left;
+}
+
+.check.active {
+  background: url("../img/f60icon.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+  background-position: center center;
+}
+
+.check {
+  width: 0.38rem;
+  height: 100%;
+  background: url("../img/circle-icon.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+  background-position: center center;
+  float: left;
+}
+
+//公用删除icon
+.u-del {
+  width: 0.34rem;
+  height: 100%;
+  float: right;
+  background: url("../img/del.png") no-repeat;
+  background-size: 0.34rem 0.36rem;
+  background-position: center center;
+}
+
+//order_list_01订单付款前页面css
+.g-main .g-My-Orders {
+  width: 100%;
+  height: 100%;
+  .u-select-wrapper {
+    width: 100%;
+    height: 0.85rem;
+    background: #F3F3F3;
+    position: relative;
+    .u-select-header {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #333;
+      font-size: 0.28rem;
+      white-space: nowrap;
+      position: relative;
+      .u-input {
+
+        background: #F3F3F3;
+        text-align: center;
+        line-height: 0.85rem;
+        font-size: 0.28rem;
+        color: #333;
+        .shu {
+          display: none;
+        }
+
+      }
+      .arrow {
+        position: relative;
+        margin-left: 4px;
+        width: 0;
+        height: 0;
+      }
+    }
+    .u-top-list {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0.8rem;
+      background: #fff;
+      display: none;
+      li {
+        width: 100%;
+        height: 0.85rem;
+        padding: 0 0.2rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid #DEDEDE;
+        font-size: 0.28rem;
+        color: #333;
+        line-height: 0.85rem;
+        a {
+          display: block;
+        }
+      }
+    }
+
+  }
+  //  &&&&&&&&&&&&&&&&&&&&&&&&&中间&&&&&&&&&&&&&&&&&&&&&&&&&
+  .u-car-content.u-botder-top {
+    border-top: #E3E3E3 1px solid;
+  }
+  .u-car-content {
+    width: 100%;
+    padding: 0 0.34rem;
+    box-sizing: border-box;
+    .u-car-details.u-border-none {
+      border-bottom: 0;
+    }
+    .u-car-details {
+      border-bottom: 1px solid #E3E3E3;
+      padding-bottom: 0.4rem;
+      padding-top: 0.34rem;
+      box-sizing: border-box;
+
+      .u-details-img {
+        width: 1.95rem;
+        height: 1.95rem;
+        border: 1px solid #E3E3E3;
+        border-radius: 0.03rem;
+        float: left;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .u-details-xq {
+        width: 70%;
+        height: 1.96rem;
+        float: left;
+        font-size: 0.26rem;
+        color: #999;
+        padding-left: 0.25rem;
+        box-sizing: border-box;
+        .item-basic-info {
+          font-size: 0.28rem;
+          color: #333;
+          margin-bottom: 0.15rem;
+          margin-top: 0.05rem;
+        }
+        p {
+          line-height: 0.36rem;
+        }
+        i {
+          float: right;
+          color: #333;
+        }
+      }
+    }
+  }
+  .m-content {
+    width: 100%;
+    position: absolute;
+
+    top: 1.85rem;
+    bottom: 1rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    .u-content-list {
+      margin-bottom: 0.2rem;
+
+      li.u-car-li {
+        margin-top: 0.2rem;
+        width: 100%;
+        border-top: 1px solid #D3D3D3;
+        border-bottom: 1px solid #D3D3D3;
+        //                  margin-bottom:0.2rem;
+        background: #fff;
+        .u-tit-clearboth.u-height {
+          height: 1rem;
+        }
+        .u-tit-clearboth {
+          width: 100%;
+          height: 1.35rem;
+          padding: 0 0.34rem;
+          box-sizing: border-box;
+          position: relative;
+          border-bottom: 1px solid #E3E3E3;
+          background: #FBFBFB;
+          .u-indent-box.u-padding-none {
+            padding-left: 0;
+          }
+          .u-indent-box {
+            width: 80%;
+            height: 100%;
+            float: left;
+            padding-left: 0.28rem;
+            box-sizing: border-box;
+            font-size: 0.26rem;
+            color: #999;
+            padding-top: 0.35rem;
+            span {
+              color: #333;
+              padding-left: 0.08rem;
+            }
+          }
+
+        }
+        .u-subtotal-box {
+          width: 100%;
+          background: #F5F5F5;
+          border-top: 1px solid #E3E3E3;
+
+          .u-subtotal {
+            width: 100%;
+            font-size: 0.26rem;
+            color: #999;
+            padding: 0.34rem 0.34rem;
+            .u-moner {
+              float: right;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+
+    .u-number-cost-box {
+      width: 100%;
+      padding: 0 0.34rem;
+      box-sizing: border-box;
+      .u-number-cost {
+        border-bottom: 1px solid #E3E3E3;
+        padding-bottom: 0.4rem;
+        padding-top: 0.34rem;
+        box-sizing: border-box;
+        font-size: 0.26rem;
+        color: #999;
+        line-height: 0.6rem;
+        span {
+          float: right;
+          color: #333;
+        }
+        span.u-span2 {
+          font-size: 0.26rem;
+          font-weight: 700;
+        }
+      }
+    }
+    .u-btn-box.u-padding-none {
+      padding-top: 0;
+    }
+    .u-btn-box.u-padding-none .u-btn-not {
+      border: 1px solid #CFCFCF;
+    }
+    .u-btn-box {
+      width: 100%;
+      padding: 0.34rem 0.34rem 0.4rem;
+      box-sizing: border-box;
+      .u-btn-file {
+        //                  width: 2.6rem;
+        //                  height: 0.65rem;
+        padding: 0 0.15rem;
+        background: url("../img/put.png") no-repeat #12C286;
+        background-size: 0.33rem 0.28rem;
+        background-position: 0.16rem center;
+        border-radius: 0.03rem;
+        color: #fff;
+        padding-left: 0.64rem;
+        font-size: 0.28rem;
+        line-height: 0.65rem;
+        box-sizing: border-box;
+        float: left;
+      }
+      .u-btn-not.pay {
+        padding: 0 0.5rem;
+        border: 1px solid #FF6600;
+        color: #f60;
+      }
+      .u-btn-not {
+        padding: 0 0.15rem;
+        border: 1px solid #999999;
+        border-radius: 0.03rem;
+        color: #999;
+        text-align: center;
+        font-size: 0.28rem;
+        line-height: 0.65rem;
+        box-sizing: border-box;
+        float: right;
+        width: 2.5rem;
+      }
+    }
+  }
+  //********************底部*************************
+  .m-bottom {
+    width: 100%;
+    height: 0.99rem;
+    border-top: 1px solid #D3D3D3;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    .check_all {
+      width: 1.5rem;
+      height: 100%;
+      margin-left: 0.3rem;
+      float: left;
+
+      .all {
+        font-size: 0.28rem;
+        color: #999;
+        float: left;
+        margin-left: 0.2rem;
+        line-height: 1rem;
+      }
+    }
+    .total-money-box {
+      width: 39%;
+      height: 100%;
+      float: left;
+      font-size: 0.24rem;
+      color: #999;
+      .total {
+        width: 100%;
+        height: 50%;
+
+        line-height: 0.5rem;
+        direction: rtl;
+        span {
+          font-size: 0.28rem;
+          color: #f60;
+        }
+      }
+      .u-total-box {
+        width: 100%;
+        height: 100%;
+        text-align: right;
+        padding: 0.2rem 0;
+        span {
+          color: #f60;
+          font-size: 0.28rem;
+        }
+      }
+    }
+    .u-pay-all {
+      width: 2.3rem;
+      height: 0.62rem;
+      @include top-bottom;
+      right: 0.35rem;
+      text-align: center;
+      line-height: 0.62rem;
+      border-radius: 0.03rem;
+      background: #FF6600;
+      color: #fff;
+      font-size: 0.28rem;
+    }
+  }
+}
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//order_list_02订单付款后页面css
+.g-main .g-My-Orders .m-payment-center {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 1.85rem;
+  bottom: 0;
+  .m-payment-center-list {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: #EBEBEC;
+    .u-payment-li {
+      margin-top: 0.25rem;
+      border-top: 1px solid #D3D3D3;
+      background: #fff;
+      .u-order-info {
+        font-size: 0.26rem;
+        color: #999;
+        padding: 0.25rem 0.34rem;
+        box-sizing: border-box;
+        .info-body {
+          color: #333;
+        }
+        .second-row {
+          margin-top: 0.15rem;
+        }
+      }
+
+      .u-car-content {
+        background: #F5F5F5;
+      }
+      .u-buttom-box.u-btn-wbf {
+        padding: 0.4rem 0.34rem;
+
+      }
+      .u-buttom-box {
+        width: 100%;
+        padding: 0.65rem 0.34rem 0.2rem;
+        box-sizing: border-box;
+        margin-bottom: 0.1rem;
+        position: relative;
+        background: #f5f5f5;
+        color: #333;
+        font-size: 0.28rem;
+        .ui-progressbar-box {
+          width: 4rem;
+          position: absolute;
+          right: 0.34rem;
+          top: 0.3rem;
+          font-size: 0.2rem;
+          color: #999;
+          span {
+            margin-left: 0.8rem;
+          }
+          .ui-progressbar {
+            width: 2.3rem;
+            height: 0.14rem;
+            background: #fff;
+            border: #12C286 1px solid;
+            border-radius: 0.1rem;
+            float: right;
+            margin-top: 0.06rem;
+            .u-jd {
+
+              height: 100%;
+              background: #12C286;
+
+            }
+          }
+        }
+
+        .u-Repeat-Order-btn,
+        .u-Techn-process-btn,
+        .u-cr-btn,
+        .u-gc-btn,
+        .u-lf-btn,
+        .u-pi-btn,
+        .u-vd-btn,
+        .u-vl-btn {
+          width: 3.25rem;
+          background: #fff;
+          border: 1px solid #BABABA;
+          border-radius: 0.03rem;
+          text-align: center;
+          padding: 0 0.1rem;
+          line-height: 0.65rem;
+          box-sizing: border-box;
+          float: left;
+          position: relative;
+          a {
+            @include shade;
+          }
+        }
+
+        .u-pi-btn.u-margin-none {
+          margin: 0;
+        }
+        .u-cr-btn,
+        .u-gc-btn,
+        .u-lf-btn,
+        .u-pi-btn {
+          margin-top: 0.3rem;
+        }
+
+        .u-pi-btn {
+          position: relative;
+          i {
+            display: block;
+            width: 0.21rem;
+            height: 0.26rem;
+            background: url("../img/u-pr.jpg") no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0.17rem;
+            left: 0.15rem;
+          }
+          a {
+            @include shade;
+          }
+        }
+        .u-Repeat-Order-btn.btn-right,
+        .u-cr-btn,
+        .u-cr-btn.btn-right,
+        .u-gc-btn.btn-right,
+        .u-lf-btn.btn-right,
+        .u-vd-btn.btn-right {
+          float: right;
+
+        }
+        .u-Techn-process-btn {
+          float: right;
+        }
+      }
+      .u-price-box {
+        padding: 0.3rem 0.34rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid #D3D3D3;
+        font-size: 0.26rem;
+        color: #12c286;
+        span {
+          float: right;
+          color: #999;
+          i {
+            font-size: 0.26rem;
+            color: #f60;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .u-more {
+      padding: 0.4rem;
+      text-align: center;
+      font-size: 0.24rem;
+      color: #aaa;
+      background: #EBEBEC;
+    }
+  }
+}
+
+//<!--点击Technological process弹出fab_progress页面-->
+.g-fab-progress.active {
+  transform: translate3d(0, 0, 0);
+  -o-tranform: translate3d(0, 0, 0);
+  -moz-tranform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.g-fab-progress {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background: #fff;
+  z-index: 1000;
+  transform: translate3d(100%, 0, 0);
+  -o-tranform: translate3d(100%, 0, 0);
+  -moz-tranform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+
+  .u-fab-progress-title {
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    padding: 0 0.34rem;
+    box-sizing: border-box;
+    background: #F5F5F5;
+    border-bottom: 1px solid #D3D3D3;
+    li {
+      width: 33.33%;
+      height: 100%;
+      line-height: 0.95rem;
+      color: #999999;
+      font-size: 0.26rem;
+      float: left;
+    }
+    li:nth-child(2) {
+      padding-left: 0.35rem;
+      box-sizing: border-box;
+    }
+    li:nth-child(3) {
+      text-align: right;
+    }
+  }
+
+  .m-fab-progress-congent {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    background: #fff;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 0.34rem;
+    box-sizing: border-box;
+    li {
+      width: 100%;
+      border-bottom: 1px solid #E3E3E3;
+      div {
+
+        line-height: 1rem;
+        font-size: 0.26rem;
+        color: #333;
+      }
+      div.u-techonologt {
+        width: 40%;
+
+        float: left;
+      }
+      div.u-finished.active {
+        background: url("../img/xz-icon.jpg") no-repeat;
+        background-size: 0.2rem 0.2rem;
+        background-position: center center;
+      }
+      div.u-finished {
+        width: 10%;
+        height: 1rem;
+        float: left;
+        text-align: center;
+        background: url("../img/tick.png") no-repeat;
+        background-size: 0.26rem 0.2rem;
+        background-position: center center;
+      }
+      div.u-finished-time {
+        width: 50%;
+
+        float: left;
+        text-align: right;
+
+      }
+    }
+  }
+}

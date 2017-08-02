@@ -1,0 +1,282 @@
+.li-icon:before {
+  content: '';
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../img/li-icon.png") no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0.1rem; }
+
+.g-main .g-capabilities {
+  width: 100%;
+  height: 100%; }
+  .g-main .g-capabilities .u-capabilities-center {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .g-main .g-capabilities .u-capabilities-center .u-banner-box {
+      width: 100%;
+      height: 2.64rem;
+      background: url("../img/capabilities/pcbbanner.jpg") no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding: 0.75rem 0.34rem 0; }
+      .g-main .g-capabilities .u-capabilities-center .u-banner-box h3 {
+        font-size: 0.34rem;
+        margin-bottom: 0.3rem; }
+      .g-main .g-capabilities .u-capabilities-center .u-banner-box p {
+        font-size: 0.24rem; }
+  .g-main .g-capabilities .u-inner-list {
+    width: 100%;
+    margin-bottom: 1.22rem; }
+    .g-main .g-capabilities .u-inner-list li.u-border {
+      border-bottom: none;
+      border-top: 1px solid #E3E3E3;
+      position: relative; }
+      .g-main .g-capabilities .u-inner-list li.u-border i.icon-top {
+        display: block;
+        width: 0.27rem;
+        height: 0.15rem;
+        background: url("../img/T-icon1.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0; }
+      .g-main .g-capabilities .u-inner-list li.u-border i {
+        display: block;
+        width: 0.27rem;
+        height: 0.15rem;
+        background: url("../img/T-icon2.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0; }
+    .g-main .g-capabilities .u-inner-list li {
+      border-bottom: 1px solid #E3E3E3;
+      padding: 0.36rem 0.34rem;
+      font-size: 0.28rem;
+      color: #333;
+      position: relative; }
+      .g-main .g-capabilities .u-inner-list li a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto; }
+      .g-main .g-capabilities .u-inner-list li i {
+        color: #12C286; }
+      .g-main .g-capabilities .u-inner-list li em {
+        font-style: normal;
+        float: left;
+        width: 10%; }
+      .g-main .g-capabilities .u-inner-list li span {
+        width: 90%;
+        float: left;
+        padding-right: 0.15rem;
+        padding-left: 0.1rem; }
+
+.u-capabilities-center .u-list-box {
+  width: 100%;
+  background: #fff; }
+  .u-capabilities-center .u-list-box .u-list-title {
+    background: #F7F7F7;
+    font-size: 0;
+    border-bottom: 1px solid #D3D3D3; }
+    .u-capabilities-center .u-list-box .u-list-title li.active {
+      border-bottom: 2px solid #12C286;
+      color: #12C186; }
+    .u-capabilities-center .u-list-box .u-list-title li {
+      width: 50%;
+      display: inline-block;
+      color: #999999;
+      font-size: 0.3rem;
+      text-align: center;
+      line-height: 1rem; }
+  .u-capabilities-center .u-list-box .u-list-center {
+    width: 100%; }
+    .u-capabilities-center .u-list-box .u-list-center .u-inner.active {
+      display: block; }
+    .u-capabilities-center .u-list-box .u-list-center .u-inner {
+      display: none; }
+
+.g-capabilities .u-pcb-capabilities-center {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  bottom: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .g-capabilities .u-pcb-capabilities-center h3,
+  .g-capabilities .u-pcb-capabilities-center h5 {
+    font-size: 0.32rem;
+    line-height: 0.4rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 0.35rem 0 0.2rem; }
+  .g-capabilities .u-pcb-capabilities-center h5 {
+    font-size: 0.28rem; }
+  .g-capabilities .u-pcb-capabilities-center .u-referral-title {
+    padding: 0 0.34rem 0.35rem;
+    margin-bottom: 0.2rem;
+    background: #fff; }
+    .g-capabilities .u-pcb-capabilities-center .u-referral-title p.isSearch {
+      margin-bottom: 0.4rem;
+      margin-top: 0;
+      padding: 0 0.34rem;
+      color: #999; }
+    .g-capabilities .u-pcb-capabilities-center .u-referral-title p {
+      font-size: 0.26rem;
+      line-height: 0.32rem;
+      color: #333;
+      margin-top: 0.24rem; }
+      .g-capabilities .u-pcb-capabilities-center .u-referral-title p i {
+        font-weight: bold; }
+      .g-capabilities .u-pcb-capabilities-center .u-referral-title p a {
+        color: #00A63F; }
+    .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box {
+      padding: 0.3rem 0 0; }
+      .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-title {
+        width: 100%;
+        background: #E4F2FF;
+        color: #333;
+        line-height: 0.8rem; }
+        .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-title li:nth-child(1) {
+          width: 49.5%;
+          border-right: 1px solid #fff; }
+        .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-title li:nth-child(2) {
+          width: 50%; }
+        .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-title li {
+          font-size: 0.24rem;
+          float: left;
+          padding-left: 0.15rem; }
+      .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-content.bg-color {
+        background: #F4F7FA; }
+      .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-content {
+        border-bottom: 1px solid #e5e5e5; }
+        .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-content .u-table-conten-list {
+          border-bottom: 1px dotted #dddddd;
+          padding: 0.25rem 0;
+          font-size: 0; }
+          .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-content .u-table-conten-list li {
+            font-size: 0.24rem;
+            color: #333;
+            width: 50%;
+            display: inline-block;
+            padding-left: 0.15rem;
+            vertical-align: text-top; }
+        .g-capabilities .u-pcb-capabilities-center .u-referral-title .u-table-box .u-table-content h4 {
+          padding: 0.25rem 0.15rem;
+          font-size: 0.24rem;
+          color: #999; }
+  .g-capabilities .u-pcb-capabilities-center .u-referral-title .disc-uil {
+    padding: 0.34rem 0 0.2rem; }
+    .g-capabilities .u-pcb-capabilities-center .u-referral-title .disc-uil li {
+      font-size: 0.26rem;
+      color: #333;
+      margin-bottom: 0.1rem;
+      position: relative;
+      padding-left: 0.34rem; }
+
+.m-step-details .u-step-center {
+  width: 100%;
+  position: absolute;
+  top: 0.9rem;
+  bottom: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0.34rem; }
+  .m-step-details .u-step-center h3 {
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 0.35rem 0 0.2rem; }
+  .m-step-details .u-step-center p {
+    font-size: 0.26rem;
+    line-height: 0.32rem;
+    color: #333;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem; }
+  .m-step-details .u-step-center img {
+    width: 100%;
+    margin-bottom: 2rem; }
+
+.u-table-box .u-table-title-two {
+  width: 100%;
+  background: #E4F2FF;
+  color: #333;
+  line-height: 0.8rem; }
+  .u-table-box .u-table-title-two li:nth-child(1) {
+    width: 29.5%;
+    border-right: 1px solid #fff; }
+  .u-table-box .u-table-title-two li:nth-child(2) {
+    width: 70%; }
+  .u-table-box .u-table-title-two li {
+    font-size: 0.24rem;
+    float: left;
+    padding-left: 0.15rem; }
+
+.u-table-box .u-table-content dl.bg-color {
+  background: #F4F7FA; }
+
+.u-table-box .u-table-content dl {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 0; }
+  .u-table-box .u-table-content dl dt {
+    width: 30%;
+    display: inline-block;
+    font-size: 0.26rem;
+    color: #333;
+    padding-left: 0.15rem;
+    vertical-align: top;
+    margin-top: 0.28rem; }
+    .u-table-box .u-table-content dl dt h6 {
+      font-size: 0.26rem; }
+  .u-table-box .u-table-content dl dd {
+    width: 70%;
+    display: inline-block;
+    font-size: 0.24rem;
+    color: #999; }
+    .u-table-box .u-table-content dl dd h3 {
+      border-bottom: none;
+      font-size: 0.26rem;
+      color: #999;
+      padding: 0.2rem 0 0; }
+    .u-table-box .u-table-content dl dd p.u-dashed {
+      border-bottom: 1px dotted #dddddd; }
+    .u-table-box .u-table-content dl dd p {
+      padding-bottom: 0.2rem; }
+
+.u-referral-title .u-about-bn {
+  width: 6.92rem;
+  height: 2.76rem;
+  margin: 0 auto;
+  background: url(../img/about-bn.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: 0.9rem; }
+
+.u-referral-title .u-d-drop1 {
+  width: 6.49rem;
+  height: 6.33rem;
+  background: url(../img/aboutgj2.png) no-repeat;
+  background-size: cover;
+  margin-top: 0.5rem; }
+
+.u-referral-title .desc-img-box {
+  width: 6.82rem;
+  height: 2.80rem;
+  margin: 0.4rem auto; }
+  .u-referral-title .desc-img-box img {
+    width: 100%; }
